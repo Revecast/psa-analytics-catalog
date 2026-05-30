@@ -1,0 +1,42 @@
+{
+  "bundleId": "time-monitoring-week",
+  "name": "Time Monitoring Dashboard - Week",
+  "description": "Weekly time tracking review with entry checks, utilization reports, reviewer status, and incomplete schedule detection. 19 components, 11 reports.",
+  "category": "delivery",
+  "primaryDashboard": "Delivery_Dashboards/Time_Monitoring_Dashboard_Week",
+  "components": {
+    "dashboards": [
+      "Delivery_Dashboards/Time_Monitoring_Dashboard_Week"
+    ],
+    "dashboardFolders": [
+      "Delivery Dashboards"
+    ],
+    "reports": [
+      "Delivery_Reports/Chart_of_Time_Last_Week",
+      "Delivery_Reports/Chart_of_Time_This_Week",
+      "Delivery_Reports/Incomplete_Project_Schedules",
+      "Delivery_Reports/Individual_Util_Last_Week",
+      "Delivery_Reports/Individual_Util_This_Week",
+      "Delivery_Reports/Time_Entry_Check_Last_Week",
+      "Delivery_Reports/Time_Entry_Check_This_Week",
+      "Delivery_Reports/Time_Report_Monthly_v7",
+      "Delivery_Reports/Time_Reviewers_1st_Late",
+      "Delivery_Reports/Time_Reviewers_2nd_Late",
+      "Delivery_Reports/Weekly_Time_Entry_Check_Report"
+    ],
+    "reportFolders": [
+      "Delivery Reports"
+    ],
+    "reportTypes": [
+      "Projects_w_Week_Schedules_w_Time",
+      "Contacts_w_Staff_Weeks_w_Time"
+    ]
+  },
+  "dependsOn": [],
+  "tags": [
+    "time",
+    "utilization",
+    "weekly",
+    "staff"
+  ]
+}

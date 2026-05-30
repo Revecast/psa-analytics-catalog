@@ -1,0 +1,22 @@
+{
+  "packageDirectories": [
+    {
+      "path": "bundles/revenue-forecast-v2",
+      "default": true
+    },
+    {
+      "path": "bundles/active-project-revenue"
+    },
+    {
+      "path": "bundles/time-monitoring-week"
+    },
+    {
+      "path": "bundles/long-term-schedulin"
+    },
+    {
+      "path": "bundles/delivery-capacity-reports"
+    }
+  ],
+  "sourceApiVersion": "60.0",
+  "namespace": "Revecast"
+}

@@ -1,0 +1,26 @@
+{
+  "bundleId": "delivery-capacity-reports",
+  "name": "Delivery Capacity Reports",
+  "description": "Dashboard variant of Long Term Schedulin' organized by capacity perspective. Reuses the same 10 reports \u2014 installs nothing new if Long Term Schedulin' is already installed.",
+  "category": "delivery",
+  "primaryDashboard": "Delivery_Dashboards/Delivery_Capacity_Reports",
+  "components": {
+    "dashboards": [
+      "Delivery_Dashboards/Delivery_Capacity_Reports"
+    ],
+    "dashboardFolders": [
+      "Delivery Dashboards"
+    ],
+    "reports": [],
+    "reportFolders": [],
+    "reportTypes": []
+  },
+  "dependsOn": [
+    "long-term-schedulin"
+  ],
+  "tags": [
+    "capacity",
+    "delivery",
+    "dependent"
+  ]
+}

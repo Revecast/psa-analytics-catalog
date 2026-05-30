@@ -1,0 +1,32 @@
+{
+  "bundleId": "active-project-revenue",
+  "name": "Active Project Revenue Overview",
+  "description": "Project financials dashboard showing scheduled vs actual revenue, schedule adherence, and project-level metrics. 18 components.",
+  "category": "revenue",
+  "primaryDashboard": "Delivery_Dashboards/Active_Project_Revenue_Overview",
+  "components": {
+    "dashboards": [
+      "Delivery_Dashboards/Active_Project_Revenue_Overview"
+    ],
+    "dashboardFolders": [
+      "Delivery Dashboards"
+    ],
+    "reports": [
+      "Delivery_Reports/Project_Financials_v41",
+      "Delivery_Reports/Project_Financials_v5_Person",
+      "Delivery_Reports/Project_Financials_v6_Person"
+    ],
+    "reportFolders": [
+      "Delivery Reports"
+    ],
+    "reportTypes": [
+      "Projects_with_Members_and_Schedules"
+    ]
+  },
+  "dependsOn": [],
+  "tags": [
+    "revenue",
+    "project",
+    "financials"
+  ]
+}

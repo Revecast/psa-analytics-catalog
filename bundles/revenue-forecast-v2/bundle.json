@@ -1,0 +1,36 @@
+{
+  "bundleId": "revenue-forecast-v2",
+  "name": "Revenue Forecast v2",
+  "description": "Multi-quarter pipeline forecast with Committed/Best Case/Closed Won breakdowns by product, type, and account. 12-component grid layout with Start Date and Billable filters.",
+  "category": "revenue",
+  "primaryDashboard": "Revenue_Dashboards/Revenue_Forecast_v2",
+  "components": {
+    "dashboards": [
+      "Revenue_Dashboards/Revenue_Forecast_v2"
+    ],
+    "dashboardFolders": [
+      "Revenue Dashboards"
+    ],
+    "reports": [
+      "Revenue_Reports/Revenue_Forecast_Committed",
+      "Revenue_Reports/Revenue_Forecast_Best_Case",
+      "Revenue_Reports/Revenue_Forecast_Commit_BC",
+      "Revenue_Reports/Committed_Opps_Yet_To_Sign",
+      "Revenue_Reports/Rev_Forecast_Committed_By_Product",
+      "Revenue_Reports/Revenue_Forecast_Committed_By_Type"
+    ],
+    "reportFolders": [
+      "Revenue Reports"
+    ],
+    "reportTypes": [
+      "Opp_w_Project_w_Schedule"
+    ]
+  },
+  "dependsOn": [],
+  "tags": [
+    "pipeline",
+    "forecast",
+    "opportunity",
+    "schedule"
+  ]
+}

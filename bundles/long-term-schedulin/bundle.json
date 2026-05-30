@@ -1,0 +1,40 @@
+{
+  "bundleId": "long-term-schedulin",
+  "name": "Long Term Schedulin'",
+  "description": "Multi-week capacity outlook by role (Architect, PM, Sr SFDC, Consultant, Marketing Cloud, Other) plus Time-vs-Scheduled comparisons. 17 components, 10 reports.",
+  "category": "delivery",
+  "primaryDashboard": "Delivery_Dashboards/Long_Term_Schedulin",
+  "components": {
+    "dashboards": [
+      "Delivery_Dashboards/Long_Term_Schedulin"
+    ],
+    "dashboardFolders": [
+      "Delivery Dashboards"
+    ],
+    "reports": [
+      "Delivery_Reports/LongTerm_AllRoles_ByMonth",
+      "Delivery_Reports/LongTerm_AllRoles_ByWeek",
+      "Delivery_Reports/LongTerm_Architect",
+      "Delivery_Reports/LongTerm_PM",
+      "Delivery_Reports/LongTerm_SrSFDC",
+      "Delivery_Reports/LongTerm_Consultant",
+      "Delivery_Reports/LongTerm_MktCloud",
+      "Delivery_Reports/LongTerm_Other",
+      "Delivery_Reports/TimeEntry_Vs_Scheduled_ByPerson",
+      "Delivery_Reports/TimeEntry_Vs_Scheduled_LastMonth"
+    ],
+    "reportFolders": [
+      "Delivery Reports"
+    ],
+    "reportTypes": [
+      "Projects_w_Monthly_and_Weekly_Schedules"
+    ]
+  },
+  "dependsOn": [],
+  "tags": [
+    "capacity",
+    "scheduling",
+    "long-term",
+    "role"
+  ]
+}
