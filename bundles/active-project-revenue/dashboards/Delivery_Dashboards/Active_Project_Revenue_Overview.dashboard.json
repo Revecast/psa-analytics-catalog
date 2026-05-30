@@ -40,28 +40,6 @@
         "sort": null,
         "useReportChart": false,
         "visualizationProperties": {
-          "breakPoints": [
-            {
-              "aggregateName": "s!Revecast__Project_Schedule__c.Revecast__Scheduled_Revenue__c",
-              "breaks": [
-                {
-                  "color": "c25454",
-                  "lowerBound": null,
-                  "upperBound": 0
-                },
-                {
-                  "color": "c2c254",
-                  "lowerBound": 0,
-                  "upperBound": 0
-                },
-                {
-                  "color": "54c254",
-                  "lowerBound": 0,
-                  "upperBound": null
-                }
-              ]
-            }
-          ],
           "decimalPrecision": null,
           "displayUnits": "auto",
           "metricLabel": "Combined Revenue",
@@ -94,28 +72,6 @@
         "sort": null,
         "useReportChart": false,
         "visualizationProperties": {
-          "breakPoints": [
-            {
-              "aggregateName": "s!Revecast__Project_Schedule__c.Revecast__Scheduled_Revenue__c",
-              "breaks": [
-                {
-                  "color": "c25454",
-                  "lowerBound": null,
-                  "upperBound": 0
-                },
-                {
-                  "color": "c2c254",
-                  "lowerBound": 0,
-                  "upperBound": 0
-                },
-                {
-                  "color": "54c254",
-                  "lowerBound": 0,
-                  "upperBound": null
-                }
-              ]
-            }
-          ],
           "decimalPrecision": null,
           "displayUnits": "auto",
           "metricLabel": "Actual Dollars in (this date range)",
@@ -261,28 +217,6 @@
         "sort": null,
         "useReportChart": false,
         "visualizationProperties": {
-          "breakPoints": [
-            {
-              "aggregateName": "s!Revecast__Project_Schedule__c.Revecast__Scheduled_Revenue__c",
-              "breaks": [
-                {
-                  "color": "c25454",
-                  "lowerBound": null,
-                  "upperBound": 0
-                },
-                {
-                  "color": "c2c254",
-                  "lowerBound": 0,
-                  "upperBound": 0
-                },
-                {
-                  "color": "54c254",
-                  "lowerBound": 0,
-                  "upperBound": null
-                }
-              ]
-            }
-          ],
           "decimalPrecision": null,
           "displayUnits": "auto",
           "metricLabel": "Scheduled Revenue",
@@ -377,28 +311,6 @@
         "sort": null,
         "useReportChart": false,
         "visualizationProperties": {
-          "breakPoints": [
-            {
-              "aggregateName": "s!Revecast__Project_Schedule__c.Revecast__Scheduled_Revenue__c",
-              "breaks": [
-                {
-                  "color": "c25454",
-                  "lowerBound": null,
-                  "upperBound": 0
-                },
-                {
-                  "color": "c2c254",
-                  "lowerBound": 0,
-                  "upperBound": 0
-                },
-                {
-                  "color": "54c254",
-                  "lowerBound": 0,
-                  "upperBound": null
-                }
-              ]
-            }
-          ],
           "decimalPrecision": null,
           "displayUnits": "auto",
           "metricLabel": "Scheduled Dollars in (this date range)",
@@ -493,28 +405,6 @@
         "sort": null,
         "useReportChart": false,
         "visualizationProperties": {
-          "breakPoints": [
-            {
-              "aggregateName": "s!Revecast__Project_Schedule__c.Revecast__Scheduled_Revenue__c",
-              "breaks": [
-                {
-                  "color": "c25454",
-                  "lowerBound": null,
-                  "upperBound": 0
-                },
-                {
-                  "color": "c2c254",
-                  "lowerBound": 0,
-                  "upperBound": 0
-                },
-                {
-                  "color": "54c254",
-                  "lowerBound": 0,
-                  "upperBound": null
-                }
-              ]
-            }
-          ],
           "decimalPrecision": null,
           "displayUnits": "auto",
           "metricLabel": "Actual Revenue",
@@ -655,28 +545,6 @@
         "sort": null,
         "useReportChart": false,
         "visualizationProperties": {
-          "breakPoints": [
-            {
-              "aggregateName": "s!Revecast__Project_Schedule__c.Revecast__Scheduled_Revenue__c",
-              "breaks": [
-                {
-                  "color": "c25454",
-                  "lowerBound": null,
-                  "upperBound": 0
-                },
-                {
-                  "color": "c2c254",
-                  "lowerBound": 0,
-                  "upperBound": 0
-                },
-                {
-                  "color": "54c254",
-                  "lowerBound": 0,
-                  "upperBound": null
-                }
-              ]
-            }
-          ],
           "decimalPrecision": null,
           "displayUnits": "auto",
           "metricLabel": "Combined (actual plus future scheduled)",

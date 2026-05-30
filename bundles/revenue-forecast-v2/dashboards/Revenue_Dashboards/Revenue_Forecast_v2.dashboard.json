@@ -151,28 +151,6 @@
         "sort": null,
         "useReportChart": false,
         "visualizationProperties": {
-          "breakPoints": [
-            {
-              "aggregateName": "s!Opportunity.Amount",
-              "breaks": [
-                {
-                  "color": "c25454",
-                  "lowerBound": null,
-                  "upperBound": 0
-                },
-                {
-                  "color": "c2c254",
-                  "lowerBound": 0,
-                  "upperBound": 0
-                },
-                {
-                  "color": "54c254",
-                  "lowerBound": 0,
-                  "upperBound": null
-                }
-              ]
-            }
-          ],
           "decimalPrecision": null,
           "displayUnits": "auto",
           "showChatterPhotos": true,
@@ -700,13 +678,11 @@
     {
       "dataType": "date",
       "errorMessage": null,
-      "id": "0IBcU000000BJaPWAW",
       "name": "Start Date",
       "options": [
         {
           "alias": null,
           "endValue": "11/30/2025",
-          "id": "0ICcU000000DSWLWA4",
           "operation": "between",
           "startValue": "11/30/2024",
           "value": null
@@ -714,7 +690,6 @@
         {
           "alias": null,
           "endValue": "11/30/2026",
-          "id": "0ICcU000000DSWMWA4",
           "operation": "between",
           "startValue": "11/30/2025",
           "value": null
@@ -722,7 +697,6 @@
         {
           "alias": null,
           "endValue": null,
-          "id": "0ICcU000000DSWNWA4",
           "operation": "equals",
           "startValue": null,
           "value": "NEXT 11 MONTHS"
@@ -730,7 +704,6 @@
         {
           "alias": null,
           "endValue": null,
-          "id": "0ICcU000000DSWOWA4",
           "operation": "equals",
           "startValue": null,
           "value": "LAST 6 MONTHS"
@@ -738,7 +711,6 @@
         {
           "alias": null,
           "endValue": null,
-          "id": "0ICcU000000DSWPWA4",
           "operation": "equals",
           "startValue": null,
           "value": "LAST 3 MONTHS"
@@ -746,7 +718,6 @@
         {
           "alias": null,
           "endValue": "11/30/2024",
-          "id": "0ICcU000000DSWQWA4",
           "operation": "between",
           "startValue": "11/30/2023",
           "value": null
@@ -757,13 +728,11 @@
     {
       "dataType": "string",
       "errorMessage": null,
-      "id": "0IBcU000000BJaQWAW",
       "name": "Billable",
       "options": [
         {
           "alias": null,
           "endValue": null,
-          "id": "0ICcU000000DSWRWA4",
           "operation": "equals",
           "startValue": null,
           "value": "Billable"
@@ -771,7 +740,6 @@
         {
           "alias": null,
           "endValue": null,
-          "id": "0ICcU000000DSWSWA4",
           "operation": "equals",
           "startValue": null,
           "value": "Non-Billable"
