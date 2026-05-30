@@ -1,0 +1,92 @@
+{
+  "reportMetadata": {
+    "aggregates": [
+      "s!Revecast__Time_Entry__c.Revecast__Number_of_Hours__c",
+      "s!FK_Revecast__Staff_Week__c.Revecast__Billable_Hours_Logged_This_Week__c",
+      "s!FK_Revecast__Staff_Week__c.Revecast__Non_Billable_Hours_Logged_this_Week__c",
+      "s!FK_Revecast__Staff_Week__c.Revecast__Remaining_to_Log__c",
+      "s!FK_Revecast__Staff_Week__c.Revecast__Remaining_to_log_Billable__c",
+      "RowCount"
+    ],
+    "chart": null,
+    "crossFilters": [],
+    "currency": null,
+    "dashboardSetting": null,
+    "description": null,
+    "detailColumns": [
+      "FK_NAME",
+      "CUST_NAME",
+      "Revecast__Time_Entry__c.Revecast__Billable__c",
+      "Revecast__Time_Entry__c.Revecast__Chronology_Day__c",
+      "Revecast__Time_Entry__c.Revecast__Number_of_Hours__c",
+      "FK_Revecast__Staff_Week__c.Revecast__Billable_Hours_Logged_This_Week__c",
+      "FK_Revecast__Staff_Week__c.Revecast__Non_Billable_Hours_Logged_this_Week__c",
+      "FK_Revecast__Staff_Week__c.Revecast__Remaining_to_Log__c",
+      "FK_Revecast__Staff_Week__c.Revecast__Remaining_to_log_Billable__c"
+    ],
+    "developerName": "Chart_of_Time_This_Week",
+    "division": null,
+    "groupingsAcross": [],
+    "groupingsDown": [
+      {
+        "dateGranularity": "None",
+        "name": "Revecast__Time_Entry__c.Revecast__Project__c",
+        "sortAggregate": null,
+        "sortOrder": "Asc"
+      },
+      {
+        "dateGranularity": "None",
+        "name": "Revecast__Time_Entry__c.Revecast__WorkStream__c",
+        "sortAggregate": null,
+        "sortOrder": "Asc"
+      },
+      {
+        "dateGranularity": "None",
+        "name": "Revecast__Time_Entry__c.Revecast__Date__c",
+        "sortAggregate": null,
+        "sortOrder": "Asc"
+      }
+    ],
+    "hasDetailRows": true,
+    "hasRecordCount": true,
+    "historicalSnapshotDates": [],
+    "name": "Chart of Time This Week",
+    "presentationOptions": {
+      "hasStackedSummaries": true
+    },
+    "reportFilters": [
+      {
+        "column": "Revecast__Time_Entry__c.Revecast__Project__c",
+        "filterType": "fieldValue",
+        "isRunPageEditable": false,
+        "operator": "notContain",
+        "value": "'"
+      },
+      {
+        "column": "FK_Revecast__Staff_Week__c.Revecast__This_Week__c",
+        "filterType": "fieldValue",
+        "isRunPageEditable": false,
+        "operator": "equals",
+        "value": "This Week"
+      }
+    ],
+    "reportFormat": "SUMMARY",
+    "reportType": {
+      "label": "Time Entries with Staff Week",
+      "type": "CustomEntity$Revecast__Time_Entry__c@Revecast__Time_Entry__c.Revecast__Staff_Week__c"
+    },
+    "scope": "user",
+    "showGrandTotal": true,
+    "showSubtotals": true,
+    "sortBy": [],
+    "standardDateFilter": {
+      "column": "Revecast__Time_Entry__c.Revecast__Date__c",
+      "durationValue": "CUSTOM",
+      "endDate": null,
+      "startDate": null
+    },
+    "standardFilters": null,
+    "supportsRoleHierarchy": false,
+    "userOrHierarchyFilterId": null
+  }
+}

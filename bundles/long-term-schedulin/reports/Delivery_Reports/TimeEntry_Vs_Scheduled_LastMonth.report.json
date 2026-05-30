@@ -1,0 +1,78 @@
+{
+  "reportMetadata": {
+    "aggregates": [
+      "s!Revecast__Project_Schedule__c2.Revecast__Scheduled_Hours_this_week__c",
+      "s!Revecast__Project_Schedule__c2.Revecast__Total_Time_Logged_Billable__c",
+      "s!Revecast__Project_Schedule__c2.Revecast__Total_Time_Logged_Non_Billable__c",
+      "RowCount"
+    ],
+    "chart": null,
+    "crossFilters": [],
+    "currency": null,
+    "dashboardSetting": null,
+    "description": null,
+    "detailColumns": [
+      "Revecast__Project_Schedule__c2.Revecast__Scheduled_Hours_this_week__c",
+      "Revecast__Project_Schedule__c2.Revecast__Total_Time_Logged_Billable__c",
+      "Revecast__Project_Schedule__c2.Revecast__Total_Time_Logged_Non_Billable__c"
+    ],
+    "developerName": "TimeEntry_Vs_Scheduled_LastMonth",
+    "division": null,
+    "groupingsAcross": [],
+    "groupingsDown": [
+      {
+        "dateGranularity": "None",
+        "name": "Revecast__Project_Schedule__c2.Revecast__Team_Member_Name__c",
+        "sortAggregate": null,
+        "sortOrder": "Asc"
+      },
+      {
+        "dateGranularity": "Day",
+        "name": "Revecast__Project_Schedule__c2.Revecast__Start_Date__c",
+        "sortAggregate": null,
+        "sortOrder": "Asc"
+      }
+    ],
+    "hasDetailRows": true,
+    "hasRecordCount": true,
+    "historicalSnapshotDates": [],
+    "name": "Time Entry Vs Scheduled Last Month",
+    "presentationOptions": {
+      "hasStackedSummaries": true
+    },
+    "reportFilters": [
+      {
+        "column": "Revecast__Project_Schedule__c.Revecast__Start_Date__c",
+        "filterType": "fieldValue",
+        "isRunPageEditable": false,
+        "operator": "equals",
+        "value": "LAST MONTH"
+      },
+      {
+        "column": "Revecast__Project_Schedule__c2.Revecast__Team_Member_Name__c",
+        "filterType": "fieldValue",
+        "isRunPageEditable": false,
+        "operator": "notContain",
+        "value": "Generic"
+      }
+    ],
+    "reportFormat": "SUMMARY",
+    "reportType": {
+      "label": "Projects w/ Monthly and Weekly Schedules",
+      "type": "Revecast__Projects_w_Monthly_and_Weekly_Schedules__c"
+    },
+    "scope": "user",
+    "showGrandTotal": true,
+    "showSubtotals": true,
+    "sortBy": [],
+    "standardDateFilter": {
+      "column": "Revecast__Project_Schedule__c.Revecast__Start_Date__c",
+      "durationValue": "THIS_FISCAL_QUARTER",
+      "endDate": "2026-06-30",
+      "startDate": "2026-04-01"
+    },
+    "standardFilters": null,
+    "supportsRoleHierarchy": false,
+    "userOrHierarchyFilterId": null
+  }
+}

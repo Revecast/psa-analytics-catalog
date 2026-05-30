@@ -1,0 +1,63 @@
+{
+  "reportMetadata": {
+    "aggregates": [
+      "s!Revecast__Project_Schedule__c.Revecast__Scheduled_Hours_this_week__c",
+      "s!Revecast__Project_Schedule__c.Revecast__Total_Time_Logged_Billable__c",
+      "RowCount"
+    ],
+    "chart": null,
+    "crossFilters": [],
+    "currency": null,
+    "dashboardSetting": null,
+    "description": null,
+    "detailColumns": [
+      "Revecast__Project_Schedule__c.Revecast__Scheduled_Hours_this_week__c",
+      "Revecast__Project_Schedule__c.Revecast__Total_Time_Logged_Billable__c"
+    ],
+    "developerName": "Incomplete_Project_Schedules",
+    "division": null,
+    "groupingsAcross": [],
+    "groupingsDown": [
+      {
+        "dateGranularity": "None",
+        "name": "Revecast__Project_Schedule__c.Revecast__Team_Member_Name__c",
+        "sortAggregate": null,
+        "sortOrder": "Asc"
+      }
+    ],
+    "hasDetailRows": true,
+    "hasRecordCount": true,
+    "historicalSnapshotDates": [],
+    "name": "Incomplete Project Schedules",
+    "presentationOptions": {
+      "hasStackedSummaries": true
+    },
+    "reportFilters": [
+      {
+        "column": "Revecast__Project_Schedule__c.Revecast__Type__c",
+        "filterType": "fieldValue",
+        "isRunPageEditable": false,
+        "operator": "equals",
+        "value": "Week"
+      }
+    ],
+    "reportFormat": "SUMMARY",
+    "reportType": {
+      "label": "Project Schedules",
+      "type": "CustomEntity$Revecast__Project_Schedule__c"
+    },
+    "scope": "user",
+    "showGrandTotal": true,
+    "showSubtotals": true,
+    "sortBy": [],
+    "standardDateFilter": {
+      "column": "Revecast__Project_Schedule__c.Revecast__Accepted_Approved__c",
+      "durationValue": "CUSTOM",
+      "endDate": null,
+      "startDate": null
+    },
+    "standardFilters": null,
+    "supportsRoleHierarchy": false,
+    "userOrHierarchyFilterId": null
+  }
+}

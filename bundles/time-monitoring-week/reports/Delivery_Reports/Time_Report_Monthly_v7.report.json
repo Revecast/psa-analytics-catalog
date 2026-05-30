@@ -1,0 +1,67 @@
+{
+  "reportMetadata": {
+    "aggregates": [
+      "s!Revecast__Time_Entry__c.Revecast__Number_of_Hours__c",
+      "RowCount"
+    ],
+    "chart": null,
+    "crossFilters": [],
+    "currency": null,
+    "dashboardSetting": null,
+    "description": null,
+    "detailColumns": [
+      "Revecast__Time_Entry__c.Revecast__Number_of_Hours__c"
+    ],
+    "developerName": "Time_Report_Monthly_v7",
+    "division": null,
+    "groupingsAcross": [],
+    "groupingsDown": [
+      {
+        "dateGranularity": "None",
+        "name": "Revecast__Time_Entry__c.Revecast__Status__c",
+        "sortAggregate": null,
+        "sortOrder": "Asc"
+      },
+      {
+        "dateGranularity": "None",
+        "name": "Revecast__Project_Schedule__c.Revecast__Team_Member_Name__c",
+        "sortAggregate": null,
+        "sortOrder": "Asc"
+      }
+    ],
+    "hasDetailRows": true,
+    "hasRecordCount": true,
+    "historicalSnapshotDates": [],
+    "name": "Time Report Monthly v7",
+    "presentationOptions": {
+      "hasStackedSummaries": true
+    },
+    "reportFilters": [
+      {
+        "column": "Revecast__Project_Schedule__c.Revecast__Start_Date__c",
+        "filterType": "fieldValue",
+        "isRunPageEditable": false,
+        "operator": "equals",
+        "value": "LAST WEEK"
+      }
+    ],
+    "reportFormat": "SUMMARY",
+    "reportType": {
+      "label": "Projects w/ Week Schedules w/ Time",
+      "type": "Revecast__Projects_w_Week_Schedules_w_Time__c"
+    },
+    "scope": "user",
+    "showGrandTotal": true,
+    "showSubtotals": true,
+    "sortBy": [],
+    "standardDateFilter": {
+      "column": "Revecast__Project__c.Revecast__Start_Date__c",
+      "durationValue": "THIS_FISCAL_QUARTER",
+      "endDate": "2026-06-30",
+      "startDate": "2026-04-01"
+    },
+    "standardFilters": null,
+    "supportsRoleHierarchy": false,
+    "userOrHierarchyFilterId": null
+  }
+}

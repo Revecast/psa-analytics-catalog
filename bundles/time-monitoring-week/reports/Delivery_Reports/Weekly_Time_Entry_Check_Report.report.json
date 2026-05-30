@@ -1,0 +1,74 @@
+{
+  "reportMetadata": {
+    "aggregates": [
+      "s!Revecast__Time_Entry__c.Revecast__Number_of_Hours__c",
+      "RowCount"
+    ],
+    "chart": null,
+    "crossFilters": [],
+    "currency": null,
+    "dashboardSetting": null,
+    "description": null,
+    "detailColumns": [
+      "CUST_NAME",
+      "Revecast__Time_Entry__c.Revecast__Date__c",
+      "Revecast__Time_Entry__c.Revecast__Project__c",
+      "Revecast__Time_Entry__c.Revecast__Number_of_Hours__c",
+      "Revecast__Time_Entry__c.Revecast__Project_Member__c",
+      "Revecast__Time_Entry__c.Revecast__Status__c",
+      "Revecast__Time_Entry__c.Revecast__Scheduled_Actual__c",
+      "Revecast__Time_Entry__c.Revecast__WorkStream__c"
+    ],
+    "developerName": "Weekly_Time_Entry_Check_Report",
+    "division": null,
+    "groupingsAcross": [],
+    "groupingsDown": [
+      {
+        "dateGranularity": "None",
+        "name": "Revecast__Time_Entry__c.Revecast__Chronology_Day__c",
+        "sortAggregate": null,
+        "sortOrder": "Asc"
+      },
+      {
+        "dateGranularity": "None",
+        "name": "FK_NAME",
+        "sortAggregate": null,
+        "sortOrder": "Asc"
+      }
+    ],
+    "hasDetailRows": true,
+    "hasRecordCount": true,
+    "historicalSnapshotDates": [],
+    "name": "Weekly Time Entry Check Report",
+    "presentationOptions": {
+      "hasStackedSummaries": true
+    },
+    "reportFilters": [
+      {
+        "column": "Revecast__Time_Entry__c.Revecast__This_Week__c",
+        "filterType": "fieldValue",
+        "isRunPageEditable": false,
+        "operator": "equals",
+        "value": "This Week"
+      }
+    ],
+    "reportFormat": "SUMMARY",
+    "reportType": {
+      "label": "Time Entries with Staff Week",
+      "type": "CustomEntity$Revecast__Time_Entry__c@Revecast__Time_Entry__c.Revecast__Staff_Week__c"
+    },
+    "scope": "user",
+    "showGrandTotal": true,
+    "showSubtotals": true,
+    "sortBy": [],
+    "standardDateFilter": {
+      "column": "Revecast__Time_Entry__c.Revecast__Date__c",
+      "durationValue": "CUSTOM",
+      "endDate": null,
+      "startDate": null
+    },
+    "standardFilters": null,
+    "supportsRoleHierarchy": false,
+    "userOrHierarchyFilterId": null
+  }
+}

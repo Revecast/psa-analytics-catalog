@@ -1,0 +1,78 @@
+{
+  "reportMetadata": {
+    "aggregates": [
+      "s!Revecast__Time_Entry__c.Revecast__Billable__c",
+      "s!Revecast__Time_Entry__c.Revecast__Number_of_Hours__c",
+      "RowCount"
+    ],
+    "chart": null,
+    "crossFilters": [],
+    "currency": null,
+    "dashboardSetting": null,
+    "description": null,
+    "detailColumns": [
+      "FK_NAME",
+      "CUST_NAME",
+      "Revecast__Time_Entry__c.Revecast__Billable__c",
+      "Revecast__Time_Entry__c.Revecast__Chronology_Day__c",
+      "Revecast__Time_Entry__c.Revecast__Number_of_Hours__c"
+    ],
+    "developerName": "Chart_of_Time_Last_Week",
+    "division": null,
+    "groupingsAcross": [],
+    "groupingsDown": [
+      {
+        "dateGranularity": "None",
+        "name": "Revecast__Time_Entry__c.Revecast__Project__c",
+        "sortAggregate": null,
+        "sortOrder": "Asc"
+      },
+      {
+        "dateGranularity": "None",
+        "name": "Revecast__Time_Entry__c.Revecast__WorkStream__c",
+        "sortAggregate": null,
+        "sortOrder": "Asc"
+      },
+      {
+        "dateGranularity": "None",
+        "name": "Revecast__Time_Entry__c.Revecast__Date__c",
+        "sortAggregate": null,
+        "sortOrder": "Asc"
+      }
+    ],
+    "hasDetailRows": true,
+    "hasRecordCount": true,
+    "historicalSnapshotDates": [],
+    "name": "Chart of Time Last Week",
+    "presentationOptions": {
+      "hasStackedSummaries": true
+    },
+    "reportFilters": [
+      {
+        "column": "Revecast__Time_Entry__c.Revecast__Date__c",
+        "filterType": "fieldValue",
+        "isRunPageEditable": false,
+        "operator": "equals",
+        "value": "LAST WEEK"
+      }
+    ],
+    "reportFormat": "SUMMARY",
+    "reportType": {
+      "label": "Time Entries with Staff Week",
+      "type": "CustomEntity$Revecast__Time_Entry__c@Revecast__Time_Entry__c.Revecast__Staff_Week__c"
+    },
+    "scope": "user",
+    "showGrandTotal": true,
+    "showSubtotals": true,
+    "sortBy": [],
+    "standardDateFilter": {
+      "column": "Revecast__Time_Entry__c.Revecast__Date__c",
+      "durationValue": "CUSTOM",
+      "endDate": null,
+      "startDate": null
+    },
+    "standardFilters": null,
+    "supportsRoleHierarchy": false,
+    "userOrHierarchyFilterId": null
+  }
+}

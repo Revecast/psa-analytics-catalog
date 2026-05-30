@@ -1,0 +1,991 @@
+{
+  "canChangeRunningUser": false,
+  "canUseStickyFilter": true,
+  "chartTheme": null,
+  "colorPalette": null,
+  "components": [
+    {
+      "chartTheme": null,
+      "componentData": null,
+      "footer": null,
+      "header": null,
+      "id": "01acU0000034c9pQAA",
+      "lastModifiedDate": "2026-05-28T15:50:26Z",
+      "properties": {
+        "content": {
+          "additionalInfo": null,
+          "richTextContent": "[{\"insert\":\"Section\"}]"
+        },
+        "visualizationType": "RichText"
+      },
+      "reportId": null,
+      "title": null,
+      "type": "Dashboard"
+    },
+    {
+      "chartTheme": null,
+      "componentData": 0,
+      "footer": null,
+      "header": "Long Term Schedulin' (All Roles)",
+      "id": "01acU0000034c9sQAA",
+      "lastModifiedDate": "2026-05-28T15:50:27Z",
+      "properties": {
+        "aggregates": [
+          {
+            "name": "s!Revecast__Project_Schedule__c2.Revecast__Scheduled_Hours_this_week__c"
+          }
+        ],
+        "autoSelectColumns": true,
+        "drillUrl": null,
+        "filterColumns": [],
+        "groupings": [
+          {
+            "inheritedReportSort": "reportGrouping",
+            "name": "Revecast__Project_Schedule__c2.Revecast__Start_Date__c",
+            "sortAggregate": null,
+            "sortOrder": null
+          }
+        ],
+        "maxRows": null,
+        "reportFormat": "SUMMARY",
+        "sort": null,
+        "useReportChart": false,
+        "visualizationProperties": {
+          "axisRange": {
+            "max": null,
+            "min": null,
+            "rangeType": "auto"
+          },
+          "decimalPrecision": null,
+          "displayUnits": "auto",
+          "groupByType": "none",
+          "legendPosition": "Right",
+          "showValues": true
+        },
+        "visualizationType": "Line"
+      },
+      "reportId": "00OcU000004nCNVUA2",
+      "title": null,
+      "type": "Report"
+    },
+    {
+      "chartTheme": null,
+      "componentData": 1,
+      "footer": null,
+      "header": "Long Term Schedulin' Architect",
+      "id": "01acU0000034c9vQAA",
+      "lastModifiedDate": "2026-05-28T15:50:27Z",
+      "properties": {
+        "aggregates": [
+          {
+            "name": "s!Revecast__Project_Schedule__c2.Revecast__Scheduled_Hours_this_week__c"
+          }
+        ],
+        "autoSelectColumns": true,
+        "drillUrl": null,
+        "filterColumns": [],
+        "groupings": [
+          {
+            "inheritedReportSort": "reportGrouping",
+            "name": "Revecast__Project_Schedule__c2.Revecast__Start_Date__c",
+            "sortAggregate": null,
+            "sortOrder": null
+          }
+        ],
+        "maxRows": null,
+        "reportFormat": "SUMMARY",
+        "sort": null,
+        "useReportChart": false,
+        "visualizationProperties": {
+          "aggregateVisualizationInfos": [
+            {
+              "axis": "Y",
+              "visualizationType": "Column"
+            }
+          ],
+          "axisRange": {
+            "max": null,
+            "min": null,
+            "rangeType": "auto"
+          },
+          "decimalPrecision": null,
+          "displayUnits": "auto",
+          "groupByType": "none",
+          "legendPosition": "Right",
+          "showValues": true
+        },
+        "visualizationType": "Column"
+      },
+      "reportId": "00OcU000004nASAUA2",
+      "title": null,
+      "type": "Report"
+    },
+    {
+      "chartTheme": null,
+      "componentData": 2,
+      "footer": null,
+      "header": "Long Term Schedulin' Senior SFDC Co",
+      "id": "01acU0000034c9yQAA",
+      "lastModifiedDate": "2026-05-28T15:50:27Z",
+      "properties": {
+        "aggregates": [
+          {
+            "name": "s!Revecast__Project_Schedule__c2.Revecast__Scheduled_Hours_this_week__c"
+          }
+        ],
+        "autoSelectColumns": true,
+        "drillUrl": null,
+        "filterColumns": [],
+        "groupings": [
+          {
+            "inheritedReportSort": "reportGrouping",
+            "name": "Revecast__Project_Schedule__c2.Revecast__Start_Date__c",
+            "sortAggregate": null,
+            "sortOrder": null
+          }
+        ],
+        "maxRows": null,
+        "reportFormat": "SUMMARY",
+        "sort": null,
+        "useReportChart": false,
+        "visualizationProperties": {
+          "axisRange": {
+            "max": null,
+            "min": null,
+            "rangeType": "auto"
+          },
+          "decimalPrecision": null,
+          "displayUnits": "auto",
+          "groupByType": "none",
+          "legendPosition": "Right",
+          "showValues": true
+        },
+        "visualizationType": "Line"
+      },
+      "reportId": "00OcU000004nCQjUAM",
+      "title": null,
+      "type": "Report"
+    },
+    {
+      "chartTheme": null,
+      "componentData": 3,
+      "footer": null,
+      "header": "07. Long Term Schedulin' Consult",
+      "id": "01acU0000034cA1QAI",
+      "lastModifiedDate": "2026-05-28T15:50:27Z",
+      "properties": {
+        "aggregates": [
+          {
+            "name": "s!Revecast__Project_Schedule__c2.Revecast__Scheduled_Hours_this_week__c"
+          }
+        ],
+        "autoSelectColumns": true,
+        "drillUrl": null,
+        "filterColumns": [],
+        "groupings": [
+          {
+            "inheritedReportSort": "reportGrouping",
+            "name": "Revecast__Project_Schedule__c2.Revecast__Start_Date__c",
+            "sortAggregate": null,
+            "sortOrder": null
+          }
+        ],
+        "maxRows": null,
+        "reportFormat": "SUMMARY",
+        "sort": null,
+        "useReportChart": false,
+        "visualizationProperties": {
+          "aggregateVisualizationInfos": [
+            {
+              "axis": "Y",
+              "visualizationType": "Column"
+            }
+          ],
+          "axisRange": {
+            "max": null,
+            "min": null,
+            "rangeType": "auto"
+          },
+          "decimalPrecision": null,
+          "displayUnits": "auto",
+          "groupByType": "none",
+          "legendPosition": "Right",
+          "showValues": true
+        },
+        "visualizationType": "Column"
+      },
+      "reportId": "00OcU000004n9YbUAI",
+      "title": null,
+      "type": "Report"
+    },
+    {
+      "chartTheme": null,
+      "componentData": 4,
+      "footer": null,
+      "header": "Schedules by Person",
+      "id": "01acU0000034cA4QAI",
+      "lastModifiedDate": "2026-05-28T15:50:28Z",
+      "properties": {
+        "aggregates": [
+          {
+            "name": "s!Revecast__Project_Schedule__c2.Revecast__Scheduled_Hours_this_week__c"
+          }
+        ],
+        "autoSelectColumns": true,
+        "drillUrl": null,
+        "filterColumns": [],
+        "groupings": [
+          {
+            "inheritedReportSort": "reportGrouping",
+            "name": "Revecast__Project_Schedule__c2.Revecast__Start_Date__c",
+            "sortAggregate": null,
+            "sortOrder": null
+          }
+        ],
+        "maxRows": null,
+        "reportFormat": "SUMMARY",
+        "sort": null,
+        "useReportChart": false,
+        "visualizationProperties": {
+          "axisRange": {
+            "max": null,
+            "min": null,
+            "rangeType": "auto"
+          },
+          "decimalPrecision": null,
+          "displayUnits": "auto",
+          "groupByType": "none",
+          "legendPosition": "Right",
+          "showValues": true
+        },
+        "visualizationType": "Line"
+      },
+      "reportId": "00OcU000004nCSLUA2",
+      "title": null,
+      "type": "Report"
+    },
+    {
+      "chartTheme": null,
+      "componentData": 5,
+      "footer": null,
+      "header": "Long Term Schedulin' (All Roles by",
+      "id": "01acU0000034c9qQAA",
+      "lastModifiedDate": "2026-05-28T15:50:27Z",
+      "properties": {
+        "aggregates": [
+          {
+            "name": "s!Revecast__Project_Schedule__c2.Revecast__Scheduled_Hours_this_week__c"
+          }
+        ],
+        "autoSelectColumns": true,
+        "drillUrl": null,
+        "filterColumns": [],
+        "groupings": [
+          {
+            "inheritedReportSort": "reportGrouping",
+            "name": "Revecast__Project_Schedule__c.Revecast__Category__c",
+            "sortAggregate": null,
+            "sortOrder": null
+          }
+        ],
+        "maxRows": null,
+        "reportFormat": "SUMMARY",
+        "sort": null,
+        "useReportChart": false,
+        "visualizationProperties": {
+          "aggregateVisualizationInfos": [
+            {
+              "axis": "Y",
+              "visualizationType": "Column"
+            }
+          ],
+          "axisRange": {
+            "max": null,
+            "min": null,
+            "rangeType": "auto"
+          },
+          "decimalPrecision": null,
+          "displayUnits": "auto",
+          "groupByType": "none",
+          "legendPosition": "Right",
+          "showValues": true
+        },
+        "visualizationType": "Column"
+      },
+      "reportId": "00OcU000004nCLtUAM",
+      "title": null,
+      "type": "Report"
+    },
+    {
+      "chartTheme": null,
+      "componentData": 6,
+      "footer": null,
+      "header": "Long Term Schedulin' Project Manage",
+      "id": "01acU0000034c9tQAA",
+      "lastModifiedDate": "2026-05-28T15:50:27Z",
+      "properties": {
+        "aggregates": [
+          {
+            "name": "s!Revecast__Project_Schedule__c2.Revecast__Scheduled_Hours_this_week__c"
+          }
+        ],
+        "autoSelectColumns": true,
+        "drillUrl": null,
+        "filterColumns": [],
+        "groupings": [
+          {
+            "inheritedReportSort": "reportGrouping",
+            "name": "Revecast__Project_Schedule__c2.Revecast__Start_Date__c",
+            "sortAggregate": null,
+            "sortOrder": null
+          }
+        ],
+        "maxRows": null,
+        "reportFormat": "SUMMARY",
+        "sort": null,
+        "useReportChart": false,
+        "visualizationProperties": {
+          "aggregateVisualizationInfos": [
+            {
+              "axis": "Y",
+              "visualizationType": "Column"
+            }
+          ],
+          "axisRange": {
+            "max": null,
+            "min": null,
+            "rangeType": "auto"
+          },
+          "decimalPrecision": null,
+          "displayUnits": "auto",
+          "groupByType": "none",
+          "legendPosition": "Right",
+          "showValues": true
+        },
+        "visualizationType": "Column"
+      },
+      "reportId": "00OcU000004n0nqUAA",
+      "title": null,
+      "type": "Report"
+    },
+    {
+      "chartTheme": null,
+      "componentData": 7,
+      "footer": null,
+      "header": "Long Term Schedulin' Architect",
+      "id": "01acU0000034c9wQAA",
+      "lastModifiedDate": "2026-05-28T15:50:27Z",
+      "properties": {
+        "aggregates": [
+          {
+            "name": "s!Revecast__Project_Schedule__c2.Revecast__Scheduled_Hours_this_week__c"
+          }
+        ],
+        "autoSelectColumns": true,
+        "drillUrl": null,
+        "filterColumns": [],
+        "groupings": [
+          {
+            "inheritedReportSort": "reportGrouping",
+            "name": "Revecast__Project_Schedule__c2.Revecast__Start_Date__c",
+            "sortAggregate": null,
+            "sortOrder": null
+          }
+        ],
+        "maxRows": null,
+        "reportFormat": "SUMMARY",
+        "sort": null,
+        "useReportChart": false,
+        "visualizationProperties": {
+          "axisRange": {
+            "max": null,
+            "min": null,
+            "rangeType": "auto"
+          },
+          "decimalPrecision": null,
+          "displayUnits": "auto",
+          "groupByType": "none",
+          "legendPosition": "Right",
+          "showValues": true
+        },
+        "visualizationType": "Line"
+      },
+      "reportId": "00OcU000004nASAUA2",
+      "title": null,
+      "type": "Report"
+    },
+    {
+      "chartTheme": null,
+      "componentData": 8,
+      "footer": null,
+      "header": "Long Term Schedulin' Marketing/Data",
+      "id": "01acU0000034c9zQAA",
+      "lastModifiedDate": "2026-05-28T15:50:27Z",
+      "properties": {
+        "aggregates": [
+          {
+            "name": "s!Revecast__Project_Schedule__c2.Revecast__Scheduled_Hours_this_week__c"
+          }
+        ],
+        "autoSelectColumns": true,
+        "drillUrl": null,
+        "filterColumns": [],
+        "groupings": [
+          {
+            "inheritedReportSort": "reportGrouping",
+            "name": "Revecast__Project_Schedule__c2.Revecast__Start_Date__c",
+            "sortAggregate": null,
+            "sortOrder": null
+          }
+        ],
+        "maxRows": null,
+        "reportFormat": "SUMMARY",
+        "sort": null,
+        "useReportChart": false,
+        "visualizationProperties": {
+          "aggregateVisualizationInfos": [
+            {
+              "axis": "Y",
+              "visualizationType": "Column"
+            }
+          ],
+          "axisRange": {
+            "max": null,
+            "min": null,
+            "rangeType": "auto"
+          },
+          "decimalPrecision": null,
+          "displayUnits": "auto",
+          "groupByType": "none",
+          "legendPosition": "Right",
+          "showValues": true
+        },
+        "visualizationType": "Column"
+      },
+      "reportId": "00OcU000004n9gfUAA",
+      "title": null,
+      "type": "Report"
+    },
+    {
+      "chartTheme": null,
+      "componentData": 9,
+      "footer": null,
+      "header": "07. Long Term Schedulin' Consult",
+      "id": "01acU0000034cA2QAI",
+      "lastModifiedDate": "2026-05-28T15:50:27Z",
+      "properties": {
+        "aggregates": [
+          {
+            "name": "s!Revecast__Project_Schedule__c2.Revecast__Scheduled_Hours_this_week__c"
+          }
+        ],
+        "autoSelectColumns": true,
+        "drillUrl": null,
+        "filterColumns": [],
+        "groupings": [
+          {
+            "inheritedReportSort": "reportGrouping",
+            "name": "Revecast__Project_Schedule__c2.Revecast__Start_Date__c",
+            "sortAggregate": null,
+            "sortOrder": null
+          }
+        ],
+        "maxRows": null,
+        "reportFormat": "SUMMARY",
+        "sort": null,
+        "useReportChart": false,
+        "visualizationProperties": {
+          "axisRange": {
+            "max": null,
+            "min": null,
+            "rangeType": "auto"
+          },
+          "decimalPrecision": null,
+          "displayUnits": "auto",
+          "groupByType": "none",
+          "legendPosition": "Right",
+          "showValues": true
+        },
+        "visualizationType": "Line"
+      },
+      "reportId": "00OcU000004n9YbUAI",
+      "title": null,
+      "type": "Report"
+    },
+    {
+      "chartTheme": null,
+      "componentData": 10,
+      "footer": null,
+      "header": "Staff Member Time Summary (Last Month)",
+      "id": "01acU0000034cA5QAI",
+      "lastModifiedDate": "2026-05-28T15:50:28Z",
+      "properties": {
+        "aggregates": [
+          {
+            "name": "s!Revecast__Project_Schedule__c2.Revecast__Scheduled_Hours_this_week__c"
+          }
+        ],
+        "autoSelectColumns": true,
+        "drillUrl": null,
+        "filterColumns": [],
+        "groupings": [
+          {
+            "inheritedReportSort": "reportGrouping",
+            "name": "Revecast__Project_Schedule__c2.Revecast__Team_Member_Name__c",
+            "sortAggregate": null,
+            "sortOrder": null
+          }
+        ],
+        "maxRows": null,
+        "reportFormat": "SUMMARY",
+        "sort": null,
+        "useReportChart": false,
+        "visualizationProperties": {
+          "axisRange": {
+            "max": null,
+            "min": null,
+            "rangeType": "auto"
+          },
+          "decimalPrecision": null,
+          "displayUnits": "auto",
+          "groupByType": "none",
+          "legendPosition": "Right",
+          "showChatterPhotos": false,
+          "showValues": true
+        },
+        "visualizationType": "Bar"
+      },
+      "reportId": "00OcU000004nAjuUAE",
+      "title": null,
+      "type": "Report"
+    },
+    {
+      "chartTheme": null,
+      "componentData": 11,
+      "footer": null,
+      "header": "Long Term Schedulin' (All Roles)",
+      "id": "01acU0000034c9rQAA",
+      "lastModifiedDate": "2026-05-28T15:50:27Z",
+      "properties": {
+        "aggregates": [
+          {
+            "name": "s!Revecast__Project_Schedule__c2.Revecast__Scheduled_Hours_this_week__c"
+          }
+        ],
+        "autoSelectColumns": true,
+        "drillUrl": null,
+        "filterColumns": [],
+        "groupings": [
+          {
+            "inheritedReportSort": "reportGrouping",
+            "name": "Revecast__Project_Schedule__c2.Revecast__Start_Date__c",
+            "sortAggregate": null,
+            "sortOrder": null
+          }
+        ],
+        "maxRows": null,
+        "reportFormat": "SUMMARY",
+        "sort": null,
+        "useReportChart": false,
+        "visualizationProperties": {
+          "aggregateVisualizationInfos": [
+            {
+              "axis": "Y",
+              "visualizationType": "Column"
+            }
+          ],
+          "axisRange": {
+            "max": null,
+            "min": null,
+            "rangeType": "auto"
+          },
+          "decimalPrecision": null,
+          "displayUnits": "auto",
+          "groupByType": "none",
+          "legendPosition": "Right",
+          "showValues": true
+        },
+        "visualizationType": "Column"
+      },
+      "reportId": "00OcU000004nCNVUA2",
+      "title": null,
+      "type": "Report"
+    },
+    {
+      "chartTheme": null,
+      "componentData": 12,
+      "footer": null,
+      "header": "Long Term Schedulin' Project Manage",
+      "id": "01acU0000034c9uQAA",
+      "lastModifiedDate": "2026-05-28T15:50:27Z",
+      "properties": {
+        "aggregates": [
+          {
+            "name": "s!Revecast__Project_Schedule__c2.Revecast__Scheduled_Hours_this_week__c"
+          }
+        ],
+        "autoSelectColumns": true,
+        "drillUrl": null,
+        "filterColumns": [],
+        "groupings": [
+          {
+            "inheritedReportSort": "reportGrouping",
+            "name": "Revecast__Project_Schedule__c2.Revecast__Start_Date__c",
+            "sortAggregate": null,
+            "sortOrder": null
+          }
+        ],
+        "maxRows": null,
+        "reportFormat": "SUMMARY",
+        "sort": null,
+        "useReportChart": false,
+        "visualizationProperties": {
+          "axisRange": {
+            "max": null,
+            "min": null,
+            "rangeType": "auto"
+          },
+          "decimalPrecision": null,
+          "displayUnits": "auto",
+          "groupByType": "none",
+          "legendPosition": "Right",
+          "showValues": true
+        },
+        "visualizationType": "Line"
+      },
+      "reportId": "00OcU000004n0nqUAA",
+      "title": null,
+      "type": "Report"
+    },
+    {
+      "chartTheme": null,
+      "componentData": 13,
+      "footer": null,
+      "header": "Long Term Schedulin' Senior SFDC Co",
+      "id": "01acU0000034c9xQAA",
+      "lastModifiedDate": "2026-05-28T15:50:27Z",
+      "properties": {
+        "aggregates": [
+          {
+            "name": "s!Revecast__Project_Schedule__c2.Revecast__Scheduled_Hours_this_week__c"
+          }
+        ],
+        "autoSelectColumns": true,
+        "drillUrl": null,
+        "filterColumns": [],
+        "groupings": [
+          {
+            "inheritedReportSort": "reportGrouping",
+            "name": "Revecast__Project_Schedule__c2.Revecast__Start_Date__c",
+            "sortAggregate": null,
+            "sortOrder": null
+          }
+        ],
+        "maxRows": null,
+        "reportFormat": "SUMMARY",
+        "sort": null,
+        "useReportChart": false,
+        "visualizationProperties": {
+          "aggregateVisualizationInfos": [
+            {
+              "axis": "Y",
+              "visualizationType": "Column"
+            }
+          ],
+          "axisRange": {
+            "max": null,
+            "min": null,
+            "rangeType": "auto"
+          },
+          "decimalPrecision": null,
+          "displayUnits": "auto",
+          "groupByType": "none",
+          "legendPosition": "Right",
+          "showValues": true
+        },
+        "visualizationType": "Column"
+      },
+      "reportId": "00OcU000004nCQjUAM",
+      "title": null,
+      "type": "Report"
+    },
+    {
+      "chartTheme": null,
+      "componentData": 14,
+      "footer": null,
+      "header": "Long Term Schedulin' Marketing/Data",
+      "id": "01acU0000034cA0QAI",
+      "lastModifiedDate": "2026-05-28T15:50:27Z",
+      "properties": {
+        "aggregates": [
+          {
+            "name": "s!Revecast__Project_Schedule__c2.Revecast__Scheduled_Hours_this_week__c"
+          }
+        ],
+        "autoSelectColumns": true,
+        "drillUrl": null,
+        "filterColumns": [],
+        "groupings": [
+          {
+            "inheritedReportSort": "reportGrouping",
+            "name": "Revecast__Project_Schedule__c2.Revecast__Start_Date__c",
+            "sortAggregate": null,
+            "sortOrder": null
+          }
+        ],
+        "maxRows": null,
+        "reportFormat": "SUMMARY",
+        "sort": null,
+        "useReportChart": false,
+        "visualizationProperties": {
+          "axisRange": {
+            "max": null,
+            "min": null,
+            "rangeType": "auto"
+          },
+          "decimalPrecision": null,
+          "displayUnits": "auto",
+          "groupByType": "none",
+          "legendPosition": "Right",
+          "showValues": true
+        },
+        "visualizationType": "Line"
+      },
+      "reportId": "00OcU000004n9gfUAA",
+      "title": null,
+      "type": "Report"
+    },
+    {
+      "chartTheme": null,
+      "componentData": 15,
+      "footer": null,
+      "header": "All other roles in one graphic",
+      "id": "01acU0000034cA3QAI",
+      "lastModifiedDate": "2026-05-28T15:50:28Z",
+      "properties": {
+        "aggregates": [
+          {
+            "name": "s!Revecast__Project_Schedule__c2.Revecast__Scheduled_Hours_this_week__c"
+          }
+        ],
+        "autoSelectColumns": true,
+        "drillUrl": null,
+        "filterColumns": [],
+        "groupings": [
+          {
+            "inheritedReportSort": "reportGrouping",
+            "name": "Revecast__Project_Schedule__c2.Revecast__Start_Date__c",
+            "sortAggregate": null,
+            "sortOrder": null
+          }
+        ],
+        "maxRows": null,
+        "reportFormat": "SUMMARY",
+        "sort": null,
+        "useReportChart": false,
+        "visualizationProperties": {
+          "aggregateVisualizationInfos": [
+            {
+              "axis": "Y",
+              "visualizationType": "Column"
+            }
+          ],
+          "axisRange": {
+            "max": null,
+            "min": null,
+            "rangeType": "auto"
+          },
+          "decimalPrecision": null,
+          "displayUnits": "auto",
+          "groupByType": "none",
+          "legendPosition": "Right",
+          "showValues": true
+        },
+        "visualizationType": "Column"
+      },
+      "reportId": "00OcU000004nCSLUA2",
+      "title": null,
+      "type": "Report"
+    },
+    {
+      "chartTheme": null,
+      "componentData": 16,
+      "footer": null,
+      "header": "Staff Member Time Summary (This Month)",
+      "id": "01acU0000034cA6QAI",
+      "lastModifiedDate": "2026-05-28T15:50:28Z",
+      "properties": {
+        "aggregates": [
+          {
+            "name": "s!Revecast__Project_Schedule__c2.Revecast__Scheduled_Hours_this_week__c"
+          }
+        ],
+        "autoSelectColumns": true,
+        "drillUrl": null,
+        "filterColumns": [],
+        "groupings": [
+          {
+            "inheritedReportSort": "reportGrouping",
+            "name": "Revecast__Project_Schedule__c2.Revecast__Team_Member_Name__c",
+            "sortAggregate": null,
+            "sortOrder": null
+          }
+        ],
+        "maxRows": null,
+        "reportFormat": "SUMMARY",
+        "sort": null,
+        "useReportChart": false,
+        "visualizationProperties": {
+          "axisRange": {
+            "max": null,
+            "min": null,
+            "rangeType": "auto"
+          },
+          "decimalPrecision": null,
+          "displayUnits": "auto",
+          "groupByType": "none",
+          "legendPosition": "Right",
+          "showChatterPhotos": false,
+          "showValues": true
+        },
+        "visualizationType": "Bar"
+      },
+      "reportId": "00OcU000004nCTxUAM",
+      "title": null,
+      "type": "Report"
+    }
+  ],
+  "dashboardType": "SpecifiedUser",
+  "description": null,
+  "developerName": "Delivery_Capacity_Reports",
+  "filters": [],
+  "flexTableImplementation": "REPORT_INSTANCE",
+  "folderId": "00lcU000004LEFDQA4",
+  "folderName": "Delivery Dashboards",
+  "id": "01ZcU000002t9kfUAA",
+  "layout": {
+    "components": [
+      {
+        "colspan": 2,
+        "column": 0,
+        "row": 0,
+        "rowspan": 13
+      },
+      {
+        "colspan": 12,
+        "column": 0,
+        "row": 25,
+        "rowspan": 12
+      },
+      {
+        "colspan": 12,
+        "column": 0,
+        "row": 58,
+        "rowspan": 12
+      },
+      {
+        "colspan": 12,
+        "column": 0,
+        "row": 91,
+        "rowspan": 11
+      },
+      {
+        "colspan": 12,
+        "column": 0,
+        "row": 123,
+        "rowspan": 10
+      },
+      {
+        "colspan": 12,
+        "column": 0,
+        "row": 155,
+        "rowspan": 12
+      },
+      {
+        "colspan": 10,
+        "column": 2,
+        "row": 0,
+        "rowspan": 13
+      },
+      {
+        "colspan": 12,
+        "column": 0,
+        "row": 37,
+        "rowspan": 11
+      },
+      {
+        "colspan": 12,
+        "column": 0,
+        "row": 70,
+        "rowspan": 11
+      },
+      {
+        "colspan": 12,
+        "column": 0,
+        "row": 102,
+        "rowspan": 11
+      },
+      {
+        "colspan": 12,
+        "column": 0,
+        "row": 133,
+        "rowspan": 10
+      },
+      {
+        "colspan": 6,
+        "column": 0,
+        "row": 167,
+        "rowspan": 23
+      },
+      {
+        "colspan": 12,
+        "column": 0,
+        "row": 13,
+        "rowspan": 12
+      },
+      {
+        "colspan": 12,
+        "column": 0,
+        "row": 48,
+        "rowspan": 10
+      },
+      {
+        "colspan": 12,
+        "column": 0,
+        "row": 81,
+        "rowspan": 10
+      },
+      {
+        "colspan": 12,
+        "column": 0,
+        "row": 113,
+        "rowspan": 10
+      },
+      {
+        "colspan": 12,
+        "column": 0,
+        "row": 143,
+        "rowspan": 12
+      },
+      {
+        "colspan": 6,
+        "column": 6,
+        "row": 167,
+        "rowspan": 23
+      }
+    ],
+    "gridLayout": true,
+    "numColumns": 12,
+    "rowHeight": 36
+  },
+  "maxFilterOptions": 50,
+  "name": "Delivery Capacity Reports",
+  "owner": {
+    "displayName": "User User",
+    "id": "005cU00000EnrPjQAJ"
+  },
+  "runningUser": {
+    "displayName": "User User",
+    "id": "005cU00000EnrPjQAJ"
+  }
+}

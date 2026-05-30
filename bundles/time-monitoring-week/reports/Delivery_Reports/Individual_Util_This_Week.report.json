@@ -1,0 +1,81 @@
+{
+  "reportMetadata": {
+    "aggregates": [
+      "s!Revecast__Staff_Week__c.Revecast__Weekly_Utilization__c",
+      "s!Revecast__Staff_Week__c.Revecast__Objective__c",
+      "s!Revecast__Staff_Week__c.Revecast__Billable_Hours_Logged_This_Week__c",
+      "RowCount"
+    ],
+    "chart": null,
+    "crossFilters": [],
+    "currency": null,
+    "dashboardSetting": null,
+    "description": null,
+    "detailColumns": [
+      "Contact.Name",
+      "Revecast__Staff_Week__c.Revecast__Weekly_Utilization__c",
+      "Revecast__Staff_Week__c.Revecast__Objective__c",
+      "Revecast__Staff_Week__c.Revecast__Billable_Hours_Logged_This_Week__c",
+      "Revecast__Staff_Week__c.Revecast__This_Week__c"
+    ],
+    "developerName": "Individual_Util_This_Week",
+    "division": null,
+    "groupingsAcross": [],
+    "groupingsDown": [
+      {
+        "dateGranularity": "None",
+        "name": "Revecast__Staff_Week__c.Name",
+        "sortAggregate": null,
+        "sortOrder": "Asc"
+      }
+    ],
+    "hasDetailRows": true,
+    "hasRecordCount": true,
+    "historicalSnapshotDates": [],
+    "name": "Individual Utilization - This Week",
+    "presentationOptions": {
+      "hasStackedSummaries": true
+    },
+    "reportFilters": [
+      {
+        "column": "Contact.Revecast__Type__c",
+        "filterType": "fieldValue",
+        "isRunPageEditable": false,
+        "operator": "equals",
+        "value": "Staff"
+      },
+      {
+        "column": "Contact.Revecast__Sub_Type__c",
+        "filterType": "fieldValue",
+        "isRunPageEditable": false,
+        "operator": "equals",
+        "value": "Billable"
+      },
+      {
+        "column": "Revecast__Staff_Week__c.Revecast__This_Week__c",
+        "filterType": "fieldValue",
+        "isRunPageEditable": false,
+        "operator": "equals",
+        "value": "This Week"
+      }
+    ],
+    "reportFormat": "SUMMARY",
+    "reportType": {
+      "label": "Contacts w/w/o Staff Weeks w/w/o Time",
+      "type": "Revecast__Contacts_w_Staff_Weeks_w_Time__c"
+    },
+    "scope": "user",
+    "showGrandTotal": true,
+    "showSubtotals": true,
+    "sortBy": [],
+    "standardDateFilter": {
+      "column": "Revecast__Time_Entry__c.Revecast__Date__c",
+      "durationValue": "THIS_FISCAL_QUARTER",
+      "endDate": "2026-06-30",
+      "startDate": "2026-04-01"
+    },
+    "standardFilters": null,
+    "supportsRoleHierarchy": false,
+    "userOrHierarchyFilterId": null
+  }
+}

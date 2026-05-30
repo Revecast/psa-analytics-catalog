@@ -1,0 +1,72 @@
+{
+  "reportMetadata": {
+    "aggregates": [
+      "s!Opportunity.Amount",
+      "s!Revecast__Project_Schedule__c.Revecast__Scheduled_Revenue__c",
+      "s!Revecast__Project_Schedule__c.Revecast__Actual_Revenue_Calculated__c",
+      "RowCount"
+    ],
+    "chart": null,
+    "crossFilters": [],
+    "currency": null,
+    "dashboardSetting": null,
+    "description": null,
+    "detailColumns": [
+      "Opportunity.Amount",
+      "Revecast__Project_Schedule__c.Revecast__Scheduled_Revenue__c",
+      "Revecast__Project_Schedule__c.Revecast__Actual_Revenue_Calculated__c"
+    ],
+    "developerName": "Committed_Opps_Yet_To_Sign",
+    "division": null,
+    "groupingsAcross": [],
+    "groupingsDown": [
+      {
+        "dateGranularity": "Month",
+        "name": "Revecast__Project_Schedule__c.Revecast__Start_Date__c",
+        "sortAggregate": null,
+        "sortOrder": "Asc"
+      },
+      {
+        "dateGranularity": "None",
+        "name": "Opportunity.Name",
+        "sortAggregate": null,
+        "sortOrder": "Asc"
+      }
+    ],
+    "hasDetailRows": true,
+    "hasRecordCount": true,
+    "historicalSnapshotDates": [],
+    "name": "Committed Opportunities Yet to Sign",
+    "presentationOptions": {
+      "hasStackedSummaries": false
+    },
+    "reportFilters": [
+      {
+        "column": "Opportunity.ForecastCategoryName",
+        "filterType": "fieldValue",
+        "isRunPageEditable": false,
+        "operator": "equals",
+        "value": "Commit"
+      }
+    ],
+    "reportFormat": "SUMMARY",
+    "reportType": {
+      "label": "Opp w/ Project w/ Schedule",
+      "type": "Revecast__Opp_w_Project_w_Schedule__c"
+    },
+    "saveRoleHierarchy": false,
+    "scope": "organization",
+    "showGrandTotal": true,
+    "showSubtotals": true,
+    "sortBy": [],
+    "standardDateFilter": {
+      "column": "Opportunity.Revecast__Calculated_End_Date__c",
+      "durationValue": "CUSTOM",
+      "endDate": null,
+      "startDate": null
+    },
+    "standardFilters": null,
+    "supportsRoleHierarchy": true,
+    "userOrHierarchyFilterId": null
+  }
+}

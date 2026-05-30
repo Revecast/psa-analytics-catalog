@@ -1,0 +1,903 @@
+{
+  "canChangeRunningUser": false,
+  "canUseStickyFilter": true,
+  "chartTheme": null,
+  "colorPalette": null,
+  "components": [
+    {
+      "chartTheme": null,
+      "componentData": null,
+      "footer": null,
+      "header": null,
+      "id": "01acU0000034M54QAE",
+      "lastModifiedDate": "2026-05-28T15:41:50Z",
+      "properties": {
+        "content": {
+          "additionalInfo": null,
+          "richTextContent": "[{\"insert\":\"Section\"}]"
+        },
+        "visualizationType": "RichText"
+      },
+      "reportId": null,
+      "title": null,
+      "type": "Dashboard"
+    },
+    {
+      "chartTheme": null,
+      "componentData": 0,
+      "footer": null,
+      "header": "Time - Reviewers Report - First Late Last Week",
+      "id": "01acU0000034M57QAE",
+      "lastModifiedDate": "2026-05-28T15:41:51Z",
+      "properties": {
+        "aggregates": [
+          {
+            "name": "s!Revecast__Time_Entry__c.Revecast__Number_of_Hours__c"
+          }
+        ],
+        "autoSelectColumns": true,
+        "drillUrl": null,
+        "filterColumns": [],
+        "groupings": [
+          {
+            "inheritedReportSort": "reportGrouping",
+            "name": "Revecast__Time_Entry__c.Revecast__Date__c",
+            "sortAggregate": null,
+            "sortOrder": null
+          }
+        ],
+        "maxRows": null,
+        "reportFormat": "SUMMARY",
+        "sort": null,
+        "useReportChart": false,
+        "visualizationProperties": {
+          "axisRange": {
+            "max": null,
+            "min": null,
+            "rangeType": "auto"
+          },
+          "decimalPrecision": null,
+          "displayUnits": "auto",
+          "groupByType": "none",
+          "legendPosition": "Right",
+          "showChatterPhotos": false,
+          "showValues": true
+        },
+        "visualizationType": "Bar"
+      },
+      "reportId": "00OcU000004nBeLUAU",
+      "title": null,
+      "type": "Report"
+    },
+    {
+      "chartTheme": null,
+      "componentData": null,
+      "footer": null,
+      "header": null,
+      "id": "01acU0000034M5AQAU",
+      "lastModifiedDate": "2026-05-28T15:41:51Z",
+      "properties": {
+        "content": {
+          "additionalInfo": null,
+          "richTextContent": "[{\"insert\":\"Section\"}]"
+        },
+        "visualizationType": "RichText"
+      },
+      "reportId": null,
+      "title": null,
+      "type": "Dashboard"
+    },
+    {
+      "chartTheme": null,
+      "componentData": 1,
+      "footer": null,
+      "header": "Chart of Time Last Week",
+      "id": "01acU0000034M5DQAU",
+      "lastModifiedDate": "2026-05-28T15:41:52Z",
+      "properties": {
+        "aggregates": [
+          {
+            "name": "s!Revecast__Time_Entry__c.Revecast__Billable__c"
+          }
+        ],
+        "autoSelectColumns": true,
+        "drillUrl": null,
+        "filterColumns": [],
+        "groupings": [
+          {
+            "inheritedReportSort": "reportGrouping",
+            "name": "Revecast__Time_Entry__c.Revecast__Project__c",
+            "sortAggregate": null,
+            "sortOrder": null
+          }
+        ],
+        "maxRows": null,
+        "reportFormat": "SUMMARY",
+        "sort": null,
+        "useReportChart": false,
+        "visualizationProperties": {
+          "combineSmallGroups": true,
+          "decimalPrecision": null,
+          "displayUnits": "auto",
+          "legendPosition": "Right",
+          "showPercentages": true,
+          "showTotal": false,
+          "showValues": true
+        },
+        "visualizationType": "Donut"
+      },
+      "reportId": "00OcU000004nB9hUAE",
+      "title": null,
+      "type": "Report"
+    },
+    {
+      "chartTheme": null,
+      "componentData": null,
+      "footer": null,
+      "header": null,
+      "id": "01acU0000034M5GQAU",
+      "lastModifiedDate": "2026-05-28T15:41:52Z",
+      "properties": {
+        "content": {
+          "additionalInfo": null,
+          "richTextContent": "[{\"insert\":\"Section\"}]"
+        },
+        "visualizationType": "RichText"
+      },
+      "reportId": null,
+      "title": null,
+      "type": "Dashboard"
+    },
+    {
+      "chartTheme": null,
+      "componentData": 2,
+      "footer": null,
+      "header": "Time Entry Check - This Week",
+      "id": "01acU0000034M5JQAU",
+      "lastModifiedDate": "2026-05-28T15:41:52Z",
+      "properties": {
+        "aggregates": [
+          {
+            "name": "s!Revecast__Staff_Week__c.Revecast__Billable_Hours_Logged_This_Week__c"
+          }
+        ],
+        "autoSelectColumns": true,
+        "drillUrl": null,
+        "filterColumns": [],
+        "groupings": [
+          {
+            "inheritedReportSort": "reportGrouping",
+            "name": "Contact.Name",
+            "sortAggregate": null,
+            "sortOrder": null
+          }
+        ],
+        "maxRows": null,
+        "reportFormat": "SUMMARY",
+        "sort": null,
+        "useReportChart": false,
+        "visualizationProperties": {
+          "aggregateVisualizationInfos": [
+            {
+              "axis": "Y",
+              "visualizationType": "Column"
+            }
+          ],
+          "axisRange": {
+            "max": null,
+            "min": null,
+            "rangeType": "auto"
+          },
+          "decimalPrecision": null,
+          "displayUnits": "auto",
+          "groupByType": "none",
+          "legendPosition": "Right",
+          "showValues": true
+        },
+        "visualizationType": "Column"
+      },
+      "reportId": "00OcU000004nBZVUA2",
+      "title": null,
+      "type": "Report"
+    },
+    {
+      "chartTheme": null,
+      "componentData": 3,
+      "footer": null,
+      "header": "Chart of Time THIS Week",
+      "id": "01acU0000034M5MQAU",
+      "lastModifiedDate": "2026-05-28T15:41:52Z",
+      "properties": {
+        "aggregates": [
+          {
+            "name": "s!Revecast__Time_Entry__c.Revecast__Number_of_Hours__c"
+          }
+        ],
+        "autoSelectColumns": true,
+        "drillUrl": null,
+        "filterColumns": [],
+        "groupings": [
+          {
+            "inheritedReportSort": "reportGrouping",
+            "name": "Revecast__Time_Entry__c.Revecast__Project__c",
+            "sortAggregate": null,
+            "sortOrder": null
+          }
+        ],
+        "maxRows": null,
+        "reportFormat": "SUMMARY",
+        "sort": null,
+        "useReportChart": false,
+        "visualizationProperties": {
+          "aggregateVisualizationInfos": [
+            {
+              "axis": "Y",
+              "visualizationType": "Column"
+            }
+          ],
+          "axisRange": {
+            "max": null,
+            "min": null,
+            "rangeType": "auto"
+          },
+          "decimalPrecision": null,
+          "displayUnits": "auto",
+          "groupByType": "none",
+          "legendPosition": "Right",
+          "showValues": true
+        },
+        "visualizationType": "Column"
+      },
+      "reportId": "00OcU000004n3yrUAA",
+      "title": null,
+      "type": "Report"
+    },
+    {
+      "chartTheme": null,
+      "componentData": 4,
+      "footer": null,
+      "header": "Time Entry Check - Last Week",
+      "id": "01acU0000034M55QAE",
+      "lastModifiedDate": "2026-05-28T15:41:51Z",
+      "properties": {
+        "aggregates": [
+          {
+            "name": "s!Revecast__Staff_Week__c.Revecast__Billable_Hours_Logged_This_Week__c"
+          }
+        ],
+        "autoSelectColumns": true,
+        "drillUrl": null,
+        "filterColumns": [],
+        "groupings": [
+          {
+            "inheritedReportSort": "reportGrouping",
+            "name": "Contact.Name",
+            "sortAggregate": null,
+            "sortOrder": null
+          }
+        ],
+        "maxRows": null,
+        "reportFormat": "SUMMARY",
+        "sort": null,
+        "useReportChart": false,
+        "visualizationProperties": {
+          "aggregateVisualizationInfos": [
+            {
+              "axis": "Y",
+              "visualizationType": "Column"
+            }
+          ],
+          "axisRange": {
+            "max": null,
+            "min": null,
+            "rangeType": "auto"
+          },
+          "decimalPrecision": null,
+          "displayUnits": "auto",
+          "groupByType": "none",
+          "legendPosition": "Right",
+          "showValues": true
+        },
+        "visualizationType": "Column"
+      },
+      "reportId": "00OcU000004nBXtUAM",
+      "title": null,
+      "type": "Report"
+    },
+    {
+      "chartTheme": null,
+      "componentData": 5,
+      "footer": null,
+      "header": "Time - Reviewers Report - 2nd Late Last Week",
+      "id": "01acU0000034M58QAE",
+      "lastModifiedDate": "2026-05-28T15:41:51Z",
+      "properties": {
+        "aggregates": [
+          {
+            "name": "s!Revecast__Time_Entry__c.Revecast__Number_of_Hours__c"
+          }
+        ],
+        "autoSelectColumns": true,
+        "drillUrl": null,
+        "filterColumns": [],
+        "groupings": [
+          {
+            "inheritedReportSort": "reportGrouping",
+            "name": "Revecast__Time_Entry__c.Revecast__Date__c",
+            "sortAggregate": null,
+            "sortOrder": null
+          }
+        ],
+        "maxRows": null,
+        "reportFormat": "SUMMARY",
+        "sort": null,
+        "useReportChart": false,
+        "visualizationProperties": {
+          "axisRange": {
+            "max": null,
+            "min": null,
+            "rangeType": "auto"
+          },
+          "decimalPrecision": null,
+          "displayUnits": "auto",
+          "groupByType": "none",
+          "legendPosition": "Right",
+          "showChatterPhotos": false,
+          "showValues": true
+        },
+        "visualizationType": "Bar"
+      },
+      "reportId": "00OcU000004nBfxUAE",
+      "title": null,
+      "type": "Report"
+    },
+    {
+      "chartTheme": null,
+      "componentData": null,
+      "footer": null,
+      "header": null,
+      "id": "01acU0000034M5BQAU",
+      "lastModifiedDate": "2026-05-28T15:41:51Z",
+      "properties": {
+        "content": {
+          "additionalInfo": null,
+          "richTextContent": "[{\"insert\":\"Section\"}]"
+        },
+        "visualizationType": "RichText"
+      },
+      "reportId": null,
+      "title": null,
+      "type": "Dashboard"
+    },
+    {
+      "chartTheme": null,
+      "componentData": 6,
+      "footer": null,
+      "header": "Chart of Time Last Week",
+      "id": "01acU0000034M5EQAU",
+      "lastModifiedDate": "2026-05-28T15:41:52Z",
+      "properties": {
+        "aggregates": [
+          {
+            "name": "s!Revecast__Time_Entry__c.Revecast__Billable__c"
+          }
+        ],
+        "autoSelectColumns": true,
+        "drillUrl": null,
+        "filterColumns": [],
+        "groupings": [
+          {
+            "inheritedReportSort": "reportGrouping",
+            "name": "Revecast__Time_Entry__c.Revecast__Project__c",
+            "sortAggregate": null,
+            "sortOrder": null
+          }
+        ],
+        "maxRows": null,
+        "reportFormat": "SUMMARY",
+        "sort": null,
+        "useReportChart": false,
+        "visualizationProperties": {
+          "aggregateVisualizationInfos": [
+            {
+              "axis": "Y",
+              "visualizationType": "Column"
+            }
+          ],
+          "axisRange": {
+            "max": null,
+            "min": null,
+            "rangeType": "auto"
+          },
+          "decimalPrecision": null,
+          "displayUnits": "auto",
+          "groupByType": "none",
+          "legendPosition": "Right",
+          "showValues": true
+        },
+        "visualizationType": "Column"
+      },
+      "reportId": "00OcU000004nB9hUAE",
+      "title": null,
+      "type": "Report"
+    },
+    {
+      "chartTheme": null,
+      "componentData": null,
+      "footer": null,
+      "header": null,
+      "id": "01acU0000034M5HQAU",
+      "lastModifiedDate": "2026-05-28T15:41:52Z",
+      "properties": {
+        "content": {
+          "additionalInfo": null,
+          "richTextContent": "[{\"insert\":\"Section\"}]"
+        },
+        "visualizationType": "RichText"
+      },
+      "reportId": null,
+      "title": null,
+      "type": "Dashboard"
+    },
+    {
+      "chartTheme": null,
+      "componentData": 7,
+      "footer": null,
+      "header": "Percent to Target - This Week",
+      "id": "01acU0000034M5KQAU",
+      "lastModifiedDate": "2026-05-28T15:41:52Z",
+      "properties": {
+        "aggregates": [
+          {
+            "name": "s!Revecast__Staff_Week__c.Revecast__Weekly_Utilization__c"
+          }
+        ],
+        "autoSelectColumns": true,
+        "drillUrl": null,
+        "filterColumns": [],
+        "groupings": [
+          {
+            "inheritedReportSort": "reportGrouping",
+            "name": "Revecast__Staff_Week__c.Name",
+            "sortAggregate": null,
+            "sortOrder": null
+          }
+        ],
+        "maxRows": null,
+        "reportFormat": "SUMMARY",
+        "sort": null,
+        "useReportChart": false,
+        "visualizationProperties": {
+          "aggregateVisualizationInfos": [
+            {
+              "axis": "Y",
+              "visualizationType": "Column"
+            }
+          ],
+          "axisRange": {
+            "max": null,
+            "min": null,
+            "rangeType": "auto"
+          },
+          "decimalPrecision": null,
+          "displayUnits": "auto",
+          "groupByType": "none",
+          "legendPosition": "Right",
+          "showValues": true
+        },
+        "visualizationType": "Column"
+      },
+      "reportId": "00OcU000004nBb7UAE",
+      "title": null,
+      "type": "Report"
+    },
+    {
+      "chartTheme": null,
+      "componentData": 8,
+      "footer": null,
+      "header": "Last Week's Time Review Status",
+      "id": "01acU0000034M56QAE",
+      "lastModifiedDate": "2026-05-28T15:41:51Z",
+      "properties": {
+        "aggregates": [
+          {
+            "name": "s!Revecast__Time_Entry__c.Revecast__Number_of_Hours__c"
+          }
+        ],
+        "autoSelectColumns": true,
+        "drillUrl": null,
+        "filterColumns": [],
+        "groupings": [
+          {
+            "inheritedReportSort": "reportGrouping",
+            "name": "Revecast__Time_Entry__c.Revecast__Status__c",
+            "sortAggregate": null,
+            "sortOrder": null
+          }
+        ],
+        "maxRows": null,
+        "reportFormat": "SUMMARY",
+        "sort": null,
+        "useReportChart": false,
+        "visualizationProperties": {
+          "aggregateVisualizationInfos": [
+            {
+              "axis": "Y",
+              "visualizationType": "Column"
+            }
+          ],
+          "axisRange": {
+            "max": null,
+            "min": null,
+            "rangeType": "auto"
+          },
+          "decimalPrecision": null,
+          "displayUnits": "auto",
+          "groupByType": "none",
+          "legendPosition": "Right",
+          "showValues": true
+        },
+        "visualizationType": "Column"
+      },
+      "reportId": "00OcU000004nBWHUA2",
+      "title": null,
+      "type": "Report"
+    },
+    {
+      "chartTheme": null,
+      "componentData": null,
+      "footer": null,
+      "header": null,
+      "id": "01acU0000034M59QAE",
+      "lastModifiedDate": "2026-05-28T15:41:51Z",
+      "properties": {
+        "content": {
+          "additionalInfo": null,
+          "richTextContent": "[{\"insert\":\"Section\"}]"
+        },
+        "visualizationType": "RichText"
+      },
+      "reportId": null,
+      "title": null,
+      "type": "Dashboard"
+    },
+    {
+      "chartTheme": null,
+      "componentData": 9,
+      "footer": null,
+      "header": "Incomplete Project Schedules",
+      "id": "01acU0000034M5CQAU",
+      "lastModifiedDate": "2026-05-28T15:41:52Z",
+      "properties": {
+        "aggregates": [
+          {
+            "name": "s!Revecast__Project_Schedule__c.Revecast__Scheduled_Hours_this_week__c"
+          }
+        ],
+        "autoSelectColumns": true,
+        "drillUrl": null,
+        "filterColumns": [],
+        "groupings": [
+          {
+            "inheritedReportSort": "reportGrouping",
+            "name": "Revecast__Project_Schedule__c.Revecast__Team_Member_Name__c",
+            "sortAggregate": null,
+            "sortOrder": null
+          }
+        ],
+        "maxRows": null,
+        "reportFormat": "SUMMARY",
+        "sort": null,
+        "useReportChart": false,
+        "visualizationProperties": {
+          "aggregateVisualizationInfos": [
+            {
+              "axis": "Y",
+              "visualizationType": "Column"
+            }
+          ],
+          "axisRange": {
+            "max": null,
+            "min": null,
+            "rangeType": "auto"
+          },
+          "decimalPrecision": null,
+          "displayUnits": "auto",
+          "groupByType": "none",
+          "legendPosition": "Right",
+          "showValues": true
+        },
+        "visualizationType": "Column"
+      },
+      "reportId": "00OcU000004nBT3UAM",
+      "title": null,
+      "type": "Report"
+    },
+    {
+      "chartTheme": null,
+      "componentData": 10,
+      "footer": null,
+      "header": "Individual Utilization Report - Last Wee",
+      "id": "01acU0000034M5FQAU",
+      "lastModifiedDate": "2026-05-28T15:41:52Z",
+      "properties": {
+        "aggregates": [
+          {
+            "name": "s!Revecast__Staff_Week__c.Revecast__Weekly_Utilization__c"
+          }
+        ],
+        "autoSelectColumns": true,
+        "drillUrl": null,
+        "filterColumns": [],
+        "groupings": [
+          {
+            "inheritedReportSort": "reportGrouping",
+            "name": "Revecast__Staff_Week__c.Name",
+            "sortAggregate": null,
+            "sortOrder": null
+          }
+        ],
+        "maxRows": null,
+        "reportFormat": "SUMMARY",
+        "sort": null,
+        "useReportChart": false,
+        "visualizationProperties": {
+          "aggregateVisualizationInfos": [
+            {
+              "axis": "Y",
+              "visualizationType": "Column"
+            }
+          ],
+          "axisRange": {
+            "max": null,
+            "min": null,
+            "rangeType": "auto"
+          },
+          "decimalPrecision": null,
+          "displayUnits": "auto",
+          "groupByType": "none",
+          "legendPosition": "Right",
+          "showValues": true
+        },
+        "visualizationType": "Column"
+      },
+      "reportId": "00OcU000004nBcjUAE",
+      "title": null,
+      "type": "Report"
+    },
+    {
+      "chartTheme": null,
+      "componentData": 11,
+      "footer": null,
+      "header": "Weekly Time Entry Check Report (This Week)",
+      "id": "01acU0000034M5IQAU",
+      "lastModifiedDate": "2026-05-28T15:41:52Z",
+      "properties": {
+        "aggregates": [
+          {
+            "name": "s!Revecast__Time_Entry__c.Revecast__Number_of_Hours__c"
+          }
+        ],
+        "autoSelectColumns": true,
+        "drillUrl": null,
+        "filterColumns": [],
+        "groupings": [
+          {
+            "inheritedReportSort": "reportGrouping",
+            "name": "Revecast__Time_Entry__c.Revecast__Chronology_Day__c",
+            "sortAggregate": null,
+            "sortOrder": null
+          }
+        ],
+        "maxRows": null,
+        "reportFormat": "SUMMARY",
+        "sort": null,
+        "useReportChart": false,
+        "visualizationProperties": {
+          "aggregateVisualizationInfos": [
+            {
+              "axis": "Y",
+              "visualizationType": "Column"
+            }
+          ],
+          "axisRange": {
+            "max": null,
+            "min": null,
+            "rangeType": "auto"
+          },
+          "decimalPrecision": null,
+          "displayUnits": "auto",
+          "groupByType": "none",
+          "legendPosition": "Right",
+          "showValues": true
+        },
+        "visualizationType": "Column"
+      },
+      "reportId": "00OcU000004mgcCUAQ",
+      "title": null,
+      "type": "Report"
+    },
+    {
+      "chartTheme": null,
+      "componentData": 12,
+      "footer": null,
+      "header": "Chart of Time THIS Week",
+      "id": "01acU0000034M5LQAU",
+      "lastModifiedDate": "2026-05-28T15:41:52Z",
+      "properties": {
+        "aggregates": [
+          {
+            "name": "s!Revecast__Time_Entry__c.Revecast__Number_of_Hours__c"
+          }
+        ],
+        "autoSelectColumns": true,
+        "drillUrl": null,
+        "filterColumns": [],
+        "groupings": [
+          {
+            "inheritedReportSort": "reportGrouping",
+            "name": "Revecast__Time_Entry__c.Revecast__Project__c",
+            "sortAggregate": null,
+            "sortOrder": null
+          }
+        ],
+        "maxRows": null,
+        "reportFormat": "SUMMARY",
+        "sort": null,
+        "useReportChart": false,
+        "visualizationProperties": {
+          "combineSmallGroups": true,
+          "decimalPrecision": null,
+          "displayUnits": "auto",
+          "legendPosition": "Right",
+          "showPercentages": true,
+          "showTotal": false,
+          "showValues": true
+        },
+        "visualizationType": "Donut"
+      },
+      "reportId": "00OcU000004n3yrUAA",
+      "title": null,
+      "type": "Report"
+    }
+  ],
+  "dashboardType": "LoggedInUser",
+  "description": null,
+  "developerName": "Time_Monitoring_Dashboard_Week",
+  "filters": [],
+  "flexTableImplementation": "REPORT_INSTANCE",
+  "folderId": "00lcU000004LEFDQA4",
+  "folderName": "Delivery Dashboards",
+  "id": "01ZcU000002t7PVUAY",
+  "layout": {
+    "components": [
+      {
+        "colspan": 12,
+        "column": 0,
+        "row": 0,
+        "rowspan": 3
+      },
+      {
+        "colspan": 6,
+        "column": 0,
+        "row": 19,
+        "rowspan": 12
+      },
+      {
+        "colspan": 12,
+        "column": 0,
+        "row": 35,
+        "rowspan": 4
+      },
+      {
+        "colspan": 4,
+        "column": 0,
+        "row": 58,
+        "rowspan": 11
+      },
+      {
+        "colspan": 12,
+        "column": 0,
+        "row": 80,
+        "rowspan": 3
+      },
+      {
+        "colspan": 12,
+        "column": 0,
+        "row": 93,
+        "rowspan": 8
+      },
+      {
+        "colspan": 8,
+        "column": 4,
+        "row": 113,
+        "rowspan": 10
+      },
+      {
+        "colspan": 12,
+        "column": 0,
+        "row": 3,
+        "rowspan": 8
+      },
+      {
+        "colspan": 6,
+        "column": 6,
+        "row": 19,
+        "rowspan": 12
+      },
+      {
+        "colspan": 12,
+        "column": 0,
+        "row": 39,
+        "rowspan": 2
+      },
+      {
+        "colspan": 8,
+        "column": 4,
+        "row": 58,
+        "rowspan": 11
+      },
+      {
+        "colspan": 2,
+        "column": 0,
+        "row": 83,
+        "rowspan": 10
+      },
+      {
+        "colspan": 12,
+        "column": 0,
+        "row": 101,
+        "rowspan": 12
+      },
+      {
+        "colspan": 12,
+        "column": 0,
+        "row": 11,
+        "rowspan": 8
+      },
+      {
+        "colspan": 12,
+        "column": 0,
+        "row": 31,
+        "rowspan": 4
+      },
+      {
+        "colspan": 12,
+        "column": 0,
+        "row": 41,
+        "rowspan": 17
+      },
+      {
+        "colspan": 12,
+        "column": 0,
+        "row": 69,
+        "rowspan": 11
+      },
+      {
+        "colspan": 10,
+        "column": 2,
+        "row": 83,
+        "rowspan": 10
+      },
+      {
+        "colspan": 4,
+        "column": 0,
+        "row": 113,
+        "rowspan": 10
+      }
+    ],
+    "gridLayout": true,
+    "numColumns": 12,
+    "rowHeight": 36
+  },
+  "maxFilterOptions": 50,
+  "name": "Time Monitoring Dashboard - Week",
+  "owner": {
+    "displayName": "User User",
+    "id": "005cU00000EnrPjQAJ"
+  },
+  "runningUser": {
+    "displayName": "User User",
+    "id": "005cU00000EnrPjQAJ"
+  }
+}

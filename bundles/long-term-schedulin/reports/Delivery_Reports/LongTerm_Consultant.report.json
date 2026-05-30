@@ -1,0 +1,96 @@
+{
+  "reportMetadata": {
+    "aggregates": [
+      "s!Revecast__Project_Schedule__c2.Revecast__Scheduled_Hours_this_week__c",
+      "s!Revecast__Project_Schedule__c2.Revecast__Number_of_Business_Days__c",
+      "RowCount"
+    ],
+    "chart": null,
+    "crossFilters": [],
+    "currency": null,
+    "dashboardSetting": null,
+    "description": null,
+    "detailColumns": [
+      "Revecast__Project_Schedule__c2.Revecast__Scheduled_Hours_this_week__c",
+      "Revecast__Project_Schedule__c2.Revecast__Number_of_Business_Days__c"
+    ],
+    "developerName": "LongTerm_Consultant",
+    "division": null,
+    "groupingsAcross": [],
+    "groupingsDown": [
+      {
+        "dateGranularity": "Day",
+        "name": "Revecast__Project_Schedule__c2.Revecast__Start_Date__c",
+        "sortAggregate": null,
+        "sortOrder": "Asc"
+      },
+      {
+        "dateGranularity": "None",
+        "name": "Revecast__Project_Schedule__c2.Revecast__Team_Member_Name__c",
+        "sortAggregate": null,
+        "sortOrder": "Asc"
+      },
+      {
+        "dateGranularity": "None",
+        "name": "Revecast__Project__c.Name",
+        "sortAggregate": null,
+        "sortOrder": "Asc"
+      }
+    ],
+    "hasDetailRows": true,
+    "hasRecordCount": true,
+    "historicalSnapshotDates": [],
+    "name": "Long Term Schedulin' Consultant",
+    "presentationOptions": {
+      "hasStackedSummaries": true
+    },
+    "reportFilters": [
+      {
+        "column": "Revecast__Project_Schedule__c2.Revecast__This_Week__c",
+        "filterType": "fieldValue",
+        "isRunPageEditable": false,
+        "operator": "contains",
+        "value": "This Week,Future"
+      },
+      {
+        "column": "Revecast__Project__c.Revecast__Project_Type__c",
+        "filterType": "fieldValue",
+        "isRunPageEditable": false,
+        "operator": "notEqual",
+        "value": "Internal Project"
+      },
+      {
+        "column": "Revecast__Project_Schedule__c2.Revecast__Project_Role__c",
+        "filterType": "fieldValue",
+        "isRunPageEditable": false,
+        "operator": "contains",
+        "value": "Salesforce Consultant"
+      },
+      {
+        "column": "Revecast__Project_Schedule__c2.Revecast__Scheduled_Hours_this_week__c",
+        "filterType": "fieldValue",
+        "isRunPageEditable": false,
+        "operator": "greaterThan",
+        "value": "0.00"
+      }
+    ],
+    "reportFormat": "SUMMARY",
+    "reportType": {
+      "label": "Projects w/ Monthly and Weekly Schedules",
+      "type": "Revecast__Projects_w_Monthly_and_Weekly_Schedules__c"
+    },
+    "scope": "user",
+    "showGrandTotal": true,
+    "showSubtotals": true,
+    "sortBy": [],
+    "standardDateFilter": {
+      "column": "Revecast__Project_Schedule__c.Revecast__Start_Date__c",
+      "durationValue": "THIS_FISCAL_QUARTER",
+      "endDate": "2026-06-30",
+      "startDate": "2026-04-01"
+    },
+    "standardFilters": null,
+    "supportsRoleHierarchy": false,
+    "userOrHierarchyFilterId": null
+  }
+}

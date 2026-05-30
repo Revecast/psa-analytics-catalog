@@ -1,0 +1,86 @@
+{
+  "reportMetadata": {
+    "aggregates": [
+      "s!Revecast__Project_Schedule__c.Revecast__Scheduled_Revenue__c",
+      "s!Revecast__Project_Schedule__c.Revecast__Actual_Revenue_Calculated__c",
+      "a!Revecast__Project_Schedule__c.Revecast__Rate__c",
+      "RowCount"
+    ],
+    "chart": null,
+    "crossFilters": [],
+    "currency": null,
+    "dashboardSetting": null,
+    "description": null,
+    "detailColumns": [
+      "Revecast__Project_Schedule__c.Revecast__Scheduled_Revenue__c",
+      "Revecast__Project_Schedule__c.Revecast__Actual_Revenue_Calculated__c",
+      "Revecast__Project_Schedule__c.Revecast__Rate__c"
+    ],
+    "developerName": "Revenue_Forecast_Committed_By_Type",
+    "division": null,
+    "groupingsAcross": [],
+    "groupingsDown": [
+      {
+        "dateGranularity": "None",
+        "name": "Opportunity.Name",
+        "sortAggregate": null,
+        "sortOrder": "Asc"
+      },
+      {
+        "dateGranularity": "None",
+        "name": "Opportunity.Type",
+        "sortAggregate": null,
+        "sortOrder": "Asc"
+      }
+    ],
+    "hasDetailRows": true,
+    "hasRecordCount": true,
+    "historicalSnapshotDates": [],
+    "name": "Revenue Forecast - Committed - By Type",
+    "presentationOptions": {
+      "hasStackedSummaries": false
+    },
+    "reportFilters": [
+      {
+        "column": "Opportunity.ForecastCategoryName",
+        "filterType": "fieldValue",
+        "isRunPageEditable": false,
+        "operator": "equals",
+        "value": "Commit"
+      },
+      {
+        "column": "Opportunity.StageName",
+        "filterType": "fieldValue",
+        "isRunPageEditable": false,
+        "operator": "equals",
+        "value": "Closed Won"
+      },
+      {
+        "column": "Revecast__Project_Schedule__c.Revecast__Project_Type__c",
+        "filterType": "fieldValue",
+        "isRunPageEditable": false,
+        "operator": "equals",
+        "value": "External"
+      }
+    ],
+    "reportFormat": "SUMMARY",
+    "reportType": {
+      "label": "Opp w/ Project w/ Schedule",
+      "type": "Revecast__Opp_w_Project_w_Schedule__c"
+    },
+    "saveRoleHierarchy": false,
+    "scope": "organization",
+    "showGrandTotal": true,
+    "showSubtotals": true,
+    "sortBy": [],
+    "standardDateFilter": {
+      "column": "Opportunity.CloseDate",
+      "durationValue": "CUSTOM",
+      "endDate": null,
+      "startDate": null
+    },
+    "standardFilters": null,
+    "supportsRoleHierarchy": true,
+    "userOrHierarchyFilterId": null
+  }
+}
