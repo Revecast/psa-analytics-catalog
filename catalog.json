@@ -10,24 +10,35 @@
       "id": "revenue",
       "label": "Revenue",
       "description": "Pipeline forecasting and revenue analysis dashboards",
-      "bundleIds": ["revenue-forecast-v2", "active-project-revenue"]
+      "bundleIds": [
+        "revenue-forecast-v2",
+        "active-project-revenue"
+      ]
     },
     {
       "id": "delivery",
       "label": "Delivery & Time",
       "description": "Time tracking, staff scheduling, and capacity planning",
-      "bundleIds": ["time-monitoring-week", "long-term-schedulin", "delivery-capacity-reports"]
+      "bundleIds": [
+        "time-monitoring-week",
+        "long-term-schedulin",
+        "delivery-capacity-reports"
+      ]
     }
   ],
   "bundles": {
     "revenue-forecast-v2": {
-      "name": "Revenue Forecast v2",
+      "name": "Revenue Forecast",
       "description": "Multi-quarter pipeline forecast with Committed/Best Case/Closed Won breakdowns by product, type, and account. 12-component grid layout with Start Date and Billable filters.",
       "category": "revenue",
       "primaryDashboard": "Revenue_Dashboards/Revenue_Forecast_v2",
       "components": {
-        "dashboards": ["Revenue_Dashboards/Revenue_Forecast_v2"],
-        "dashboardFolders": ["Revenue Dashboards"],
+        "dashboards": [
+          "Revenue_Dashboards/Revenue_Forecast_v2"
+        ],
+        "dashboardFolders": [
+          "Revenue Dashboards"
+        ],
         "reports": [
           "Revenue_Reports/Revenue_Forecast_Committed",
           "Revenue_Reports/Revenue_Forecast_Best_Case",
@@ -36,39 +47,64 @@
           "Revenue_Reports/Rev_Forecast_Committed_By_Product",
           "Revenue_Reports/Revenue_Forecast_Committed_By_Type"
         ],
-        "reportFolders": ["Revenue Reports"],
-        "reportTypes": ["Opp_w_Project_w_Schedule"]
+        "reportFolders": [
+          "Revenue Reports"
+        ],
+        "reportTypes": [
+          "Opp_w_Project_w_Schedule"
+        ]
       },
       "dependsOn": [],
-      "tags": ["pipeline", "forecast", "opportunity", "schedule"]
+      "tags": [
+        "pipeline",
+        "forecast",
+        "opportunity",
+        "schedule"
+      ]
     },
     "active-project-revenue": {
-      "name": "Active Project Revenue Overview",
+      "name": "Project Financials Overview",
       "description": "Project financials dashboard showing scheduled vs actual revenue, schedule adherence, and project-level metrics. 18 components.",
       "category": "revenue",
       "primaryDashboard": "Delivery_Dashboards/Active_Project_Revenue_Overview",
       "components": {
-        "dashboards": ["Delivery_Dashboards/Active_Project_Revenue_Overview"],
-        "dashboardFolders": ["Delivery Dashboards"],
+        "dashboards": [
+          "Delivery_Dashboards/Active_Project_Revenue_Overview"
+        ],
+        "dashboardFolders": [
+          "Delivery Dashboards"
+        ],
         "reports": [
           "Delivery_Reports/Project_Financials_v41",
           "Delivery_Reports/Project_Financials_v5_Person",
           "Delivery_Reports/Project_Financials_v6_Person"
         ],
-        "reportFolders": ["Delivery Reports"],
-        "reportTypes": ["Projects_with_Members_and_Schedules"]
+        "reportFolders": [
+          "Delivery Reports"
+        ],
+        "reportTypes": [
+          "Projects_with_Members_and_Schedules"
+        ]
       },
       "dependsOn": [],
-      "tags": ["revenue", "project", "financials"]
+      "tags": [
+        "revenue",
+        "project",
+        "financials"
+      ]
     },
     "time-monitoring-week": {
-      "name": "Time Monitoring Dashboard - Week",
+      "name": "Weekly Time Monitoring",
       "description": "Weekly time tracking review with entry checks, utilization reports, reviewer status, and incomplete schedule detection. 19 components, 11 reports.",
       "category": "delivery",
       "primaryDashboard": "Delivery_Dashboards/Time_Monitoring_Dashboard_Week",
       "components": {
-        "dashboards": ["Delivery_Dashboards/Time_Monitoring_Dashboard_Week"],
-        "dashboardFolders": ["Delivery Dashboards"],
+        "dashboards": [
+          "Delivery_Dashboards/Time_Monitoring_Dashboard_Week"
+        ],
+        "dashboardFolders": [
+          "Delivery Dashboards"
+        ],
         "reports": [
           "Delivery_Reports/Chart_of_Time_Last_Week",
           "Delivery_Reports/Chart_of_Time_This_Week",
@@ -82,23 +118,34 @@
           "Delivery_Reports/Time_Reviewers_2nd_Late",
           "Delivery_Reports/Weekly_Time_Entry_Check_Report"
         ],
-        "reportFolders": ["Delivery Reports"],
+        "reportFolders": [
+          "Delivery Reports"
+        ],
         "reportTypes": [
           "Projects_w_Week_Schedules_w_Time",
           "Contacts_w_Staff_Weeks_w_Time"
         ]
       },
       "dependsOn": [],
-      "tags": ["time", "utilization", "weekly", "staff"]
+      "tags": [
+        "time",
+        "utilization",
+        "weekly",
+        "staff"
+      ]
     },
     "long-term-schedulin": {
-      "name": "Long Term Schedulin'",
+      "name": "Long-Term Schedule Outlook",
       "description": "Multi-week capacity outlook by role (Architect, PM, Sr SFDC, Consultant, Marketing Cloud, Other) plus Time-vs-Scheduled comparisons. 17 components, 10 reports.",
       "category": "delivery",
       "primaryDashboard": "Delivery_Dashboards/Long_Term_Schedulin",
       "components": {
-        "dashboards": ["Delivery_Dashboards/Long_Term_Schedulin"],
-        "dashboardFolders": ["Delivery Dashboards"],
+        "dashboards": [
+          "Delivery_Dashboards/Long_Term_Schedulin"
+        ],
+        "dashboardFolders": [
+          "Delivery Dashboards"
+        ],
         "reports": [
           "Delivery_Reports/LongTerm_AllRoles_ByMonth",
           "Delivery_Reports/LongTerm_AllRoles_ByWeek",
@@ -111,26 +158,45 @@
           "Delivery_Reports/TimeEntry_Vs_Scheduled_ByPerson",
           "Delivery_Reports/TimeEntry_Vs_Scheduled_LastMonth"
         ],
-        "reportFolders": ["Delivery Reports"],
-        "reportTypes": ["Projects_w_Monthly_and_Weekly_Schedules"]
+        "reportFolders": [
+          "Delivery Reports"
+        ],
+        "reportTypes": [
+          "Projects_w_Monthly_and_Weekly_Schedules"
+        ]
       },
       "dependsOn": [],
-      "tags": ["capacity", "scheduling", "long-term", "role"]
+      "tags": [
+        "capacity",
+        "scheduling",
+        "long-term",
+        "role"
+      ]
     },
     "delivery-capacity-reports": {
-      "name": "Delivery Capacity Reports",
-      "description": "Dashboard variant of Long Term Schedulin' organized by capacity perspective. Reuses the same 10 reports — installs nothing new if Long Term Schedulin' is already installed.",
+      "name": "Delivery Capacity",
+      "description": "Dashboard variant of Long-Term Schedule Outlook organized by capacity perspective. Reuses the same 10 reports \u2014 installs nothing new if Long-Term Schedule Outlook is already installed.",
       "category": "delivery",
       "primaryDashboard": "Delivery_Dashboards/Delivery_Capacity_Reports",
       "components": {
-        "dashboards": ["Delivery_Dashboards/Delivery_Capacity_Reports"],
-        "dashboardFolders": ["Delivery Dashboards"],
+        "dashboards": [
+          "Delivery_Dashboards/Delivery_Capacity_Reports"
+        ],
+        "dashboardFolders": [
+          "Delivery Dashboards"
+        ],
         "reports": [],
         "reportFolders": [],
         "reportTypes": []
       },
-      "dependsOn": ["long-term-schedulin"],
-      "tags": ["capacity", "delivery", "dependent"]
+      "dependsOn": [
+        "long-term-schedulin"
+      ],
+      "tags": [
+        "capacity",
+        "delivery",
+        "dependent"
+      ]
     }
   }
 }

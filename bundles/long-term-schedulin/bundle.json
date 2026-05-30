@@ -1,6 +1,6 @@
 {
   "bundleId": "long-term-schedulin",
-  "name": "Long Term Schedulin'",
+  "name": "Long-Term Schedule Outlook",
   "description": "Multi-week capacity outlook by role (Architect, PM, Sr SFDC, Consultant, Marketing Cloud, Other) plus Time-vs-Scheduled comparisons. 17 components, 10 reports.",
   "category": "delivery",
   "primaryDashboard": "Delivery_Dashboards/Long_Term_Schedulin",

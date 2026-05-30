@@ -1,6 +1,6 @@
 {
   "bundleId": "time-monitoring-week",
-  "name": "Time Monitoring Dashboard - Week",
+  "name": "Weekly Time Monitoring",
   "description": "Weekly time tracking review with entry checks, utilization reports, reviewer status, and incomplete schedule detection. 19 components, 11 reports.",
   "category": "delivery",
   "primaryDashboard": "Delivery_Dashboards/Time_Monitoring_Dashboard_Week",

@@ -1,6 +1,6 @@
 {
   "bundleId": "revenue-forecast-v2",
-  "name": "Revenue Forecast v2",
+  "name": "Revenue Forecast",
   "description": "Multi-quarter pipeline forecast with Committed/Best Case/Closed Won breakdowns by product, type, and account. 12-component grid layout with Start Date and Billable filters.",
   "category": "revenue",
   "primaryDashboard": "Revenue_Dashboards/Revenue_Forecast_v2",

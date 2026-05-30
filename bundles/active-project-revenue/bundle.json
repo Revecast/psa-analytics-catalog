@@ -1,6 +1,6 @@
 {
   "bundleId": "active-project-revenue",
-  "name": "Active Project Revenue Overview",
+  "name": "Project Financials Overview",
   "description": "Project financials dashboard showing scheduled vs actual revenue, schedule adherence, and project-level metrics. 18 components.",
   "category": "revenue",
   "primaryDashboard": "Delivery_Dashboards/Active_Project_Revenue_Overview",
