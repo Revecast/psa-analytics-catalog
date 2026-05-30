@@ -9,8 +9,6 @@
       "componentData": null,
       "footer": null,
       "header": null,
-      "id": "01acU0000034M54QAE",
-      "lastModifiedDate": "2026-05-28T15:41:50Z",
       "properties": {
         "content": {
           "additionalInfo": null,
@@ -27,8 +25,6 @@
       "componentData": 0,
       "footer": null,
       "header": "Time - Reviewers Report - First Late Last Week",
-      "id": "01acU0000034M57QAE",
-      "lastModifiedDate": "2026-05-28T15:41:51Z",
       "properties": {
         "aggregates": [
           {
@@ -67,15 +63,14 @@
       },
       "reportId": "00OcU000004nBeLUAU",
       "title": null,
-      "type": "Report"
+      "type": "Report",
+      "__devName": "Time_Reviewers_1st_Late"
     },
     {
       "chartTheme": null,
       "componentData": null,
       "footer": null,
       "header": null,
-      "id": "01acU0000034M5AQAU",
-      "lastModifiedDate": "2026-05-28T15:41:51Z",
       "properties": {
         "content": {
           "additionalInfo": null,
@@ -92,8 +87,6 @@
       "componentData": 1,
       "footer": null,
       "header": "Chart of Time Last Week",
-      "id": "01acU0000034M5DQAU",
-      "lastModifiedDate": "2026-05-28T15:41:52Z",
       "properties": {
         "aggregates": [
           {
@@ -128,15 +121,14 @@
       },
       "reportId": "00OcU000004nB9hUAE",
       "title": null,
-      "type": "Report"
+      "type": "Report",
+      "__devName": "Chart_of_Time_Last_Week"
     },
     {
       "chartTheme": null,
       "componentData": null,
       "footer": null,
       "header": null,
-      "id": "01acU0000034M5GQAU",
-      "lastModifiedDate": "2026-05-28T15:41:52Z",
       "properties": {
         "content": {
           "additionalInfo": null,
@@ -153,8 +145,6 @@
       "componentData": 2,
       "footer": null,
       "header": "Time Entry Check - This Week",
-      "id": "01acU0000034M5JQAU",
-      "lastModifiedDate": "2026-05-28T15:41:52Z",
       "properties": {
         "aggregates": [
           {
@@ -198,15 +188,14 @@
       },
       "reportId": "00OcU000004nBZVUA2",
       "title": null,
-      "type": "Report"
+      "type": "Report",
+      "__devName": "Time_Entry_Check_This_Week"
     },
     {
       "chartTheme": null,
       "componentData": 3,
       "footer": null,
       "header": "Chart of Time THIS Week",
-      "id": "01acU0000034M5MQAU",
-      "lastModifiedDate": "2026-05-28T15:41:52Z",
       "properties": {
         "aggregates": [
           {
@@ -250,15 +239,14 @@
       },
       "reportId": "00OcU000004n3yrUAA",
       "title": null,
-      "type": "Report"
+      "type": "Report",
+      "__devName": "Chart_of_Time_This_Week"
     },
     {
       "chartTheme": null,
       "componentData": 4,
       "footer": null,
       "header": "Time Entry Check - Last Week",
-      "id": "01acU0000034M55QAE",
-      "lastModifiedDate": "2026-05-28T15:41:51Z",
       "properties": {
         "aggregates": [
           {
@@ -302,15 +290,14 @@
       },
       "reportId": "00OcU000004nBXtUAM",
       "title": null,
-      "type": "Report"
+      "type": "Report",
+      "__devName": "Time_Entry_Check_Last_Week"
     },
     {
       "chartTheme": null,
       "componentData": 5,
       "footer": null,
       "header": "Time - Reviewers Report - 2nd Late Last Week",
-      "id": "01acU0000034M58QAE",
-      "lastModifiedDate": "2026-05-28T15:41:51Z",
       "properties": {
         "aggregates": [
           {
@@ -349,15 +336,14 @@
       },
       "reportId": "00OcU000004nBfxUAE",
       "title": null,
-      "type": "Report"
+      "type": "Report",
+      "__devName": "Time_Reviewers_2nd_Late"
     },
     {
       "chartTheme": null,
       "componentData": null,
       "footer": null,
       "header": null,
-      "id": "01acU0000034M5BQAU",
-      "lastModifiedDate": "2026-05-28T15:41:51Z",
       "properties": {
         "content": {
           "additionalInfo": null,
@@ -374,8 +360,6 @@
       "componentData": 6,
       "footer": null,
       "header": "Chart of Time Last Week",
-      "id": "01acU0000034M5EQAU",
-      "lastModifiedDate": "2026-05-28T15:41:52Z",
       "properties": {
         "aggregates": [
           {
@@ -419,15 +403,14 @@
       },
       "reportId": "00OcU000004nB9hUAE",
       "title": null,
-      "type": "Report"
+      "type": "Report",
+      "__devName": "Chart_of_Time_Last_Week"
     },
     {
       "chartTheme": null,
       "componentData": null,
       "footer": null,
       "header": null,
-      "id": "01acU0000034M5HQAU",
-      "lastModifiedDate": "2026-05-28T15:41:52Z",
       "properties": {
         "content": {
           "additionalInfo": null,
@@ -444,8 +427,6 @@
       "componentData": 7,
       "footer": null,
       "header": "Percent to Target - This Week",
-      "id": "01acU0000034M5KQAU",
-      "lastModifiedDate": "2026-05-28T15:41:52Z",
       "properties": {
         "aggregates": [
           {
@@ -489,15 +470,14 @@
       },
       "reportId": "00OcU000004nBb7UAE",
       "title": null,
-      "type": "Report"
+      "type": "Report",
+      "__devName": "Individual_Util_This_Week"
     },
     {
       "chartTheme": null,
       "componentData": 8,
       "footer": null,
       "header": "Last Week's Time Review Status",
-      "id": "01acU0000034M56QAE",
-      "lastModifiedDate": "2026-05-28T15:41:51Z",
       "properties": {
         "aggregates": [
           {
@@ -541,15 +521,14 @@
       },
       "reportId": "00OcU000004nBWHUA2",
       "title": null,
-      "type": "Report"
+      "type": "Report",
+      "__devName": "Time_Report_Monthly_v7"
     },
     {
       "chartTheme": null,
       "componentData": null,
       "footer": null,
       "header": null,
-      "id": "01acU0000034M59QAE",
-      "lastModifiedDate": "2026-05-28T15:41:51Z",
       "properties": {
         "content": {
           "additionalInfo": null,
@@ -566,8 +545,6 @@
       "componentData": 9,
       "footer": null,
       "header": "Incomplete Project Schedules",
-      "id": "01acU0000034M5CQAU",
-      "lastModifiedDate": "2026-05-28T15:41:52Z",
       "properties": {
         "aggregates": [
           {
@@ -611,15 +588,14 @@
       },
       "reportId": "00OcU000004nBT3UAM",
       "title": null,
-      "type": "Report"
+      "type": "Report",
+      "__devName": "Incomplete_Project_Schedules"
     },
     {
       "chartTheme": null,
       "componentData": 10,
       "footer": null,
       "header": "Individual Utilization Report - Last Wee",
-      "id": "01acU0000034M5FQAU",
-      "lastModifiedDate": "2026-05-28T15:41:52Z",
       "properties": {
         "aggregates": [
           {
@@ -663,15 +639,14 @@
       },
       "reportId": "00OcU000004nBcjUAE",
       "title": null,
-      "type": "Report"
+      "type": "Report",
+      "__devName": "Individual_Util_Last_Week"
     },
     {
       "chartTheme": null,
       "componentData": 11,
       "footer": null,
       "header": "Weekly Time Entry Check Report (This Week)",
-      "id": "01acU0000034M5IQAU",
-      "lastModifiedDate": "2026-05-28T15:41:52Z",
       "properties": {
         "aggregates": [
           {
@@ -715,15 +690,14 @@
       },
       "reportId": "00OcU000004mgcCUAQ",
       "title": null,
-      "type": "Report"
+      "type": "Report",
+      "__devName": "Weekly_Time_Entry_Check_Report"
     },
     {
       "chartTheme": null,
       "componentData": 12,
       "footer": null,
       "header": "Chart of Time THIS Week",
-      "id": "01acU0000034M5LQAU",
-      "lastModifiedDate": "2026-05-28T15:41:52Z",
       "properties": {
         "aggregates": [
           {
@@ -758,7 +732,8 @@
       },
       "reportId": "00OcU000004n3yrUAA",
       "title": null,
-      "type": "Report"
+      "type": "Report",
+      "__devName": "Chart_of_Time_This_Week"
     }
   ],
   "dashboardType": "LoggedInUser",
@@ -766,9 +741,6 @@
   "developerName": "Time_Monitoring_Dashboard_Week",
   "filters": [],
   "flexTableImplementation": "REPORT_INSTANCE",
-  "folderId": "00lcU000004LEFDQA4",
-  "folderName": "Delivery Dashboards",
-  "id": "01ZcU000002t7PVUAY",
   "layout": {
     "components": [
       {
@@ -891,13 +863,5 @@
     "rowHeight": 36
   },
   "maxFilterOptions": 50,
-  "name": "Time Monitoring Dashboard - Week",
-  "owner": {
-    "displayName": "User User",
-    "id": "005cU00000EnrPjQAJ"
-  },
-  "runningUser": {
-    "displayName": "User User",
-    "id": "005cU00000EnrPjQAJ"
-  }
+  "name": "Time Monitoring Dashboard - Week"
 }

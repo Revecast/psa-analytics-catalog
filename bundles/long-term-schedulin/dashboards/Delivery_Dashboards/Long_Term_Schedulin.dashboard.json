@@ -9,8 +9,6 @@
       "componentData": null,
       "footer": null,
       "header": null,
-      "id": "01acU0000034bbxQAA",
-      "lastModifiedDate": "2026-05-28T15:46:15Z",
       "properties": {
         "content": {
           "additionalInfo": null,
@@ -27,8 +25,6 @@
       "componentData": 0,
       "footer": null,
       "header": "Long Term Schedulin' Architect",
-      "id": "01acU0000034bc0QAA",
-      "lastModifiedDate": "2026-05-28T15:46:16Z",
       "properties": {
         "aggregates": [
           {
@@ -72,15 +68,14 @@
       },
       "reportId": "00OcU000004nASAUA2",
       "title": null,
-      "type": "Report"
+      "type": "Report",
+      "__devName": "LongTerm_Architect"
     },
     {
       "chartTheme": null,
       "componentData": 1,
       "footer": null,
       "header": "07. Long Term Schedulin' Consult",
-      "id": "01acU0000034bc3QAA",
-      "lastModifiedDate": "2026-05-28T15:46:16Z",
       "properties": {
         "aggregates": [
           {
@@ -124,15 +119,14 @@
       },
       "reportId": "00OcU000004n9YbUAI",
       "title": null,
-      "type": "Report"
+      "type": "Report",
+      "__devName": "LongTerm_Consultant"
     },
     {
       "chartTheme": null,
       "componentData": 2,
       "footer": null,
       "header": "Long Term Schedulin' Project Manage",
-      "id": "01acU0000034bc6QAA",
-      "lastModifiedDate": "2026-05-28T15:46:16Z",
       "properties": {
         "aggregates": [
           {
@@ -170,15 +164,14 @@
       },
       "reportId": "00OcU000004n0nqUAA",
       "title": null,
-      "type": "Report"
+      "type": "Report",
+      "__devName": "LongTerm_PM"
     },
     {
       "chartTheme": null,
       "componentData": 3,
       "footer": null,
       "header": "Long Term Schedulin' Marketing/Data",
-      "id": "01acU0000034bc9QAA",
-      "lastModifiedDate": "2026-05-28T15:46:16Z",
       "properties": {
         "aggregates": [
           {
@@ -216,15 +209,14 @@
       },
       "reportId": "00OcU000004n9gfUAA",
       "title": null,
-      "type": "Report"
+      "type": "Report",
+      "__devName": "LongTerm_MktCloud"
     },
     {
       "chartTheme": null,
       "componentData": 4,
       "footer": null,
       "header": "Staff Member Time Summary (Last Month)",
-      "id": "01acU0000034bcCQAQ",
-      "lastModifiedDate": "2026-05-28T15:46:16Z",
       "properties": {
         "aggregates": [
           {
@@ -263,15 +255,14 @@
       },
       "reportId": "00OcU000004nAjuUAE",
       "title": null,
-      "type": "Report"
+      "type": "Report",
+      "__devName": "TimeEntry_Vs_Scheduled_LastMonth"
     },
     {
       "chartTheme": null,
       "componentData": 5,
       "footer": null,
       "header": "Long Term Schedulin' (All Roles by",
-      "id": "01acU0000034bbyQAA",
-      "lastModifiedDate": "2026-05-28T15:46:16Z",
       "properties": {
         "aggregates": [
           {
@@ -315,15 +306,14 @@
       },
       "reportId": "00OcU000004nCLtUAM",
       "title": null,
-      "type": "Report"
+      "type": "Report",
+      "__devName": "LongTerm_AllRoles_ByMonth"
     },
     {
       "chartTheme": null,
       "componentData": 6,
       "footer": null,
       "header": "Long Term Schedulin' Project Manage",
-      "id": "01acU0000034bc1QAA",
-      "lastModifiedDate": "2026-05-28T15:46:16Z",
       "properties": {
         "aggregates": [
           {
@@ -367,15 +357,14 @@
       },
       "reportId": "00OcU000004n0nqUAA",
       "title": null,
-      "type": "Report"
+      "type": "Report",
+      "__devName": "LongTerm_PM"
     },
     {
       "chartTheme": null,
       "componentData": 7,
       "footer": null,
       "header": "Long Term Schedulin' Marketing Clou",
-      "id": "01acU0000034bc4QAA",
-      "lastModifiedDate": "2026-05-28T15:46:16Z",
       "properties": {
         "aggregates": [
           {
@@ -419,15 +408,14 @@
       },
       "reportId": "00OcU000004n9gfUAA",
       "title": null,
-      "type": "Report"
+      "type": "Report",
+      "__devName": "LongTerm_MktCloud"
     },
     {
       "chartTheme": null,
       "componentData": 8,
       "footer": null,
       "header": "Long Term Schedulin' Senior SFDC Co",
-      "id": "01acU0000034bc7QAA",
-      "lastModifiedDate": "2026-05-28T15:46:16Z",
       "properties": {
         "aggregates": [
           {
@@ -465,15 +453,14 @@
       },
       "reportId": "00OcU000004nCQjUAM",
       "title": null,
-      "type": "Report"
+      "type": "Report",
+      "__devName": "LongTerm_SrSFDC"
     },
     {
       "chartTheme": null,
       "componentData": 9,
       "footer": null,
       "header": "All other roles in one graphic",
-      "id": "01acU0000034bcAQAQ",
-      "lastModifiedDate": "2026-05-28T15:46:16Z",
       "properties": {
         "aggregates": [
           {
@@ -517,15 +504,14 @@
       },
       "reportId": "00OcU000004nCSLUA2",
       "title": null,
-      "type": "Report"
+      "type": "Report",
+      "__devName": "LongTerm_Other"
     },
     {
       "chartTheme": null,
       "componentData": 10,
       "footer": null,
       "header": "Staff Member Time Summary (This Month)",
-      "id": "01acU0000034bcDQAQ",
-      "lastModifiedDate": "2026-05-28T15:46:17Z",
       "properties": {
         "aggregates": [
           {
@@ -564,15 +550,14 @@
       },
       "reportId": "00OcU000004nCTxUAM",
       "title": null,
-      "type": "Report"
+      "type": "Report",
+      "__devName": "TimeEntry_Vs_Scheduled_ByPerson"
     },
     {
       "chartTheme": null,
       "componentData": 11,
       "footer": null,
       "header": "Long Term Schedulin' (All Roles - b",
-      "id": "01acU0000034bbzQAA",
-      "lastModifiedDate": "2026-05-28T15:46:16Z",
       "properties": {
         "aggregates": [
           {
@@ -616,15 +601,14 @@
       },
       "reportId": "00OcU000004nCNVUA2",
       "title": null,
-      "type": "Report"
+      "type": "Report",
+      "__devName": "LongTerm_AllRoles_ByWeek"
     },
     {
       "chartTheme": null,
       "componentData": 12,
       "footer": null,
       "header": "Long Term Schedulin' Senior SFDC Co",
-      "id": "01acU0000034bc2QAA",
-      "lastModifiedDate": "2026-05-28T15:46:16Z",
       "properties": {
         "aggregates": [
           {
@@ -668,15 +652,14 @@
       },
       "reportId": "00OcU000004nCQjUAM",
       "title": null,
-      "type": "Report"
+      "type": "Report",
+      "__devName": "LongTerm_SrSFDC"
     },
     {
       "chartTheme": null,
       "componentData": 13,
       "footer": null,
       "header": "Long Term Schedulin' Architect",
-      "id": "01acU0000034bc5QAA",
-      "lastModifiedDate": "2026-05-28T15:46:16Z",
       "properties": {
         "aggregates": [
           {
@@ -714,15 +697,14 @@
       },
       "reportId": "00OcU000004nASAUA2",
       "title": null,
-      "type": "Report"
+      "type": "Report",
+      "__devName": "LongTerm_Architect"
     },
     {
       "chartTheme": null,
       "componentData": 14,
       "footer": null,
       "header": "07. Long Term Schedulin' Consult",
-      "id": "01acU0000034bc8QAA",
-      "lastModifiedDate": "2026-05-28T15:46:16Z",
       "properties": {
         "aggregates": [
           {
@@ -760,15 +742,14 @@
       },
       "reportId": "00OcU000004n9YbUAI",
       "title": null,
-      "type": "Report"
+      "type": "Report",
+      "__devName": "LongTerm_Consultant"
     },
     {
       "chartTheme": null,
       "componentData": 15,
       "footer": null,
       "header": "Schedules by Person",
-      "id": "01acU0000034bcBQAQ",
-      "lastModifiedDate": "2026-05-28T15:46:16Z",
       "properties": {
         "aggregates": [
           {
@@ -806,7 +787,8 @@
       },
       "reportId": "00OcU000004nCSLUA2",
       "title": null,
-      "type": "Report"
+      "type": "Report",
+      "__devName": "LongTerm_Other"
     }
   ],
   "dashboardType": "SpecifiedUser",
@@ -814,9 +796,6 @@
   "developerName": "Long_Term_Schedulin",
   "filters": [],
   "flexTableImplementation": "REPORT_INSTANCE",
-  "folderId": "00lcU000004LEFDQA4",
-  "folderName": "Delivery Dashboards",
-  "id": "01ZcU000002t8VFUAY",
   "layout": {
     "components": [
       {
@@ -927,13 +906,5 @@
     "rowHeight": 36
   },
   "maxFilterOptions": 50,
-  "name": "Long Term Schedulin'",
-  "owner": {
-    "displayName": "User User",
-    "id": "005cU00000EnrPjQAJ"
-  },
-  "runningUser": {
-    "displayName": "User User",
-    "id": "005cU00000EnrPjQAJ"
-  }
+  "name": "Long Term Schedulin'"
 }

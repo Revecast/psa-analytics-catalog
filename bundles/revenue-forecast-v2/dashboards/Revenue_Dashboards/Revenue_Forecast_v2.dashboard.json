@@ -9,8 +9,6 @@
       "componentData": 0,
       "footer": null,
       "header": "Committed Forecast",
-      "id": "01acU0000033pSTQAY",
-      "lastModifiedDate": "2026-05-27T23:06:07Z",
       "properties": {
         "aggregates": [
           {
@@ -54,15 +52,14 @@
       },
       "reportId": "00OcU000004lBh2UAE",
       "title": "Committed Forecast",
-      "type": "Report"
+      "type": "Report",
+      "__devName": "Revenue_Forecast_Committed"
     },
     {
       "chartTheme": null,
       "componentData": 1,
       "footer": null,
       "header": "Best Case Forecast",
-      "id": "01acU0000033pSWQAY",
-      "lastModifiedDate": "2026-05-27T23:06:07Z",
       "properties": {
         "aggregates": [
           {
@@ -115,15 +112,14 @@
       },
       "reportId": "00OcU000004lBh1UAE",
       "title": "Best Case Forecast",
-      "type": "Report"
+      "type": "Report",
+      "__devName": "Revenue_Forecast_Commit_BC"
     },
     {
       "chartTheme": null,
       "componentData": 2,
       "footer": null,
       "header": "Committed Opportunities Yet to Sign",
-      "id": "01acU0000033pSZQAY",
-      "lastModifiedDate": "2026-05-27T23:06:08Z",
       "properties": {
         "aggregates": [
           {
@@ -201,15 +197,14 @@
       },
       "reportId": "00OcU000004lBgyUAE",
       "title": "Committed Opps Yet to Sign",
-      "type": "Report"
+      "type": "Report",
+      "__devName": "Committed_Opps_Yet_To_Sign"
     },
     {
       "chartTheme": null,
       "componentData": 3,
       "footer": null,
       "header": "Revenue Leak",
-      "id": "01acU0000033pScQAI",
-      "lastModifiedDate": "2026-05-27T23:06:08Z",
       "properties": {
         "aggregates": [
           {
@@ -262,15 +257,14 @@
       },
       "reportId": "00OcU000004lBh2UAE",
       "title": "Revenue Leak",
-      "type": "Report"
+      "type": "Report",
+      "__devName": "Revenue_Forecast_Committed"
     },
     {
       "chartTheme": null,
       "componentData": 4,
       "footer": null,
       "header": "Committed Forecast",
-      "id": "01acU0000033pSUQAY",
-      "lastModifiedDate": "2026-05-27T23:06:07Z",
       "properties": {
         "aggregates": [
           {
@@ -323,15 +317,14 @@
       },
       "reportId": "00OcU000004lBh2UAE",
       "title": "Committed Forecast",
-      "type": "Report"
+      "type": "Report",
+      "__devName": "Revenue_Forecast_Committed"
     },
     {
       "chartTheme": null,
       "componentData": 5,
       "footer": null,
       "header": "Best Case Deals",
-      "id": "01acU0000033pSXQAY",
-      "lastModifiedDate": "2026-05-27T23:06:07Z",
       "properties": {
         "aggregates": [
           {
@@ -375,15 +368,14 @@
       },
       "reportId": "00OcU000004lBh0UAE",
       "title": "Best Case Deals",
-      "type": "Report"
+      "type": "Report",
+      "__devName": "Revenue_Forecast_Best_Case"
     },
     {
       "chartTheme": null,
       "componentData": 6,
       "footer": null,
       "header": "Revenue Leak",
-      "id": "01acU0000033pSaQAI",
-      "lastModifiedDate": "2026-05-27T23:06:08Z",
       "properties": {
         "aggregates": [
           {
@@ -427,15 +419,14 @@
       },
       "reportId": "00OcU000004lBh2UAE",
       "title": "Revenue Leak",
-      "type": "Report"
+      "type": "Report",
+      "__devName": "Revenue_Forecast_Committed"
     },
     {
       "chartTheme": null,
       "componentData": 7,
       "footer": null,
       "header": "Rev Forecast - Committed - By Product",
-      "id": "01acU0000033pSdQAI",
-      "lastModifiedDate": "2026-05-27T23:06:08Z",
       "properties": {
         "aggregates": [
           {
@@ -479,15 +470,14 @@
       },
       "reportId": "00OcU000004lBgzUAE",
       "title": "Rev Forecast - By Product",
-      "type": "Report"
+      "type": "Report",
+      "__devName": "Rev_Forecast_Committed_By_Product"
     },
     {
       "chartTheme": null,
       "componentData": 8,
       "footer": null,
       "header": "Best Case Forecast",
-      "id": "01acU0000033pSVQAY",
-      "lastModifiedDate": "2026-05-27T23:06:07Z",
       "properties": {
         "aggregates": [
           {
@@ -531,15 +521,14 @@
       },
       "reportId": "00OcU000004lBh1UAE",
       "title": "Best Case Forecast",
-      "type": "Report"
+      "type": "Report",
+      "__devName": "Revenue_Forecast_Commit_BC"
     },
     {
       "chartTheme": null,
       "componentData": 9,
       "footer": null,
       "header": "Best Case Deals",
-      "id": "01acU0000033pSYQAY",
-      "lastModifiedDate": "2026-05-27T23:06:08Z",
       "properties": {
         "aggregates": [
           {
@@ -598,15 +587,14 @@
       },
       "reportId": "00OcU000004lBh0UAE",
       "title": "Best Case Deals",
-      "type": "Report"
+      "type": "Report",
+      "__devName": "Revenue_Forecast_Best_Case"
     },
     {
       "chartTheme": null,
       "componentData": 10,
       "footer": null,
       "header": "Average Bill Rate",
-      "id": "01acU0000033pSbQAI",
-      "lastModifiedDate": "2026-05-27T23:06:08Z",
       "properties": {
         "aggregates": [
           {
@@ -650,15 +638,14 @@
       },
       "reportId": "00OcU000004lBh2UAE",
       "title": "Average Bill Rate",
-      "type": "Report"
+      "type": "Report",
+      "__devName": "Revenue_Forecast_Committed"
     },
     {
       "chartTheme": null,
       "componentData": 11,
       "footer": null,
       "header": "Revenue Forecast - Committed - by Type",
-      "id": "01acU0000033pSeQAI",
-      "lastModifiedDate": "2026-05-27T23:06:08Z",
       "properties": {
         "aggregates": [
           {
@@ -702,7 +689,8 @@
       },
       "reportId": "00OcU000004lBh3UAE",
       "title": "Rev Forecast - by Type",
-      "type": "Report"
+      "type": "Report",
+      "__devName": "Revenue_Forecast_Committed_By_Type"
     }
   ],
   "dashboardType": "LoggedInUser",
@@ -793,9 +781,6 @@
     }
   ],
   "flexTableImplementation": "REPORT_INSTANCE",
-  "folderId": "00lcU000004JJHZQA4",
-  "folderName": "Revenue Dashboards",
-  "id": "01ZcU000002rzc5UAA",
   "layout": {
     "components": [
       {
@@ -876,13 +861,5 @@
     "rowHeight": 36
   },
   "maxFilterOptions": 50,
-  "name": "Revenue Forecast v2",
-  "owner": {
-    "displayName": "User User",
-    "id": "005cU00000EnrPjQAJ"
-  },
-  "runningUser": {
-    "displayName": "User User",
-    "id": "005cU00000EnrPjQAJ"
-  }
+  "name": "Revenue Forecast v2"
 }
