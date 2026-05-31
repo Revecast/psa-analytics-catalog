@@ -38,5 +38,8 @@
     "utilization",
     "weekly",
     "staff"
-  ]
+  ],
+  "dashboardTitles": {
+    "Delivery_Dashboards/Time_Monitoring_Dashboard_Week": "Time Monitoring Dashboard - Week"
+  }
 }

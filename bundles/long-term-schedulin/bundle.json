@@ -36,5 +36,8 @@
     "scheduling",
     "long-term",
     "role"
-  ]
+  ],
+  "dashboardTitles": {
+    "Delivery_Dashboards/Long_Term_Schedulin": "Long Term Schedulin'"
+  }
 }

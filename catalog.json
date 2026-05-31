@@ -60,7 +60,10 @@
         "forecast",
         "opportunity",
         "schedule"
-      ]
+      ],
+      "dashboardTitles": {
+        "Revenue_Dashboards/Revenue_Forecast_v2": "Revenue Forecast v2"
+      }
     },
     "active-project-revenue": {
       "name": "Project Financials Overview",
@@ -91,7 +94,10 @@
         "revenue",
         "project",
         "financials"
-      ]
+      ],
+      "dashboardTitles": {
+        "Delivery_Dashboards/Active_Project_Revenue_Overview": "Active Project Revenue Overview (by Time Frame)"
+      }
     },
     "time-monitoring-week": {
       "name": "Weekly Time Monitoring",
@@ -132,7 +138,10 @@
         "utilization",
         "weekly",
         "staff"
-      ]
+      ],
+      "dashboardTitles": {
+        "Delivery_Dashboards/Time_Monitoring_Dashboard_Week": "Time Monitoring Dashboard - Week"
+      }
     },
     "long-term-schedulin": {
       "name": "Long-Term Schedule Outlook",
@@ -171,7 +180,10 @@
         "scheduling",
         "long-term",
         "role"
-      ]
+      ],
+      "dashboardTitles": {
+        "Delivery_Dashboards/Long_Term_Schedulin": "Long Term Schedulin'"
+      }
     },
     "delivery-capacity-reports": {
       "name": "Delivery Capacity",
@@ -196,7 +208,10 @@
         "capacity",
         "delivery",
         "dependent"
-      ]
+      ],
+      "dashboardTitles": {
+        "Delivery_Dashboards/Delivery_Capacity_Reports": "Delivery Capacity Reports"
+      }
     }
   }
 }

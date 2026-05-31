@@ -22,5 +22,8 @@
     "capacity",
     "delivery",
     "dependent"
-  ]
+  ],
+  "dashboardTitles": {
+    "Delivery_Dashboards/Delivery_Capacity_Reports": "Delivery Capacity Reports"
+  }
 }

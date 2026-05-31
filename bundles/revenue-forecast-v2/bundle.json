@@ -32,5 +32,8 @@
     "forecast",
     "opportunity",
     "schedule"
-  ]
+  ],
+  "dashboardTitles": {
+    "Revenue_Dashboards/Revenue_Forecast_v2": "Revenue Forecast v2"
+  }
 }
