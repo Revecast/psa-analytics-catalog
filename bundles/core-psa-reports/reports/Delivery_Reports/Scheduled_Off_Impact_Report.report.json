@@ -1,0 +1,77 @@
+{
+  "reportMetadata": {
+    "aggregates": [
+      "s!Revecast__Scheduled_Off__c.Revecast__Onshore__c",
+      "s!Revecast__Scheduled_Off__c.Revecast__Offshore__c",
+      "s!Revecast__Day_Off__c.Revecast__Number_of_Hours__c",
+      "RowCount"
+    ],
+    "chart": null,
+    "crossFilters": [],
+    "currency": null,
+    "dashboardSetting": null,
+    "description": null,
+    "detailColumns": [
+      "Revecast__Scheduled_Off__c.Id",
+      "Revecast__Scheduled_Off__c.Name",
+      "Revecast__Scheduled_Off__c.Revecast__Scheduled_Off_Type__c",
+      "Revecast__Scheduled_Off__c.Revecast__Onshore__c",
+      "Revecast__Scheduled_Off__c.Revecast__Offshore__c",
+      "Revecast__Scheduled_Off__c.Revecast__Date__c",
+      "Revecast__Day_Off__c.Id",
+      "Revecast__Day_Off__c.Name",
+      "Revecast__Day_Off__c.Revecast__Chronology_Day__c.Name",
+      "Revecast__Day_Off__c.Revecast__Team_Member__c.Name",
+      "Revecast__Day_Off__c.Revecast__Number_of_Hours__c",
+      "Revecast__Day_Off__c.Revecast__Status__c",
+      "Revecast__Day_Off_Impact__c.Name",
+      "Revecast__Day_Off_Impact__c.Revecast__Project_Schedule_Week__c.Name"
+    ],
+    "developerName": "Scheduled_Off_Impact_Report",
+    "division": null,
+    "groupingsAcross": [],
+    "groupingsDown": [
+      {
+        "dateGranularity": "None",
+        "name": "Revecast__Day_Off_Impact__c.Revecast__Project_Schedule_Month__c.Name",
+        "sortAggregate": null,
+        "sortOrder": "Asc"
+      }
+    ],
+    "hasDetailRows": true,
+    "hasRecordCount": true,
+    "historicalSnapshotDates": [],
+    "name": "Scheduled Off Impact (For Day)",
+    "presentationOptions": {
+      "hasStackedSummaries": false
+    },
+    "reportBooleanFilter": null,
+    "reportFilters": [
+      {
+        "column": "Revecast__Scheduled_Off__c.Id",
+        "filterType": "fieldValue",
+        "isRunPageEditable": true,
+        "operator": "equals",
+        "value": ""
+      }
+    ],
+    "reportFormat": "SUMMARY",
+    "reportType": {
+      "label": "Scheduled Offs w/ Days Off w/w/o Day Off Impacts",
+      "type": "Revecast__Scheduled_Offs_w_Days_Off_w_w_o_Day_Off_Impacts__c"
+    },
+    "scope": "organization",
+    "showGrandTotal": true,
+    "showSubtotals": true,
+    "sortBy": [],
+    "standardDateFilter": {
+      "column": "Revecast__Scheduled_Off__c.CreatedDate",
+      "durationValue": "CUSTOM",
+      "endDate": null,
+      "startDate": null
+    },
+    "standardFilters": null,
+    "supportsRoleHierarchy": false,
+    "userOrHierarchyFilterId": null
+  }
+}

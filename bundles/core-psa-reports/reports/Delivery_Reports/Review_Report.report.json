@@ -1,0 +1,88 @@
+{
+  "reportMetadata": {
+    "aggregates": [
+      "s!Revecast__Time_Entry__c.Revecast__Billable__c",
+      "s!Revecast__Time_Entry__c.Revecast__Number_of_Hours__c",
+      "s!Revecast__Time_Entry__c.Revecast__Updated__c",
+      "RowCount"
+    ],
+    "chart": null,
+    "crossFilters": [],
+    "currency": null,
+    "dashboardSetting": null,
+    "description": null,
+    "detailColumns": [
+      "Revecast__Time_Entry__c.Revecast__Parent_Time_Entry__c",
+      "CUST_NAME",
+      "Revecast__Time_Entry__c.Revecast__Date__c",
+      "Revecast__Time_Entry__c.Revecast__Billable__c",
+      "Revecast__Time_Entry__c.Revecast__Number_of_Hours__c",
+      "Revecast__Time_Entry__c.Revecast__SA_Comments__c",
+      "Revecast__Time_Entry__c.Revecast__Status__c",
+      "Revecast__Time_Entry__c.Revecast__Description__c",
+      "FK_Revecast__WorkStream__c.Revecast__Reviewer_1__c",
+      "FK_Revecast__WorkStream__c.Revecast__Reviewer_2__c",
+      "Revecast__Time_Entry__c.Revecast__Updated__c"
+    ],
+    "developerName": "Review_Report",
+    "division": null,
+    "groupingsAcross": [],
+    "groupingsDown": [],
+    "hasDetailRows": true,
+    "hasRecordCount": true,
+    "historicalSnapshotDates": [],
+    "name": "Weekly Time Sheet Review.v1 (Internal)",
+    "presentationOptions": {
+      "hasStackedSummaries": false
+    },
+    "reportBooleanFilter": "(1 OR 2) AND 3 AND 4",
+    "reportFilters": [
+      {
+        "column": "FK_Revecast__WorkStream__c.Revecast__Reviewer_1__c",
+        "filterType": "fieldValue",
+        "isRunPageEditable": true,
+        "operator": "equals",
+        "value": ""
+      },
+      {
+        "column": "FK_Revecast__WorkStream__c.Revecast__Reviewer_2__c",
+        "filterType": "fieldValue",
+        "isRunPageEditable": true,
+        "operator": "equals",
+        "value": ""
+      },
+      {
+        "column": "Revecast__Time_Entry__c.Revecast__This_Week__c",
+        "filterType": "fieldValue",
+        "isRunPageEditable": true,
+        "operator": "equals",
+        "value": "This Week"
+      },
+      {
+        "column": "Revecast__Time_Entry__c.Revecast__Updated__c",
+        "filterType": "fieldValue",
+        "isRunPageEditable": true,
+        "operator": "equals",
+        "value": "False"
+      }
+    ],
+    "reportFormat": "TABULAR",
+    "reportType": {
+      "label": "Time Entries with WorkStream",
+      "type": "CustomEntity$Revecast__Time_Entry__c@Revecast__Time_Entry__c.Revecast__WorkStream__c"
+    },
+    "scope": "organization",
+    "showGrandTotal": true,
+    "showSubtotals": true,
+    "sortBy": [],
+    "standardDateFilter": {
+      "column": "Revecast__Time_Entry__c.Revecast__Date__c",
+      "durationValue": "CUSTOM",
+      "endDate": null,
+      "startDate": null
+    },
+    "standardFilters": null,
+    "supportsRoleHierarchy": false,
+    "userOrHierarchyFilterId": null
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "reportMetadata": {
+    "aggregates": [
+      "s!Revecast__Project_Schedule__c2.Revecast__Scheduled_Hours_this_week__c",
+      "RowCount"
+    ],
+    "chart": {
+      "chartType": "Vertical Bar Stacked",
+      "groupingColorPalette": "DEFAULT",
+      "groupings": [
+        "Revecast__Project_Schedule__c2.Revecast__Start_Date__c",
+        "Revecast__Project_Schedule__c2.Revecast__Team_Member_Name__c"
+      ],
+      "hasLegend": true,
+      "legendPosition": "Right",
+      "referenceLineColors": [
+        null
+      ],
+      "referenceLineValues": [
+        null
+      ],
+      "showChartPercentages": false,
+      "showChartTotal": false,
+      "showChartValues": false,
+      "summaries": [
+        "s!Revecast__Project_Schedule__c2.Revecast__Scheduled_Hours_this_week__c"
+      ],
+      "summaryAxisLocations": [
+        "Y"
+      ],
+      "summaryColors": [
+        null
+      ],
+      "summaryVisualizationTypes": [
+        "Column"
+      ],
+      "title": "Project Schedule Details"
+    },
+    "crossFilters": [],
+    "currency": null,
+    "dashboardSetting": null,
+    "description": "Rebuilding this report, as the old one didn't have the right report type, and was in need of an update.",
+    "detailColumns": [
+      "Revecast__Project_Schedule__c2.Name",
+      "Revecast__Project_Schedule__c2.Revecast__Scheduled_Hours_this_week__c"
+    ],
+    "developerName": "Project_Member_Schedule",
+    "division": null,
+    "groupingsAcross": [],
+    "groupingsDown": [
+      {
+        "dateGranularity": "Week",
+        "name": "Revecast__Project_Schedule__c2.Revecast__Start_Date__c",
+        "sortAggregate": null,
+        "sortOrder": "Asc"
+      },
+      {
+        "dateGranularity": "None",
+        "name": "Revecast__Project_Schedule__c2.Revecast__Team_Member_Name__c",
+        "sortAggregate": null,
+        "sortOrder": "Asc"
+      }
+    ],
+    "hasDetailRows": true,
+    "hasRecordCount": true,
+    "historicalSnapshotDates": [],
+    "name": "Project Member Schedule.v2",
+    "presentationOptions": {
+      "hasStackedSummaries": true
+    },
+    "reportBooleanFilter": null,
+    "reportFilters": [],
+    "reportFormat": "SUMMARY",
+    "reportType": {
+      "label": "Projects w/ Monthly and Weekly Schedules",
+      "type": "Revecast__Projects_w_Monthly_and_Weekly_Schedules__c"
+    },
+    "scope": "organization",
+    "showGrandTotal": true,
+    "showSubtotals": true,
+    "sortBy": [],
+    "standardDateFilter": {
+      "column": "Revecast__Project_Schedule__c.Revecast__Start_Date__c",
+      "durationValue": "THIS_FISCAL_QUARTER",
+      "endDate": "2026-06-30",
+      "startDate": "2026-04-01"
+    },
+    "standardFilters": null,
+    "supportsRoleHierarchy": false,
+    "userOrHierarchyFilterId": null
+  }
+}

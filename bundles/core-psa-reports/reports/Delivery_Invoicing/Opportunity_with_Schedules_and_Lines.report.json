@@ -1,0 +1,49 @@
+{
+  "reportMetadata": {
+    "aggregates": [
+      "s!Opportunity.Amount",
+      "RowCount"
+    ],
+    "chart": null,
+    "crossFilters": [],
+    "currency": null,
+    "dashboardSetting": null,
+    "description": null,
+    "detailColumns": [
+      "Opportunity.Name",
+      "Opportunity.Amount"
+    ],
+    "developerName": "Opportunity_with_Schedules_and_Lines",
+    "division": null,
+    "groupingsAcross": [],
+    "groupingsDown": [],
+    "hasDetailRows": true,
+    "hasRecordCount": true,
+    "historicalSnapshotDates": [],
+    "name": "Opportunity with Schedules and Lines",
+    "presentationOptions": {
+      "hasStackedSummaries": true
+    },
+    "reportBooleanFilter": null,
+    "reportFilters": [],
+    "reportFormat": "SUMMARY",
+    "reportType": {
+      "label": "Opp w/ Project w/ Schedule",
+      "type": "Revecast__Opp_w_Project_w_Schedule__c"
+    },
+    "saveRoleHierarchy": true,
+    "scope": "organization",
+    "showGrandTotal": true,
+    "showSubtotals": true,
+    "sortBy": [],
+    "standardDateFilter": {
+      "column": "Opportunity.CloseDate",
+      "durationValue": "CUSTOM",
+      "endDate": null,
+      "startDate": null
+    },
+    "standardFilters": null,
+    "supportsRoleHierarchy": true,
+    "userOrHierarchyFilterId": null
+  }
+}

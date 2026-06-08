@@ -1,0 +1,69 @@
+{
+  "bundleId": "core-psa-reports",
+  "name": "Core PSA Reports",
+  "description": "The standard PSA operational reports that PSACore features (Project Impact, scheduling screens, timesheet links) deep-link to. Install these, then click 'Populate Report IDs' to register them in PSA settings.",
+  "category": "core",
+  "primaryDashboard": null,
+  "components": {
+    "dashboards": [],
+    "dashboardFolders": [],
+    "reports": [
+      "Delivery_Reports/Contact_Time_Entries_This_Last_Week",
+      "Delivery_Reports/Contact_Days_Off_Report",
+      "Delivery_Reports/Contact_Project_Schedule_Report",
+      "Delivery_Reports/Scheduled_Off_Impact_Report",
+      "Delivery_Reports/Review_Report",
+      "Delivery_Invoicing/Time_Report_v2_Project_Specific",
+      "Delivery_Reports/Time_Report_Monthly_v5",
+      "Delivery_Reports/Time_Report_Monthly_v6",
+      "Delivery_Reports/Schedules_Against_Worksteams_v1",
+      "Delivery_Invoicing/Time_Report_Billable_vs_Non_Projects",
+      "Delivery_Reports/Time_Report_Monthly_v6b",
+      "Delivery_Reports/Project_Impact_Report_v2",
+      "Delivery_Invoicing/Opportunity_with_Schedules_and_Lines",
+      "Delivery_Reports/Schedule_Breakdown_by_Role",
+      "Delivery_Invoicing/Invoicing_History_Report",
+      "Delivery_Reports/Project_Schedule_Edits_Report",
+      "Delivery_Reports/Project_Scheduling_Report",
+      "Delivery_Reports/Project_Member_Schedule"
+    ],
+    "reportFolders": [
+      "Delivery Invoicing",
+      "Delivery Reports"
+    ],
+    "reportTypes": [
+      "Invoices_w_Lines_w_Time",
+      "Contacts_w_Days_Off_w_w_o_Impacts",
+      "Opp_w_Project_w_Months_w_Weeks",
+      "Projects_w_Weekly_Schedules_w_Impacts"
+    ]
+  },
+  "dependsOn": [],
+  "tags": [
+    "core",
+    "setup",
+    "required",
+    "operational"
+  ],
+  "dashboardTitles": {},
+  "reportIdFields": {
+    "Contact_Time_Entries_This_Last_Week": "Contact_Time_Entries_This_Last_Week__c",
+    "Contact_Days_Off_Report": "Contact_Days_Off_Report__c",
+    "Contact_Project_Schedule_Report": "Contact_Project_Schedule_Report__c",
+    "Scheduled_Off_Impact_Report": "Scheduled_Off_Impact_Report__c",
+    "Review_Report": "Review_Report__c",
+    "Time_Report_v2_Project_Specific": "Time_Report_v2_Project_Specific__c",
+    "Time_Report_Monthly_v5": "Time_Report_Monthly_v5__c",
+    "Time_Report_Monthly_v6": "Time_Report_Monthly_v6__c",
+    "Schedules_Against_Worksteams_v1": "Schedules_Against_Worksteams_v1__c",
+    "Time_Report_Billable_vs_Non_Projects": "Time_Report_Billable_vs_Non_Projects__c",
+    "Time_Report_Monthly_v6b": "Time_Report_Monthly_v6b__c",
+    "Project_Impact_Report_v2": "Project_Impact_Report_v2__c",
+    "Opportunity_with_Schedules_and_Lines": "Opportunity_with_Schedules_and_Lines__c",
+    "Schedule_Breakdown_by_Role": "Schedule_Breakdown_by_Role__c",
+    "Invoicing_History_Report": "Invoicing_History_Report__c",
+    "Project_Schedule_Edits_Report": "Project_Schedule_Edits_Report__c",
+    "Project_Scheduling_Report": "Project_Scheduling_Report__c",
+    "Project_Member_Schedule": "Project_Member_Schedule__c"
+  }
+}

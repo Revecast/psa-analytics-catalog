@@ -1,0 +1,128 @@
+{
+  "reportMetadata": {
+    "aggregates": [
+      "s!Revecast__Project_Schedule__c.Revecast__Scheduled_Hours_this_week__c",
+      "s!Revecast__Project_Schedule__c.Revecast__Scheduled_Revenue__c",
+      "s!FK_Revecast__WorkStream__c.Revecast__Total_Hours_Budgeted__c",
+      "s!FK_Revecast__WorkStream__c.Revecast__Total_Estimated_Hours__c",
+      "s!Revecast__Project_Schedule__c.Revecast__Number_of_Business_Days__c",
+      "RowCount"
+    ],
+    "chart": {
+      "chartType": "Horizontal Bar",
+      "groupingColorPalette": "DEFAULT",
+      "groupings": [
+        "FK_NAME"
+      ],
+      "hasLegend": true,
+      "legendPosition": "Right",
+      "referenceLineColors": [
+        null,
+        null
+      ],
+      "referenceLineValues": [
+        null,
+        null
+      ],
+      "showChartPercentages": false,
+      "showChartTotal": false,
+      "showChartValues": true,
+      "summaries": [
+        "s!FK_Revecast__WorkStream__c.Revecast__Total_Hours_Budgeted__c",
+        "s!Revecast__Project_Schedule__c.Revecast__Scheduled_Hours_this_week__c"
+      ],
+      "summaryAxisLocations": [
+        "Y",
+        "Y"
+      ],
+      "summaryColors": [
+        "#1B96FF",
+        "#16325C"
+      ],
+      "summaryVisualizationTypes": [
+        "Column",
+        "Column"
+      ],
+      "title": "Scheduled Hours by Workstream"
+    },
+    "crossFilters": [],
+    "currency": null,
+    "dashboardSetting": null,
+    "description": null,
+    "detailColumns": [
+      "CUST_NAME",
+      "Revecast__Project_Schedule__c.Revecast__Scheduled_Hours_this_week__c",
+      "Revecast__Project_Schedule__c.Revecast__Scheduled_Revenue__c",
+      "Revecast__Project_Schedule__c.Revecast__Scheduled_Actual__c",
+      "FK_Revecast__WorkStream__c.Revecast__Total_Hours_Budgeted__c",
+      "FK_Revecast__WorkStream__c.Revecast__Total_Estimated_Hours__c",
+      "Revecast__Project_Schedule__c.Revecast__Normal_Week__c",
+      "Revecast__Project_Schedule__c.Revecast__Number_of_Business_Days__c"
+    ],
+    "developerName": "Schedules_Against_Worksteams_v1",
+    "division": null,
+    "groupingsAcross": [],
+    "groupingsDown": [
+      {
+        "dateGranularity": "None",
+        "name": "Revecast__Project_Schedule__c.Revecast__Start_Date__c",
+        "sortAggregate": null,
+        "sortOrder": "Asc"
+      },
+      {
+        "dateGranularity": "None",
+        "name": "Revecast__Project_Schedule__c.Revecast__Category__c",
+        "sortAggregate": null,
+        "sortOrder": "Asc"
+      },
+      {
+        "dateGranularity": "None",
+        "name": "FK_NAME",
+        "sortAggregate": null,
+        "sortOrder": "Asc"
+      }
+    ],
+    "hasDetailRows": true,
+    "hasRecordCount": true,
+    "historicalSnapshotDates": [],
+    "name": "Schedules Against Worksteams.v1",
+    "presentationOptions": {
+      "hasStackedSummaries": true
+    },
+    "reportBooleanFilter": null,
+    "reportFilters": [
+      {
+        "column": "Revecast__Project_Schedule__c.Revecast__Project__c",
+        "filterType": "fieldValue",
+        "isRunPageEditable": true,
+        "operator": "equals",
+        "value": ""
+      },
+      {
+        "column": "Revecast__Project_Schedule__c.Revecast__This_Week__c",
+        "filterType": "fieldValue",
+        "isRunPageEditable": true,
+        "operator": "equals",
+        "value": "This Week,Future"
+      }
+    ],
+    "reportFormat": "SUMMARY",
+    "reportType": {
+      "label": "Project Schedules with Workstream",
+      "type": "CustomEntity$Revecast__Project_Schedule__c@Revecast__Project_Schedule__c.Revecast__Workstream__c"
+    },
+    "scope": "organization",
+    "showGrandTotal": true,
+    "showSubtotals": true,
+    "sortBy": [],
+    "standardDateFilter": {
+      "column": "Revecast__Project_Schedule__c.Revecast__Accepted_Approved__c",
+      "durationValue": "CUSTOM",
+      "endDate": null,
+      "startDate": null
+    },
+    "standardFilters": null,
+    "supportsRoleHierarchy": false,
+    "userOrHierarchyFilterId": null
+  }
+}

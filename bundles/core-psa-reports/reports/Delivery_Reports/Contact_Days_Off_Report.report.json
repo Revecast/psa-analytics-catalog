@@ -1,0 +1,125 @@
+{
+  "reportMetadata": {
+    "aggregates": [
+      "s!Revecast__Day_Off_Impact__c.Revecast__Hours__c",
+      "RowCount"
+    ],
+    "chart": {
+      "chartType": "Vertical Bar Stacked",
+      "groupingColorPalette": "DEFAULT",
+      "groupings": [
+        "Revecast__Day_Off__c.Revecast__Date__c",
+        "Revecast__Day_Off_Impact__c.Revecast__Project_Schedule_Month__c.Name"
+      ],
+      "hasLegend": true,
+      "legendPosition": "Right",
+      "referenceLineColors": [
+        null
+      ],
+      "referenceLineValues": [
+        null
+      ],
+      "showChartPercentages": false,
+      "showChartTotal": false,
+      "showChartValues": false,
+      "summaries": [
+        "s!Revecast__Day_Off_Impact__c.Revecast__Hours__c"
+      ],
+      "summaryAxisLocations": [
+        "Y"
+      ],
+      "summaryColors": [
+        null
+      ],
+      "summaryVisualizationTypes": [
+        "Column"
+      ],
+      "title": "Day Off Impacts"
+    },
+    "crossFilters": [],
+    "currency": null,
+    "dashboardSetting": null,
+    "description": null,
+    "detailColumns": [
+      "Contact.Name",
+      "Revecast__Day_Off__c.Name",
+      "Revecast__Day_Off_Impact__c.Name",
+      "Revecast__Day_Off_Impact__c.Revecast__Project_Schedule_Week__c.Name",
+      "Revecast__Day_Off_Impact__c.Revecast__Hours__c",
+      "Revecast__Day_Off_Impact__c.Revecast__Status__c"
+    ],
+    "developerName": "Contact_Days_Off_Report",
+    "division": null,
+    "groupingsAcross": [],
+    "groupingsDown": [
+      {
+        "dateGranularity": "Week",
+        "name": "Revecast__Day_Off__c.Revecast__Date__c",
+        "sortAggregate": null,
+        "sortOrder": "Asc"
+      },
+      {
+        "dateGranularity": "None",
+        "name": "Revecast__Day_Off_Impact__c.Revecast__Project_Schedule_Month__c.Name",
+        "sortAggregate": null,
+        "sortOrder": "Asc"
+      }
+    ],
+    "hasDetailRows": true,
+    "hasRecordCount": true,
+    "historicalSnapshotDates": [],
+    "name": "Days Off (Generic)",
+    "presentationOptions": {
+      "hasStackedSummaries": false
+    },
+    "reportBooleanFilter": null,
+    "reportFilters": [
+      {
+        "column": "Contact.Id",
+        "filterType": "fieldValue",
+        "isRunPageEditable": true,
+        "operator": "equals",
+        "value": ""
+      },
+      {
+        "column": "Revecast__Day_Off__c.Revecast__Status__c",
+        "filterType": "fieldValue",
+        "isRunPageEditable": true,
+        "operator": "equals",
+        "value": "Requested,PM Approved,Project Team Approved,Team Lead Approved,Delivery Director Approved,Accepted,Scheduled Day Off"
+      },
+      {
+        "column": "Revecast__Day_Off__c.Revecast__Date__c",
+        "filterType": "fieldValue",
+        "isRunPageEditable": true,
+        "operator": "greaterOrEqual",
+        "value": "TODAY"
+      },
+      {
+        "column": "Revecast__Day_Off_Impact__c.Revecast__Status__c",
+        "filterType": "fieldValue",
+        "isRunPageEditable": true,
+        "operator": "notEqual",
+        "value": "Cancelled"
+      }
+    ],
+    "reportFormat": "SUMMARY",
+    "reportType": {
+      "label": "Contacts w/ Days Off w/w/o Impacts",
+      "type": "Contacts_w_Days_Off_w_w_o_Impacts__c"
+    },
+    "scope": "organization",
+    "showGrandTotal": true,
+    "showSubtotals": true,
+    "sortBy": [],
+    "standardDateFilter": {
+      "column": "Contact.Birthdate",
+      "durationValue": "CUSTOM",
+      "endDate": null,
+      "startDate": null
+    },
+    "standardFilters": null,
+    "supportsRoleHierarchy": false,
+    "userOrHierarchyFilterId": null
+  }
+}
