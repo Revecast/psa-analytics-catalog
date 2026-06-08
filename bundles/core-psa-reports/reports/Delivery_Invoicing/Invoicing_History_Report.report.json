@@ -1,0 +1,105 @@
+{
+  "reportMetadata": {
+    "aggregates": [
+      "s!Revecast__Time_Entry__c.Revecast__Number_of_Hours__c",
+      "s!Revecast__Time_Entry__c.Revecast__Dollar_Amount_This_Entry__c",
+      "RowCount"
+    ],
+    "chart": {
+      "chartType": "Horizontal Bar Stacked",
+      "groupingColorPalette": "DEFAULT",
+      "groupings": [
+        "Revecast__Invoice__c.Name",
+        "Revecast__Invoice_Line_Item__c.Name"
+      ],
+      "hasLegend": true,
+      "legendPosition": "Right",
+      "referenceLineColors": [
+        null
+      ],
+      "referenceLineValues": [
+        null
+      ],
+      "showChartPercentages": false,
+      "showChartTotal": false,
+      "showChartValues": false,
+      "summaries": [
+        "s!Revecast__Time_Entry__c.Revecast__Dollar_Amount_This_Entry__c"
+      ],
+      "summaryAxisLocations": [
+        "Y"
+      ],
+      "summaryColors": [
+        null
+      ],
+      "summaryVisualizationTypes": [
+        "Column"
+      ],
+      "title": "Amount by Lines"
+    },
+    "crossFilters": [],
+    "currency": null,
+    "dashboardSetting": null,
+    "description": null,
+    "detailColumns": [
+      "Revecast__Time_Entry__c.Name",
+      "Revecast__Time_Entry__c.Revecast__Date__c",
+      "Revecast__Time_Entry__c.Revecast__Number_of_Hours__c",
+      "Revecast__Time_Entry__c.Revecast__Rate__c",
+      "Revecast__Time_Entry__c.Revecast__Dollar_Amount_This_Entry__c",
+      "Revecast__Time_Entry__c.Revecast__Status__c"
+    ],
+    "developerName": "Invoicing_History_Report",
+    "division": null,
+    "groupingsAcross": [],
+    "groupingsDown": [
+      {
+        "dateGranularity": "None",
+        "name": "Revecast__Invoice__c.Name",
+        "sortAggregate": null,
+        "sortOrder": "Asc"
+      },
+      {
+        "dateGranularity": "None",
+        "name": "Revecast__Invoice_Line_Item__c.Name",
+        "sortAggregate": null,
+        "sortOrder": "Asc"
+      }
+    ],
+    "hasDetailRows": false,
+    "hasRecordCount": true,
+    "historicalSnapshotDates": [],
+    "name": "Project Invoicing",
+    "presentationOptions": {
+      "hasStackedSummaries": false
+    },
+    "reportBooleanFilter": null,
+    "reportFilters": [
+      {
+        "column": "Revecast__Time_Entry__c.Revecast__ProjectId__c",
+        "filterType": "fieldValue",
+        "isRunPageEditable": true,
+        "operator": "equals",
+        "value": ""
+      }
+    ],
+    "reportFormat": "SUMMARY",
+    "reportType": {
+      "label": "Invoices w/ Lines w/ Time",
+      "type": "Invoices_w_Lines_w_Time__c"
+    },
+    "scope": "organization",
+    "showGrandTotal": true,
+    "showSubtotals": true,
+    "sortBy": [],
+    "standardDateFilter": {
+      "column": "Revecast__Invoice__c.CreatedDate",
+      "durationValue": "CUSTOM",
+      "endDate": null,
+      "startDate": null
+    },
+    "standardFilters": null,
+    "supportsRoleHierarchy": false,
+    "userOrHierarchyFilterId": null
+  }
+}

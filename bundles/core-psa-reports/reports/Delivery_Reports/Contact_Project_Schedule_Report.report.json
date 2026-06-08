@@ -1,0 +1,104 @@
+{
+  "reportMetadata": {
+    "aggregates": [
+      "s!Revecast__Project_Schedule__c.Revecast__Scheduled_Hours_this_week__c",
+      "RowCount"
+    ],
+    "buckets": [
+      {
+        "bucketType": "picklist",
+        "developerName": "BucketField_90915855",
+        "label": "Billable",
+        "nullTreatedAsZero": false,
+        "otherBucketLabel": null,
+        "sourceColumnName": "Revecast__Project__c.Revecast__Project_Type__c",
+        "values": [
+          {
+            "label": "Billable",
+            "rangeUpperBound": null,
+            "sourceDimensionValues": [
+              "External Project",
+              "Managed Services"
+            ]
+          },
+          {
+            "label": "Non-Billable",
+            "rangeUpperBound": null,
+            "sourceDimensionValues": [
+              "Internal Project"
+            ]
+          }
+        ]
+      }
+    ],
+    "chart": null,
+    "crossFilters": [],
+    "currency": null,
+    "dashboardSetting": null,
+    "description": null,
+    "detailColumns": [
+      "Revecast__Project_Schedule__c.Revecast__End_Date__c",
+      "Revecast__Project_Schedule__c.Name",
+      "Revecast__Project_Schedule__c.Revecast__Scheduled_Hours_this_week__c"
+    ],
+    "developerName": "Contact_Project_Schedule_Report",
+    "division": null,
+    "groupingsAcross": [],
+    "groupingsDown": [
+      {
+        "dateGranularity": "Week",
+        "name": "Revecast__Project_Schedule__c.Revecast__Start_Date__c",
+        "sortAggregate": null,
+        "sortOrder": "Asc"
+      },
+      {
+        "dateGranularity": "None",
+        "name": "Revecast__Project__c.Name",
+        "sortAggregate": null,
+        "sortOrder": "Asc"
+      }
+    ],
+    "hasDetailRows": true,
+    "hasRecordCount": true,
+    "historicalSnapshotDates": [],
+    "name": "Individual Schedule Projection",
+    "presentationOptions": {
+      "hasStackedSummaries": false
+    },
+    "reportBooleanFilter": null,
+    "reportFilters": [
+      {
+        "column": "Revecast__Project_Schedule__c.Revecast__Start_Date__c",
+        "filterType": "fieldValue",
+        "isRunPageEditable": true,
+        "operator": "equals",
+        "value": "THIS WEEK"
+      },
+      {
+        "column": "Revecast__Project_Schedule__c.Revecast__Start_Date__c",
+        "filterType": "fieldValue",
+        "isRunPageEditable": true,
+        "operator": "equals",
+        "value": "NEXT 100 WEEKS"
+      }
+    ],
+    "reportFormat": "SUMMARY",
+    "reportType": {
+      "label": "Projects with Members and Schedules",
+      "type": "Revecast__Projects_with_Members_and_Schedules__c"
+    },
+    "scope": "organization",
+    "showGrandTotal": true,
+    "showSubtotals": true,
+    "sortBy": [],
+    "standardDateFilter": {
+      "column": "Revecast__Project_Schedule__c.Revecast__Start_Date__c",
+      "durationValue": "THIS_FISCAL_QUARTER",
+      "endDate": "2026-06-30",
+      "startDate": "2026-04-01"
+    },
+    "standardFilters": null,
+    "supportsRoleHierarchy": false,
+    "userOrHierarchyFilterId": null
+  }
+}

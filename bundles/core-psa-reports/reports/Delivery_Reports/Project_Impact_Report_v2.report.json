@@ -1,0 +1,86 @@
+{
+  "reportMetadata": {
+    "aggregates": [
+      "s!Revecast__Day_Off_Impact__c.Revecast__Hours__c",
+      "s!Revecast__Project_Schedule__c.Revecast__Scheduled_Hours_this_week__c",
+      "RowCount"
+    ],
+    "chart": null,
+    "crossFilters": [],
+    "currency": null,
+    "dashboardSetting": null,
+    "description": null,
+    "detailColumns": [
+      "Revecast__Project_Schedule__c.Name",
+      "Revecast__Day_Off_Impact__c.Name",
+      "Revecast__Day_Off_Impact__c.Revecast__Hours__c",
+      "Revecast__Project_Schedule__c.Revecast__Scheduled_Hours_this_week__c",
+      "Revecast__Project_Schedule__c.Revecast__Priorities__c"
+    ],
+    "developerName": "Project_Impact_Report_v2",
+    "division": null,
+    "groupingsAcross": [],
+    "groupingsDown": [
+      {
+        "dateGranularity": "None",
+        "name": "Revecast__Day_Off_Impact__c.Revecast__Status__c",
+        "sortAggregate": null,
+        "sortOrder": "Asc"
+      },
+      {
+        "dateGranularity": "Week",
+        "name": "Revecast__Project_Schedule__c.Revecast__Start_Date__c",
+        "sortAggregate": null,
+        "sortOrder": "Asc"
+      },
+      {
+        "dateGranularity": "None",
+        "name": "Revecast__Project_Schedule__c.Revecast__Parent_Project_Schedule__c.Name",
+        "sortAggregate": null,
+        "sortOrder": "Asc"
+      }
+    ],
+    "hasDetailRows": true,
+    "hasRecordCount": true,
+    "historicalSnapshotDates": [],
+    "name": "Project Impact Report.v2",
+    "presentationOptions": {
+      "hasStackedSummaries": true
+    },
+    "reportBooleanFilter": null,
+    "reportFilters": [
+      {
+        "column": "Revecast__Project__c.Id",
+        "filterType": "fieldValue",
+        "isRunPageEditable": true,
+        "operator": "equals",
+        "value": ""
+      },
+      {
+        "column": "Revecast__Project_Schedule__c.Revecast__This_Week__c",
+        "filterType": "fieldValue",
+        "isRunPageEditable": true,
+        "operator": "equals",
+        "value": "This Week,Future"
+      }
+    ],
+    "reportFormat": "SUMMARY",
+    "reportType": {
+      "label": "Projects w/ Weekly Schedules w/ Impacts",
+      "type": "Projects_w_Weekly_Schedules_w_Impacts__c"
+    },
+    "scope": "organization",
+    "showGrandTotal": true,
+    "showSubtotals": true,
+    "sortBy": [],
+    "standardDateFilter": {
+      "column": "Revecast__Project__c.CreatedDate",
+      "durationValue": "CUSTOM",
+      "endDate": null,
+      "startDate": null
+    },
+    "standardFilters": null,
+    "supportsRoleHierarchy": false,
+    "userOrHierarchyFilterId": null
+  }
+}

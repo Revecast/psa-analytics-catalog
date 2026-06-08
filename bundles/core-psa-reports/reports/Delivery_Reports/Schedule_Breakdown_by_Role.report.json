@@ -1,0 +1,71 @@
+{
+  "reportMetadata": {
+    "aggregates": [
+      "s!Revecast__Project_Schedule__c2.Revecast__Scheduled_Hours_this_week__c",
+      "s!Revecast__Project_Schedule__c2.Revecast__Number_of_Business_Days__c",
+      "RowCount"
+    ],
+    "chart": null,
+    "crossFilters": [],
+    "currency": null,
+    "dashboardSetting": null,
+    "description": null,
+    "detailColumns": [
+      "Revecast__Project_Schedule__c2.Name",
+      "Revecast__Project_Schedule__c2.Revecast__Scheduled_Hours_this_week__c",
+      "Revecast__Project_Schedule__c2.Revecast__Number_of_Business_Days__c"
+    ],
+    "developerName": "Schedule_Breakdown_by_Role",
+    "division": null,
+    "groupingsAcross": [],
+    "groupingsDown": [
+      {
+        "dateGranularity": "None",
+        "name": "Revecast__Project_Schedule__c2.Revecast__Start_Date__c",
+        "sortAggregate": null,
+        "sortOrder": "Asc"
+      },
+      {
+        "dateGranularity": "None",
+        "name": "Revecast__Project_Schedule__c2.Revecast__Category__c",
+        "sortAggregate": null,
+        "sortOrder": "Asc"
+      }
+    ],
+    "hasDetailRows": true,
+    "hasRecordCount": true,
+    "historicalSnapshotDates": [],
+    "name": "Schedule Breakdown by Role",
+    "presentationOptions": {
+      "hasStackedSummaries": true
+    },
+    "reportBooleanFilter": null,
+    "reportFilters": [
+      {
+        "column": "Revecast__Project_Schedule__c2.Revecast__This_Week__c",
+        "filterType": "fieldValue",
+        "isRunPageEditable": true,
+        "operator": "equals",
+        "value": "This Week,Future"
+      }
+    ],
+    "reportFormat": "SUMMARY",
+    "reportType": {
+      "label": "Projects w/ Monthly and Weekly Schedules",
+      "type": "Revecast__Projects_w_Monthly_and_Weekly_Schedules__c"
+    },
+    "scope": "organization",
+    "showGrandTotal": true,
+    "showSubtotals": true,
+    "sortBy": [],
+    "standardDateFilter": {
+      "column": "Revecast__Project_Schedule__c.Revecast__Start_Date__c",
+      "durationValue": "THIS_FISCAL_QUARTER",
+      "endDate": "2026-06-30",
+      "startDate": "2026-04-01"
+    },
+    "standardFilters": null,
+    "supportsRoleHierarchy": false,
+    "userOrHierarchyFilterId": null
+  }
+}

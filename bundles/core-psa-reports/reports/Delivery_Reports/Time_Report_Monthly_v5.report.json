@@ -1,0 +1,73 @@
+{
+  "reportMetadata": {
+    "aggregates": [
+      "s!Revecast__Time_Entry__c.Revecast__Number_of_Hours__c",
+      "s!Revecast__Time_Entry__c.Revecast__Billable__c",
+      "RowCount"
+    ],
+    "chart": null,
+    "crossFilters": [],
+    "currency": null,
+    "dashboardSetting": null,
+    "description": null,
+    "detailColumns": [
+      "Revecast__Project_Schedule__c.Name",
+      "Revecast__Time_Entry__c.Name",
+      "Revecast__Time_Entry__c.Revecast__Number_of_Hours__c",
+      "Revecast__Time_Entry__c.Revecast__Billable__c"
+    ],
+    "developerName": "Time_Report_Monthly_v5",
+    "division": null,
+    "groupingsAcross": [],
+    "groupingsDown": [
+      {
+        "dateGranularity": "None",
+        "name": "Revecast__Project_Schedule__c.Revecast__Team_Member_Name__c",
+        "sortAggregate": null,
+        "sortOrder": "Asc"
+      }
+    ],
+    "hasDetailRows": true,
+    "hasRecordCount": true,
+    "historicalSnapshotDates": [],
+    "name": "Time Report (Monthly.v5)",
+    "presentationOptions": {
+      "hasStackedSummaries": true
+    },
+    "reportBooleanFilter": null,
+    "reportFilters": [
+      {
+        "column": "Revecast__Time_Entry__c.Revecast__Number_of_Hours__c",
+        "filterType": "fieldValue",
+        "isRunPageEditable": true,
+        "operator": "greaterThan",
+        "value": "0.00"
+      },
+      {
+        "column": "Revecast__Time_Entry__c.Revecast__Updated__c",
+        "filterType": "fieldValue",
+        "isRunPageEditable": true,
+        "operator": "equals",
+        "value": "False"
+      }
+    ],
+    "reportFormat": "SUMMARY",
+    "reportType": {
+      "label": "Projects w/ Week Schedules w/ Time",
+      "type": "Revecast__Projects_w_Week_Schedules_w_Time__c"
+    },
+    "scope": "organization",
+    "showGrandTotal": true,
+    "showSubtotals": true,
+    "sortBy": [],
+    "standardDateFilter": {
+      "column": "Revecast__Project__c.Revecast__Start_Date__c",
+      "durationValue": "THIS_FISCAL_QUARTER",
+      "endDate": "2026-06-30",
+      "startDate": "2026-04-01"
+    },
+    "standardFilters": null,
+    "supportsRoleHierarchy": false,
+    "userOrHierarchyFilterId": null
+  }
+}
