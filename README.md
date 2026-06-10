@@ -45,6 +45,19 @@ Schema:
 | `primaryDashboard` | The face card of the bundle |
 | `components` | Lists of dashboards / reports / report types / folders the bundle ships. The Apex installer reads this and pulls only the listed files |
 | `dependsOn` | Other bundle IDs this one needs. The picker auto-selects dependencies when this bundle is checked. Used for shared-report dashboards like Delivery Capacity Reports ← Long Term Schedulin'. |
+| `reportEngineTemplates` | Optional. Wires installed reports into the **Revecast Reporting Engine** so they appear on a record page. After installing + resolving report Ids, the wizard creates a `Report_Template__c` (and filter rows) per entry, pointed at the installed report. Only applied if the Reporting Engine objects are present in the org. |
+
+#### `reportEngineTemplates[]` entry
+
+| Field | Purpose |
+|---|---|
+| `parentObject` | API name of the object whose record page shows this report (e.g. `Revecast__Project__c`) |
+| `name` | The Report Template record name |
+| `report` | The bundle report key (folder/DeveloperName) whose installed Id this template points at |
+| `reportName` | Display label stored on the template |
+| `showDescription` | Whether the engine shows the description + inline-filter panel |
+| `description` | Optional descriptive text (used when `showDescription` is true) |
+| `filters[]` | `{ fw, filterField, operator }` rows. `fw: "0"` / `filterField: "Id"` is the mandatory record-context filter (auto-created by the engine trigger if omitted) |
 
 ## Available bundles (v1.0)
 

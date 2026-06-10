@@ -31,5 +31,40 @@
   ],
   "dashboardTitles": {
     "Delivery_Dashboards/Active_Project_Revenue_Overview": "Active Project Revenue Overview (by Time Frame)"
-  }
+  },
+  "reportEngineTemplates": [
+    {
+      "parentObject": "Revecast__Project__c",
+      "name": "Project Financials",
+      "report": "Delivery_Reports/Project_Financials_v41",
+      "reportName": "Project Financials v4",
+      "showDescription": false,
+      "description": null,
+      "filters": [
+        { "fw": "0", "filterField": "Id", "operator": "=" }
+      ]
+    },
+    {
+      "parentObject": "Revecast__Project__c",
+      "name": "Project Financials by Person",
+      "report": "Delivery_Reports/Project_Financials_v5_Person",
+      "reportName": "Project Financials v5 by Person",
+      "showDescription": false,
+      "description": null,
+      "filters": [
+        { "fw": "0", "filterField": "Id", "operator": "=" }
+      ]
+    },
+    {
+      "parentObject": "Revecast__Project__c",
+      "name": "Project Financials by Person (v6)",
+      "report": "Delivery_Reports/Project_Financials_v6_Person",
+      "reportName": "Project Financials v6 by Person",
+      "showDescription": true,
+      "description": "Per-person financial breakdown for this project: scheduled vs actual revenue and hours. Use the filters to refine before opening.",
+      "filters": [
+        { "fw": "0", "filterField": "Id", "operator": "=" }
+      ]
+    }
+  ]
 }
