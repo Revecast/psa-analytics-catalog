@@ -254,10 +254,14 @@
           "Delivery Reports"
         ],
         "reportTypes": [
-          "Invoices_w_Lines_w_Time",
           "Contacts_w_Days_Off_w_w_o_Impacts",
+          "Invoices_w_Lines_w_Time",
           "Opp_w_Project_w_Months_w_Weeks",
-          "Projects_w_Weekly_Schedules_w_Impacts"
+          "Opp_w_Project_w_Schedule",
+          "Projects_w_Monthly_and_Weekly_Schedules",
+          "Projects_w_Week_Schedules_w_Time",
+          "Projects_w_Weekly_Schedules_w_Impacts",
+          "Projects_with_Members_and_Schedules"
         ]
       },
       "dependsOn": [],
