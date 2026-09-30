@@ -7,10 +7,10 @@
     <join>
         <join>
             <outerJoin>false</outerJoin>
-            <relationship>Project_Schedules__r</relationship>
+            <relationship>Revecast__Project_Schedules__r</relationship>
         </join>
         <outerJoin>false</outerJoin>
-        <relationship>Projects__r</relationship>
+        <relationship>Revecast__Projects__r</relationship>
     </join>
     <label>Opp w/ Project w/ Schedule</label>
     <sections>
@@ -46,12 +46,12 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Product__c</field>
+            <field>Revecast__Product__c</field>
             <table>Opportunity</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Calculated_End_Date__c</field>
+            <field>Revecast__Calculated_End_Date__c</field>
             <table>Opportunity</table>
         </columns>
         <masterLabel>Opportunity</masterLabel>
@@ -60,22 +60,22 @@
         <columns>
             <checkedByDefault>true</checkedByDefault>
             <field>Name</field>
-            <table>Opportunity.Projects__r</table>
+            <table>Opportunity.Revecast__Projects__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Project_Type__c</field>
-            <table>Opportunity.Projects__r</table>
+            <field>Revecast__Project_Type__c</field>
+            <table>Opportunity.Revecast__Projects__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Start_Date__c</field>
-            <table>Opportunity.Projects__r</table>
+            <field>Revecast__Start_Date__c</field>
+            <table>Opportunity.Revecast__Projects__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>End_Date__c</field>
-            <table>Opportunity.Projects__r</table>
+            <field>Revecast__End_Date__c</field>
+            <table>Opportunity.Revecast__Projects__r</table>
         </columns>
         <masterLabel>Project</masterLabel>
     </sections>
@@ -83,52 +83,52 @@
         <columns>
             <checkedByDefault>true</checkedByDefault>
             <field>Name</field>
-            <table>Opportunity.Projects__r.Project_Schedules__r</table>
+            <table>Opportunity.Revecast__Projects__r.Revecast__Project_Schedules__r</table>
         </columns>
         <columns>
             <checkedByDefault>true</checkedByDefault>
-            <field>Start_Date__c</field>
-            <table>Opportunity.Projects__r.Project_Schedules__r</table>
+            <field>Revecast__Start_Date__c</field>
+            <table>Opportunity.Revecast__Projects__r.Revecast__Project_Schedules__r</table>
         </columns>
         <columns>
             <checkedByDefault>true</checkedByDefault>
-            <field>End_Date__c</field>
-            <table>Opportunity.Projects__r.Project_Schedules__r</table>
+            <field>Revecast__End_Date__c</field>
+            <table>Opportunity.Revecast__Projects__r.Revecast__Project_Schedules__r</table>
         </columns>
         <columns>
             <checkedByDefault>true</checkedByDefault>
-            <field>Scheduled_Revenue__c</field>
-            <table>Opportunity.Projects__r.Project_Schedules__r</table>
+            <field>Revecast__Scheduled_Revenue__c</field>
+            <table>Opportunity.Revecast__Projects__r.Revecast__Project_Schedules__r</table>
         </columns>
         <columns>
             <checkedByDefault>true</checkedByDefault>
-            <field>Actual_Revenue_Calculated__c</field>
-            <table>Opportunity.Projects__r.Project_Schedules__r</table>
+            <field>Revecast__Actual_Revenue_Calculated__c</field>
+            <table>Opportunity.Revecast__Projects__r.Revecast__Project_Schedules__r</table>
         </columns>
         <columns>
             <checkedByDefault>true</checkedByDefault>
-            <field>Rate__c</field>
-            <table>Opportunity.Projects__r.Project_Schedules__r</table>
+            <field>Revecast__Rate__c</field>
+            <table>Opportunity.Revecast__Projects__r.Revecast__Project_Schedules__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Scheduled_Hours_this_week__c</field>
-            <table>Opportunity.Projects__r.Project_Schedules__r</table>
+            <field>Revecast__Scheduled_Hours_this_week__c</field>
+            <table>Opportunity.Revecast__Projects__r.Revecast__Project_Schedules__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Workstream_Type__c</field>
-            <table>Opportunity.Projects__r.Project_Schedules__r</table>
+            <field>Revecast__Workstream_Type__c</field>
+            <table>Opportunity.Revecast__Projects__r.Revecast__Project_Schedules__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Project_Type__c</field>
-            <table>Opportunity.Projects__r.Project_Schedules__r</table>
+            <field>Revecast__Project_Type__c</field>
+            <table>Opportunity.Revecast__Projects__r.Revecast__Project_Schedules__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Type__c</field>
-            <table>Opportunity.Projects__r.Project_Schedules__r</table>
+            <field>Revecast__Type__c</field>
+            <table>Opportunity.Revecast__Projects__r.Revecast__Project_Schedules__r</table>
         </columns>
         <masterLabel>Project Schedule</masterLabel>
     </sections>
