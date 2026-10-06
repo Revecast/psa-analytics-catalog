@@ -1,27 +1,118 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>Project_Schedule__c.Actual_Revenue_Calculated__c:SUM + CDF1:SUM</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA1</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Combined</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>Project_Schedule__c.Actual_Revenue_Calculated__c:SUM + CDF1:SUM</calculatedFormula>
+        <datatype>currency</datatype>
+        <developerName>FORMULA2</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>$Combined</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>FORMULA1</column>
+        </chartSummaries>
+        <chartType>VerticalColumn</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>Project__c$Name</groupingColumn>
+        <location>CHART_BOTTOM</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>true</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <title>By Time</title>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
     <columns>
-        <aggregateTypes>Sum</aggregateTypes>
-        <field>Project__c.Project_Members__r.Project_Schedules__r$Scheduled_Revenue__c</field>
+        <field>Project__c.Project_Members__r$Name</field>
+    </columns>
+    <columns>
+        <field>Project__c.Project_Members__r.Project_Schedules__r$Name</field>
     </columns>
     <columns>
         <aggregateTypes>Sum</aggregateTypes>
         <field>Project__c.Project_Members__r.Project_Schedules__r$Actual_Revenue_Calculated__c</field>
     </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>CDF1</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Project__c.Project_Members__r.Project_Schedules__r$Scheduled_Revenue__c</field>
+    </columns>
+    <columns>
+        <field>Project__c.Project_Members__r.Project_Schedules__r$Scheduled_Actual__c</field>
+    </columns>
+    <customDetailFormulas>
+        <calculatedFormula>IF(
+    OR(
+        TEXT(Project_Schedule__c.Status__c)=&quot;Scheduled&quot;,
+        TEXT(Project_Schedule__c.Status__c)=&quot;In Progress&quot;),
+Project_Schedule__c.Scheduled_Revenue__c-Project_Schedule__c.Actual_Revenue_Calculated__c,
+0
+)</calculatedFormula>
+        <dataType>Double</dataType>
+        <developerName>CDF1</developerName>
+        <label>Future Scheduled Revenue</label>
+        <scale>2</scale>
+    </customDetailFormulas>
     <filter>
+        <booleanFilter>1 AND 2 AND (3 OR 4) AND 5</booleanFilter>
         <criteriaItems>
             <column>Project__c$Project_Type__c</column>
             <columnToColumn>false</columnToColumn>
-            <isUnlocked>false</isUnlocked>
+            <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>External Project,Managed Services</value>
         </criteriaItems>
         <criteriaItems>
             <column>Project__c$Status__c</column>
             <columnToColumn>false</columnToColumn>
-            <isUnlocked>false</isUnlocked>
+            <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
             <value>Pending</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Project__c.Project_Members__r.Project_Schedules__r$Scheduled_Revenue__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Project__c.Project_Members__r.Project_Schedules__r$Actual_Revenue_Calculated__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Project__c$Status__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>In Progress,Closed</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>
@@ -31,27 +122,27 @@
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <groupingsDown>
-        <dateGranularity>Day</dateGranularity>
+        <dateGranularity>Month</dateGranularity>
         <field>Project__c.Project_Members__r.Project_Schedules__r$End_Date__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <groupingsDown>
-        <dateGranularity>Day</dateGranularity>
+        <dateGranularity>Week</dateGranularity>
         <field>Project__c.Project_Members__r.Project_Schedules__r$Start_Date__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>Project Financials v4</name>
     <params>
         <name>co</name>
-        <value>1</value>
+        <value>0</value>
     </params>
     <reportType>Projects_with_Members_and_Schedules__c</reportType>
     <scope>organization</scope>
-    <showDetails>true</showDetails>
+    <showDetails>false</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
-        <dateColumn>Project__c.Project_Members__r.Project_Schedules__r$Start_Date__c</dateColumn>
-        <interval>INTERVAL_CURRENT</interval>
+        <dateColumn>Project__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
     </timeFrameFilter>
 </Report>

@@ -3,7 +3,53 @@
     <backgroundEndColor>#FFFFFF</backgroundEndColor>
     <backgroundFadeDirection>Diagonal</backgroundFadeDirection>
     <backgroundStartColor>#FFFFFF</backgroundStartColor>
-    <chartTheme>light</chartTheme>
+    <chartTheme>dark</chartTheme>
+    <colorPalette>water</colorPalette>
+    <dashboardChartTheme>dark</dashboardChartTheme>
+    <dashboardColorPalette>water</dashboardColorPalette>
+    <dashboardFilters>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>THIS_MONTH</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>LAST_MONTH</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>LAST_N_MONTHS:2</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>LAST_N_MONTHS:3</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>LAST_N_MONTHS:6</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>LAST_N_MONTHS:8</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>NEXT_MONTH</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>NEXT_N_MONTHS:2</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>NEXT_N_MONTHS:3</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>LAST_N_MONTHS:12</values>
+        </dashboardFilterOptions>
+        <name>Start Date (Week)</name>
+    </dashboardFilters>
     <dashboardGridLayout>
         <dashboardGridComponents>
             <colSpan>12</colSpan>
@@ -12,7 +58,7 @@
                 <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
                 <componentType>RichText</componentType>
                 <dashboardComponentContents>
-                    <richTextContent>[{"insert":"Section"}]</richTextContent>
+                    <richTextContent>[{\&amp;quot;attributes\&amp;quot;:{\&amp;quot;size\&amp;quot;:\&amp;quot;52px\&amp;quot;,\&amp;quot;color\&amp;quot;:\&amp;quot;#00b531\&amp;quot;},\&amp;quot;insert\&amp;quot;:\&amp;quot;Overview\&amp;quot;},{\&amp;quot;attributes\&amp;quot;:{\&amp;quot;align\&amp;quot;:\&amp;quot;center\&amp;quot;},\&amp;quot;insert\&amp;quot;:\&amp;quot;\\n\&amp;quot;}]</richTextContent>
                 </dashboardComponentContents>
                 <groupingSortProperties/>
             </dashboardComponent>
@@ -23,18 +69,83 @@
             <colSpan>4</colSpan>
             <columnIndex>0</columnIndex>
             <dashboardComponent>
-                <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+                <chartSummary>
+                    <aggregate>Sum</aggregate>
+                    <column>Project__c.Project_Members__r.Project_Schedules__r$Scheduled_Revenue__c</column>
+                </chartSummary>
                 <componentType>Metric</componentType>
+                <dashboardFilterColumns>
+                    <column>Project__c.Project_Members__r.Project_Schedules__r$Start_Date__c</column>
+                </dashboardFilterColumns>
+                <decimalPrecision>-1</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
-                <drillEnabled>false</drillEnabled>
-                <drillToDetailEnabled>false</drillToDetailEnabled>
+                <footer>Report: project financials.v4</footer>
+                <groupingSortProperties/>
                 <header>Scheduled Revenue</header>
-                <indicatorBreakpoint1>0.0</indicatorBreakpoint1>
-                <indicatorBreakpoint2>0.0</indicatorBreakpoint2>
-                <indicatorHighColor>#54C254</indicatorHighColor>
-                <indicatorLowColor>#C25454</indicatorLowColor>
-                <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-                <metricLabel>Scheduled Revenue</metricLabel>
+                <indicatorBreakpoint1>33.0</indicatorBreakpoint1>
+                <indicatorBreakpoint2>67.0</indicatorBreakpoint2>
+                <indicatorHighColor>#00716B</indicatorHighColor>
+                <indicatorLowColor>#C23934</indicatorLowColor>
+                <indicatorMiddleColor>#CA8501</indicatorMiddleColor>
+                <report>Delivery_Reports/Project_Financials_v41</report>
+                <showRange>false</showRange>
+            </dashboardComponent>
+            <rowIndex>3</rowIndex>
+            <rowSpan>4</rowSpan>
+        </dashboardGridComponents>
+        <dashboardGridComponents>
+            <colSpan>4</colSpan>
+            <columnIndex>4</columnIndex>
+            <dashboardComponent>
+                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+                <chartSummary>
+                    <aggregate>Sum</aggregate>
+                    <column>Project__c.Project_Members__r.Project_Schedules__r$Actual_Revenue_Calculated__c</column>
+                </chartSummary>
+                <componentType>Metric</componentType>
+                <dashboardFilterColumns>
+                    <column>Project__c.Project_Members__r.Project_Schedules__r$Start_Date__c</column>
+                </dashboardFilterColumns>
+                <decimalPrecision>-1</decimalPrecision>
+                <displayUnits>Auto</displayUnits>
+                <footer>Report: project financials.v4</footer>
+                <groupingSortProperties/>
+                <header>Actual Revenue</header>
+                <indicatorBreakpoint1>33.0</indicatorBreakpoint1>
+                <indicatorBreakpoint2>67.0</indicatorBreakpoint2>
+                <indicatorHighColor>#00716B</indicatorHighColor>
+                <indicatorLowColor>#C23934</indicatorLowColor>
+                <indicatorMiddleColor>#CA8501</indicatorMiddleColor>
+                <report>Delivery_Reports/Project_Financials_v41</report>
+                <showRange>false</showRange>
+            </dashboardComponent>
+            <rowIndex>3</rowIndex>
+            <rowSpan>4</rowSpan>
+        </dashboardGridComponents>
+        <dashboardGridComponents>
+            <colSpan>4</colSpan>
+            <columnIndex>8</columnIndex>
+            <dashboardComponent>
+                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+                <chartSummary>
+                    <column>FORMULA1</column>
+                </chartSummary>
+                <componentType>Metric</componentType>
+                <dashboardFilterColumns>
+                    <column>Project__c.Project_Members__r.Project_Schedules__r$Start_Date__c</column>
+                </dashboardFilterColumns>
+                <decimalPrecision>-1</decimalPrecision>
+                <displayUnits>Auto</displayUnits>
+                <footer>Report: project financials.v4</footer>
+                <groupingSortProperties/>
+                <header>Combined Revenue</header>
+                <indicatorBreakpoint1>33.0</indicatorBreakpoint1>
+                <indicatorBreakpoint2>67.0</indicatorBreakpoint2>
+                <indicatorHighColor>#00716B</indicatorHighColor>
+                <indicatorLowColor>#C23934</indicatorLowColor>
+                <indicatorMiddleColor>#CA8501</indicatorMiddleColor>
+                <metricLabel>Actual plus Future Scheduled</metricLabel>
                 <report>Delivery_Reports/Project_Financials_v41</report>
                 <showRange>false</showRange>
             </dashboardComponent>
@@ -48,7 +159,7 @@
                 <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
                 <componentType>RichText</componentType>
                 <dashboardComponentContents>
-                    <richTextContent>[{"insert":"Section"}]</richTextContent>
+                    <richTextContent>[{\&amp;quot;attributes\&amp;quot;:{\&amp;quot;size\&amp;quot;:\&amp;quot;52px\&amp;quot;,\&amp;quot;color\&amp;quot;:\&amp;quot;#00b531\&amp;quot;},\&amp;quot;insert\&amp;quot;:\&amp;quot;Actual\&amp;quot;},{\&amp;quot;attributes\&amp;quot;:{\&amp;quot;align\&amp;quot;:\&amp;quot;center\&amp;quot;},\&amp;quot;insert\&amp;quot;:\&amp;quot;\\n\&amp;quot;}]</richTextContent>
                 </dashboardComponentContents>
                 <groupingSortProperties/>
             </dashboardComponent>
@@ -59,21 +170,75 @@
             <colSpan>10</colSpan>
             <columnIndex>0</columnIndex>
             <dashboardComponent>
-                <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
                 <chartAxisRange>Auto</chartAxisRange>
-                <componentType>Bar</componentType>
+                <chartSummary>
+                    <aggregate>Sum</aggregate>
+                    <axisBinding>y</axisBinding>
+                    <column>Project__c.Project_Members__r.Project_Schedules__r$Actual_Revenue_Calculated__c</column>
+                </chartSummary>
+                <componentType>BarStacked</componentType>
+                <dashboardFilterColumns>
+                    <column>Project__c.Project_Members__r.Project_Schedules__r$Start_Date__c</column>
+                </dashboardFilterColumns>
+                <decimalPrecision>-1</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
                 <drillEnabled>false</drillEnabled>
                 <drillToDetailEnabled>false</drillToDetailEnabled>
-                <enableHover>true</enableHover>
+                <enableHover>false</enableHover>
                 <expandOthers>false</expandOthers>
-                <groupingSortProperties/>
+                <footer>Report: Project Financials.v4</footer>
+                <groupingColumn>Project__c$Name</groupingColumn>
+                <groupingColumn>Project__c.Project_Members__r.Project_Schedules__r$Start_Date__c</groupingColumn>
+                <groupingSortProperties>
+                    <groupingSorts>
+                        <groupingLevel>g1</groupingLevel>
+                        <sortOrder>a</sortOrder>
+                    </groupingSorts>
+                    <groupingSorts>
+                        <groupingLevel>g2</groupingLevel>
+                        <sortOrder>a</sortOrder>
+                    </groupingSorts>
+                </groupingSortProperties>
                 <header>Actual Dollars in (this date range)</header>
                 <legendPosition>Right</legendPosition>
                 <report>Delivery_Reports/Project_Financials_v41</report>
-                <showValues>true</showValues>
+                <showPercentage>false</showPercentage>
+                <showValues>false</showValues>
                 <sortBy>RowLabelAscending</sortBy>
+                <sortLegendValues>true</sortLegendValues>
+                <title>By Project (and stacked by week)</title>
                 <useReportChart>false</useReportChart>
+            </dashboardComponent>
+            <rowIndex>10</rowIndex>
+            <rowSpan>11</rowSpan>
+        </dashboardGridComponents>
+        <dashboardGridComponents>
+            <colSpan>2</colSpan>
+            <columnIndex>10</columnIndex>
+            <dashboardComponent>
+                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+                <chartSummary>
+                    <aggregate>Sum</aggregate>
+                    <column>Project__c.Project_Members__r.Project_Schedules__r$Actual_Revenue_Calculated__c</column>
+                </chartSummary>
+                <componentType>Metric</componentType>
+                <dashboardFilterColumns>
+                    <column>Project__c.Project_Members__r.Project_Schedules__r$Start_Date__c</column>
+                </dashboardFilterColumns>
+                <decimalPrecision>-1</decimalPrecision>
+                <displayUnits>Auto</displayUnits>
+                <footer>Report: Project Financials.v4</footer>
+                <groupingSortProperties/>
+                <header>Actual Dollars in (this date range)</header>
+                <indicatorBreakpoint1>33.0</indicatorBreakpoint1>
+                <indicatorBreakpoint2>67.0</indicatorBreakpoint2>
+                <indicatorHighColor>#00716B</indicatorHighColor>
+                <indicatorLowColor>#C23934</indicatorLowColor>
+                <indicatorMiddleColor>#CA8501</indicatorMiddleColor>
+                <metricLabel>Total</metricLabel>
+                <report>Delivery_Reports/Project_Financials_v41</report>
+                <showRange>false</showRange>
             </dashboardComponent>
             <rowIndex>10</rowIndex>
             <rowSpan>11</rowSpan>
@@ -82,20 +247,44 @@
             <colSpan>12</colSpan>
             <columnIndex>0</columnIndex>
             <dashboardComponent>
-                <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
                 <chartAxisRange>Auto</chartAxisRange>
-                <componentType>Bar</componentType>
+                <chartSummary>
+                    <aggregate>Sum</aggregate>
+                    <axisBinding>y</axisBinding>
+                    <column>Project__c.Project_Members__r.Project_Schedules__r$Actual_Revenue_Calculated__c</column>
+                </chartSummary>
+                <componentType>BarStacked</componentType>
+                <dashboardFilterColumns>
+                    <column>Project__c.Project_Members__r.Project_Schedules__r$Start_Date__c</column>
+                </dashboardFilterColumns>
+                <decimalPrecision>-1</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
                 <drillEnabled>false</drillEnabled>
                 <drillToDetailEnabled>false</drillToDetailEnabled>
-                <enableHover>true</enableHover>
+                <enableHover>false</enableHover>
                 <expandOthers>false</expandOthers>
-                <groupingSortProperties/>
+                <footer>Report: Project Financials.v5</footer>
+                <groupingColumn>Project__c.Project_Members__r$Staff_Member__c</groupingColumn>
+                <groupingColumn>Project__c.Project_Members__r.Project_Schedules__r$Start_Date__c</groupingColumn>
+                <groupingSortProperties>
+                    <groupingSorts>
+                        <groupingLevel>g1</groupingLevel>
+                        <sortOrder>a</sortOrder>
+                    </groupingSorts>
+                    <groupingSorts>
+                        <groupingLevel>g2</groupingLevel>
+                        <sortOrder>a</sortOrder>
+                    </groupingSorts>
+                </groupingSortProperties>
                 <header>Actual Dollars in (this date range)</header>
                 <legendPosition>Right</legendPosition>
                 <report>Delivery_Reports/Project_Financials_v5_Person</report>
-                <showValues>true</showValues>
+                <showPercentage>false</showPercentage>
+                <showValues>false</showValues>
                 <sortBy>RowLabelAscending</sortBy>
+                <sortLegendValues>true</sortLegendValues>
+                <title>By Staff Member (and stacked by week)</title>
                 <useReportChart>false</useReportChart>
             </dashboardComponent>
             <rowIndex>21</rowIndex>
@@ -108,7 +297,7 @@
                 <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
                 <componentType>RichText</componentType>
                 <dashboardComponentContents>
-                    <richTextContent>[{"insert":"Section"}]</richTextContent>
+                    <richTextContent>[{\&amp;quot;attributes\&amp;quot;:{\&amp;quot;color\&amp;quot;:\&amp;quot;#963ce8\&amp;quot;,\&amp;quot;size\&amp;quot;:\&amp;quot;52px\&amp;quot;},\&amp;quot;insert\&amp;quot;:\&amp;quot;Scheduled\&amp;quot;},{\&amp;quot;attributes\&amp;quot;:{\&amp;quot;align\&amp;quot;:\&amp;quot;center\&amp;quot;},\&amp;quot;insert\&amp;quot;:\&amp;quot;\\n\&amp;quot;}]</richTextContent>
                 </dashboardComponentContents>
                 <groupingSortProperties/>
             </dashboardComponent>
@@ -119,21 +308,75 @@
             <colSpan>10</colSpan>
             <columnIndex>0</columnIndex>
             <dashboardComponent>
-                <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
                 <chartAxisRange>Auto</chartAxisRange>
-                <componentType>Bar</componentType>
+                <chartSummary>
+                    <aggregate>Sum</aggregate>
+                    <axisBinding>y</axisBinding>
+                    <column>Project__c.Project_Members__r.Project_Schedules__r$Scheduled_Revenue__c</column>
+                </chartSummary>
+                <componentType>BarStacked</componentType>
+                <dashboardFilterColumns>
+                    <column>Project__c.Project_Members__r.Project_Schedules__r$Start_Date__c</column>
+                </dashboardFilterColumns>
+                <decimalPrecision>-1</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
                 <drillEnabled>false</drillEnabled>
                 <drillToDetailEnabled>false</drillToDetailEnabled>
-                <enableHover>true</enableHover>
+                <enableHover>false</enableHover>
                 <expandOthers>false</expandOthers>
-                <groupingSortProperties/>
+                <footer>Report: Project Financials.v4</footer>
+                <groupingColumn>Project__c$Name</groupingColumn>
+                <groupingColumn>Project__c.Project_Members__r.Project_Schedules__r$Start_Date__c</groupingColumn>
+                <groupingSortProperties>
+                    <groupingSorts>
+                        <groupingLevel>g1</groupingLevel>
+                        <sortOrder>a</sortOrder>
+                    </groupingSorts>
+                    <groupingSorts>
+                        <groupingLevel>g2</groupingLevel>
+                        <sortOrder>a</sortOrder>
+                    </groupingSorts>
+                </groupingSortProperties>
                 <header>Scheduled Dollars in (this date range)</header>
                 <legendPosition>Right</legendPosition>
                 <report>Delivery_Reports/Project_Financials_v41</report>
-                <showValues>true</showValues>
+                <showPercentage>false</showPercentage>
+                <showValues>false</showValues>
                 <sortBy>RowLabelAscending</sortBy>
+                <sortLegendValues>true</sortLegendValues>
+                <title>By Project (and stacked by week)</title>
                 <useReportChart>false</useReportChart>
+            </dashboardComponent>
+            <rowIndex>44</rowIndex>
+            <rowSpan>11</rowSpan>
+        </dashboardGridComponents>
+        <dashboardGridComponents>
+            <colSpan>2</colSpan>
+            <columnIndex>10</columnIndex>
+            <dashboardComponent>
+                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+                <chartSummary>
+                    <aggregate>Sum</aggregate>
+                    <column>Project__c.Project_Members__r.Project_Schedules__r$Scheduled_Revenue__c</column>
+                </chartSummary>
+                <componentType>Metric</componentType>
+                <dashboardFilterColumns>
+                    <column>Project__c.Project_Members__r.Project_Schedules__r$Start_Date__c</column>
+                </dashboardFilterColumns>
+                <decimalPrecision>-1</decimalPrecision>
+                <displayUnits>Auto</displayUnits>
+                <footer>Report: Project Financials.v4</footer>
+                <groupingSortProperties/>
+                <header>Scheduled Dollars in (this date range)</header>
+                <indicatorBreakpoint1>33.0</indicatorBreakpoint1>
+                <indicatorBreakpoint2>67.0</indicatorBreakpoint2>
+                <indicatorHighColor>#00716B</indicatorHighColor>
+                <indicatorLowColor>#C23934</indicatorLowColor>
+                <indicatorMiddleColor>#CA8501</indicatorMiddleColor>
+                <metricLabel>Total</metricLabel>
+                <report>Delivery_Reports/Project_Financials_v41</report>
+                <showRange>false</showRange>
             </dashboardComponent>
             <rowIndex>44</rowIndex>
             <rowSpan>11</rowSpan>
@@ -142,20 +385,44 @@
             <colSpan>12</colSpan>
             <columnIndex>0</columnIndex>
             <dashboardComponent>
-                <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
                 <chartAxisRange>Auto</chartAxisRange>
-                <componentType>Bar</componentType>
+                <chartSummary>
+                    <aggregate>Sum</aggregate>
+                    <axisBinding>y</axisBinding>
+                    <column>Project__c.Project_Members__r.Project_Schedules__r$Scheduled_Revenue__c</column>
+                </chartSummary>
+                <componentType>BarStacked</componentType>
+                <dashboardFilterColumns>
+                    <column>Project__c.Project_Members__r.Project_Schedules__r$Start_Date__c</column>
+                </dashboardFilterColumns>
+                <decimalPrecision>-1</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
                 <drillEnabled>false</drillEnabled>
                 <drillToDetailEnabled>false</drillToDetailEnabled>
-                <enableHover>true</enableHover>
+                <enableHover>false</enableHover>
                 <expandOthers>false</expandOthers>
-                <groupingSortProperties/>
+                <footer>Report: Project Financials.v5</footer>
+                <groupingColumn>Project__c.Project_Members__r$Staff_Member__c</groupingColumn>
+                <groupingColumn>Project__c.Project_Members__r.Project_Schedules__r$Start_Date__c</groupingColumn>
+                <groupingSortProperties>
+                    <groupingSorts>
+                        <groupingLevel>g1</groupingLevel>
+                        <sortOrder>a</sortOrder>
+                    </groupingSorts>
+                    <groupingSorts>
+                        <groupingLevel>g2</groupingLevel>
+                        <sortOrder>a</sortOrder>
+                    </groupingSorts>
+                </groupingSortProperties>
                 <header>Scheduled Dollars in (this date range)</header>
                 <legendPosition>Right</legendPosition>
                 <report>Delivery_Reports/Project_Financials_v5_Person</report>
-                <showValues>true</showValues>
+                <showPercentage>false</showPercentage>
+                <showValues>false</showValues>
                 <sortBy>RowLabelAscending</sortBy>
+                <sortLegendValues>true</sortLegendValues>
+                <title>by Staff Member (and stacked by week)</title>
                 <useReportChart>false</useReportChart>
             </dashboardComponent>
             <rowIndex>55</rowIndex>
@@ -168,7 +435,7 @@
                 <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
                 <componentType>RichText</componentType>
                 <dashboardComponentContents>
-                    <richTextContent>[{"insert":"Section"}]</richTextContent>
+                    <richTextContent>[{\&amp;quot;attributes\&amp;quot;:{\&amp;quot;size\&amp;quot;:\&amp;quot;52px\&amp;quot;,\&amp;quot;color\&amp;quot;:\&amp;quot;#cd96ff\&amp;quot;},\&amp;quot;insert\&amp;quot;:\&amp;quot;Combined\&amp;quot;},{\&amp;quot;attributes\&amp;quot;:{\&amp;quot;align\&amp;quot;:\&amp;quot;center\&amp;quot;},\&amp;quot;insert\&amp;quot;:\&amp;quot;\\n\&amp;quot;}]</richTextContent>
                 </dashboardComponentContents>
                 <groupingSortProperties/>
             </dashboardComponent>
@@ -179,21 +446,71 @@
             <colSpan>10</colSpan>
             <columnIndex>0</columnIndex>
             <dashboardComponent>
-                <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
                 <chartAxisRange>Auto</chartAxisRange>
-                <componentType>Bar</componentType>
+                <chartSummary>
+                    <axisBinding>y</axisBinding>
+                    <column>FORMULA1</column>
+                </chartSummary>
+                <componentType>BarStacked</componentType>
+                <dashboardFilterColumns>
+                    <column>Project__c.Project_Members__r.Project_Schedules__r$Start_Date__c</column>
+                </dashboardFilterColumns>
+                <decimalPrecision>-1</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
                 <drillEnabled>false</drillEnabled>
                 <drillToDetailEnabled>false</drillToDetailEnabled>
-                <enableHover>true</enableHover>
+                <enableHover>false</enableHover>
                 <expandOthers>false</expandOthers>
-                <groupingSortProperties/>
+                <groupingColumn>Project__c$Name</groupingColumn>
+                <groupingColumn>Project__c.Project_Members__r.Project_Schedules__r$Start_Date__c</groupingColumn>
+                <groupingSortProperties>
+                    <groupingSorts>
+                        <groupingLevel>g1</groupingLevel>
+                        <sortOrder>a</sortOrder>
+                    </groupingSorts>
+                    <groupingSorts>
+                        <groupingLevel>g2</groupingLevel>
+                        <sortOrder>a</sortOrder>
+                    </groupingSorts>
+                </groupingSortProperties>
                 <header>Project Financials.v4</header>
                 <legendPosition>Right</legendPosition>
                 <report>Delivery_Reports/Project_Financials_v41</report>
-                <showValues>true</showValues>
+                <showPercentage>false</showPercentage>
+                <showValues>false</showValues>
                 <sortBy>RowLabelAscending</sortBy>
+                <sortLegendValues>true</sortLegendValues>
                 <useReportChart>false</useReportChart>
+            </dashboardComponent>
+            <rowIndex>77</rowIndex>
+            <rowSpan>16</rowSpan>
+        </dashboardGridComponents>
+        <dashboardGridComponents>
+            <colSpan>2</colSpan>
+            <columnIndex>10</columnIndex>
+            <dashboardComponent>
+                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+                <chartSummary>
+                    <column>FORMULA1</column>
+                </chartSummary>
+                <componentType>Metric</componentType>
+                <dashboardFilterColumns>
+                    <column>Project__c.Project_Members__r.Project_Schedules__r$Start_Date__c</column>
+                </dashboardFilterColumns>
+                <decimalPrecision>-1</decimalPrecision>
+                <displayUnits>Auto</displayUnits>
+                <footer>Report: Project Financials.v4</footer>
+                <groupingSortProperties/>
+                <header>Combined (actual plus future scheduled)</header>
+                <indicatorBreakpoint1>33.0</indicatorBreakpoint1>
+                <indicatorBreakpoint2>67.0</indicatorBreakpoint2>
+                <indicatorHighColor>#00716B</indicatorHighColor>
+                <indicatorLowColor>#C23934</indicatorLowColor>
+                <indicatorMiddleColor>#CA8501</indicatorMiddleColor>
+                <metricLabel>Actual dollars plus future scheduled</metricLabel>
+                <report>Delivery_Reports/Project_Financials_v41</report>
+                <showRange>false</showRange>
             </dashboardComponent>
             <rowIndex>77</rowIndex>
             <rowSpan>16</rowSpan>
@@ -202,20 +519,46 @@
             <colSpan>12</colSpan>
             <columnIndex>0</columnIndex>
             <dashboardComponent>
-                <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
                 <chartAxisRange>Auto</chartAxisRange>
+                <chartSummary>
+                    <aggregate>Sum</aggregate>
+                    <axisBinding>y</axisBinding>
+                    <column>Project__c.Project_Members__r.Project_Schedules__r$Scheduled_Revenue__c</column>
+                </chartSummary>
+                <chartSummary>
+                    <aggregate>Sum</aggregate>
+                    <axisBinding>y</axisBinding>
+                    <column>Project__c.Project_Members__r.Project_Schedules__r$Actual_Revenue_Calculated__c</column>
+                </chartSummary>
+                <chartSummary>
+                    <axisBinding>y</axisBinding>
+                    <column>FORMULA2</column>
+                </chartSummary>
                 <componentType>Column</componentType>
+                <dashboardFilterColumns>
+                    <column>Project__c.Project_Members__r.Project_Schedules__r$Start_Date__c</column>
+                </dashboardFilterColumns>
+                <decimalPrecision>-1</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
                 <drillEnabled>false</drillEnabled>
                 <drillToDetailEnabled>false</drillToDetailEnabled>
-                <enableHover>true</enableHover>
+                <enableHover>false</enableHover>
                 <expandOthers>false</expandOthers>
-                <groupingSortProperties/>
+                <groupingColumn>Project__c$Name</groupingColumn>
+                <groupingSortProperties>
+                    <groupingSorts>
+                        <groupingLevel>g1</groupingLevel>
+                        <sortOrder>a</sortOrder>
+                    </groupingSorts>
+                </groupingSortProperties>
                 <header>Project Financials.v4</header>
                 <legendPosition>Right</legendPosition>
                 <report>Delivery_Reports/Project_Financials_v41</report>
+                <showPercentage>false</showPercentage>
                 <showValues>true</showValues>
                 <sortBy>RowLabelAscending</sortBy>
+                <sortLegendValues>true</sortLegendValues>
                 <useReportChart>false</useReportChart>
             </dashboardComponent>
             <rowIndex>93</rowIndex>
@@ -228,7 +571,7 @@
                 <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
                 <componentType>RichText</componentType>
                 <dashboardComponentContents>
-                    <richTextContent>[{"insert":"Section"}]</richTextContent>
+                    <richTextContent>[{\&amp;quot;attributes\&amp;quot;:{\&amp;quot;size\&amp;quot;:\&amp;quot;52px\&amp;quot;,\&amp;quot;color\&amp;quot;:\&amp;quot;#e8963b\&amp;quot;},\&amp;quot;insert\&amp;quot;:\&amp;quot;Adherence\&amp;quot;},{\&amp;quot;attributes\&amp;quot;:{\&amp;quot;align\&amp;quot;:\&amp;quot;center\&amp;quot;},\&amp;quot;insert\&amp;quot;:\&amp;quot;\\n\&amp;quot;}]</richTextContent>
                 </dashboardComponentContents>
                 <groupingSortProperties/>
             </dashboardComponent>
@@ -239,134 +582,42 @@
             <colSpan>12</colSpan>
             <columnIndex>0</columnIndex>
             <dashboardComponent>
-                <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
                 <chartAxisRange>Auto</chartAxisRange>
+                <chartSummary>
+                    <axisBinding>y</axisBinding>
+                    <column>FORMULA2</column>
+                </chartSummary>
                 <componentType>Column</componentType>
+                <dashboardFilterColumns>
+                    <column>Project__c.Project_Members__r.Project_Schedules__r$Start_Date__c</column>
+                </dashboardFilterColumns>
+                <decimalPrecision>-1</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
                 <drillEnabled>false</drillEnabled>
                 <drillToDetailEnabled>false</drillToDetailEnabled>
-                <enableHover>true</enableHover>
+                <enableHover>false</enableHover>
                 <expandOthers>false</expandOthers>
-                <groupingSortProperties/>
+                <footer>Report: Project Financials.v6 (shows negative number if that person hasn&apos;t hit their schedule - positive if over)</footer>
+                <groupingColumn>Project__c.Project_Members__r$Staff_Member__c</groupingColumn>
+                <groupingSortProperties>
+                    <groupingSorts>
+                        <groupingLevel>g1</groupingLevel>
+                        <sortOrder>a</sortOrder>
+                    </groupingSorts>
+                </groupingSortProperties>
                 <header>Schedule Adherence (in dollars)</header>
-                <legendPosition>Right</legendPosition>
+                <legendPosition>Bottom</legendPosition>
                 <report>Delivery_Reports/Project_Financials_v6_Person</report>
+                <showPercentage>false</showPercentage>
                 <showValues>true</showValues>
                 <sortBy>RowLabelAscending</sortBy>
+                <sortLegendValues>true</sortLegendValues>
+                <title>Only works backward in time</title>
                 <useReportChart>false</useReportChart>
             </dashboardComponent>
             <rowIndex>109</rowIndex>
             <rowSpan>20</rowSpan>
-        </dashboardGridComponents>
-        <dashboardGridComponents>
-            <colSpan>4</colSpan>
-            <columnIndex>4</columnIndex>
-            <dashboardComponent>
-                <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
-                <componentType>Metric</componentType>
-                <displayUnits>Auto</displayUnits>
-                <drillEnabled>false</drillEnabled>
-                <drillToDetailEnabled>false</drillToDetailEnabled>
-                <header>Actual Revenue</header>
-                <indicatorBreakpoint1>0.0</indicatorBreakpoint1>
-                <indicatorBreakpoint2>0.0</indicatorBreakpoint2>
-                <indicatorHighColor>#54C254</indicatorHighColor>
-                <indicatorLowColor>#C25454</indicatorLowColor>
-                <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-                <metricLabel>Actual Revenue</metricLabel>
-                <report>Delivery_Reports/Project_Financials_v41</report>
-                <showRange>false</showRange>
-            </dashboardComponent>
-            <rowIndex>3</rowIndex>
-            <rowSpan>4</rowSpan>
-        </dashboardGridComponents>
-        <dashboardGridComponents>
-            <colSpan>4</colSpan>
-            <columnIndex>8</columnIndex>
-            <dashboardComponent>
-                <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
-                <componentType>Metric</componentType>
-                <displayUnits>Auto</displayUnits>
-                <drillEnabled>false</drillEnabled>
-                <drillToDetailEnabled>false</drillToDetailEnabled>
-                <header>Combined Revenue</header>
-                <indicatorBreakpoint1>0.0</indicatorBreakpoint1>
-                <indicatorBreakpoint2>0.0</indicatorBreakpoint2>
-                <indicatorHighColor>#54C254</indicatorHighColor>
-                <indicatorLowColor>#C25454</indicatorLowColor>
-                <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-                <metricLabel>Combined Revenue</metricLabel>
-                <report>Delivery_Reports/Project_Financials_v41</report>
-                <showRange>false</showRange>
-            </dashboardComponent>
-            <rowIndex>3</rowIndex>
-            <rowSpan>4</rowSpan>
-        </dashboardGridComponents>
-        <dashboardGridComponents>
-            <colSpan>2</colSpan>
-            <columnIndex>10</columnIndex>
-            <dashboardComponent>
-                <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
-                <componentType>Metric</componentType>
-                <displayUnits>Auto</displayUnits>
-                <drillEnabled>false</drillEnabled>
-                <drillToDetailEnabled>false</drillToDetailEnabled>
-                <header>Actual Dollars in (this date range)</header>
-                <indicatorBreakpoint1>0.0</indicatorBreakpoint1>
-                <indicatorBreakpoint2>0.0</indicatorBreakpoint2>
-                <indicatorHighColor>#54C254</indicatorHighColor>
-                <indicatorLowColor>#C25454</indicatorLowColor>
-                <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-                <metricLabel>Actual Dollars in (this date range)</metricLabel>
-                <report>Delivery_Reports/Project_Financials_v41</report>
-                <showRange>false</showRange>
-            </dashboardComponent>
-            <rowIndex>10</rowIndex>
-            <rowSpan>11</rowSpan>
-        </dashboardGridComponents>
-        <dashboardGridComponents>
-            <colSpan>2</colSpan>
-            <columnIndex>10</columnIndex>
-            <dashboardComponent>
-                <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
-                <componentType>Metric</componentType>
-                <displayUnits>Auto</displayUnits>
-                <drillEnabled>false</drillEnabled>
-                <drillToDetailEnabled>false</drillToDetailEnabled>
-                <header>Scheduled Dollars in (this date range)</header>
-                <indicatorBreakpoint1>0.0</indicatorBreakpoint1>
-                <indicatorBreakpoint2>0.0</indicatorBreakpoint2>
-                <indicatorHighColor>#54C254</indicatorHighColor>
-                <indicatorLowColor>#C25454</indicatorLowColor>
-                <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-                <metricLabel>Scheduled Dollars in (this date range)</metricLabel>
-                <report>Delivery_Reports/Project_Financials_v41</report>
-                <showRange>false</showRange>
-            </dashboardComponent>
-            <rowIndex>44</rowIndex>
-            <rowSpan>11</rowSpan>
-        </dashboardGridComponents>
-        <dashboardGridComponents>
-            <colSpan>2</colSpan>
-            <columnIndex>10</columnIndex>
-            <dashboardComponent>
-                <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
-                <componentType>Metric</componentType>
-                <displayUnits>Auto</displayUnits>
-                <drillEnabled>false</drillEnabled>
-                <drillToDetailEnabled>false</drillToDetailEnabled>
-                <header>Combined (actual plus future scheduled)</header>
-                <indicatorBreakpoint1>0.0</indicatorBreakpoint1>
-                <indicatorBreakpoint2>0.0</indicatorBreakpoint2>
-                <indicatorHighColor>#54C254</indicatorHighColor>
-                <indicatorLowColor>#C25454</indicatorLowColor>
-                <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-                <metricLabel>Combined (actual plus future scheduled)</metricLabel>
-                <report>Delivery_Reports/Project_Financials_v41</report>
-                <showRange>false</showRange>
-            </dashboardComponent>
-            <rowIndex>77</rowIndex>
-            <rowSpan>16</rowSpan>
         </dashboardGridComponents>
         <numberOfColumns>12</numberOfColumns>
         <rowHeight>36</rowHeight>
