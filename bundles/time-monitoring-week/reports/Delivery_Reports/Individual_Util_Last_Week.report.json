@@ -64,7 +64,7 @@
       "label": "Contacts w/w/o Staff Weeks w/w/o Time",
       "type": "Revecast__Contacts_w_Staff_Weeks_w_Time__c"
     },
-    "scope": "user",
+    "scope": "organization",
     "showGrandTotal": true,
     "showSubtotals": true,
     "sortBy": [],

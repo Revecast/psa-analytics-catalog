@@ -50,7 +50,7 @@
       "label": "Projects w/ Week Schedules w/ Time",
       "type": "Revecast__Projects_w_Week_Schedules_w_Time__c"
     },
-    "scope": "user",
+    "scope": "organization",
     "showGrandTotal": true,
     "showSubtotals": true,
     "sortBy": [],

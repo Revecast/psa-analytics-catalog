@@ -69,7 +69,7 @@
         <value>1</value>
     </params>
     <reportType>CustomEntity$Time_Entry__c@Time_Entry__c.Staff_Week__c</reportType>
-    <scope>user</scope>
+    <scope>organization</scope>
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>

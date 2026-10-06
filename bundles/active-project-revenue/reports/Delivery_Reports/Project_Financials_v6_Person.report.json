@@ -65,7 +65,7 @@
       "label": "Projects with Members and Schedules",
       "type": "Revecast__Projects_with_Members_and_Schedules__c"
     },
-    "scope": "user",
+    "scope": "organization",
     "showGrandTotal": true,
     "showSubtotals": true,
     "sortBy": [],
