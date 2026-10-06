@@ -3,16 +3,98 @@
     "aggregates": [
       "s!Revecast__Project_Schedule__c.Revecast__Scheduled_Revenue__c",
       "s!Revecast__Project_Schedule__c.Revecast__Actual_Revenue_Calculated__c",
-      "RowCount"
+      "s!CDF1",
+      "FORMULA1",
+      "FORMULA2",
+      "FORMULA3"
     ],
-    "chart": null,
+    "chart": {
+      "chartType": "Vertical Bar",
+      "groupings": [
+        "Revecast__Project_Schedule__c.Revecast__End_Date__c"
+      ],
+      "hasLegend": false,
+      "legendPosition": null,
+      "referenceLineColors": [
+        null
+      ],
+      "referenceLineValues": [
+        null
+      ],
+      "showChartPercentages": false,
+      "showChartTotal": false,
+      "showChartValues": true,
+      "summaries": [
+        "FORMULA1"
+      ],
+      "summaryAxisLocations": [
+        "Y"
+      ],
+      "summaryColors": [
+        null
+      ],
+      "summaryVisualizationTypes": [
+        "Column"
+      ],
+      "title": "By Time"
+    },
     "crossFilters": [],
     "currency": null,
+    "customDetailFormula": {
+      "CDF1": {
+        "dataType": "double",
+        "decimalPlaces": 2,
+        "description": null,
+        "formula": "IF(\n    OR(\n        TEXT(Revecast__Project_Schedule__c.Revecast__Status__c)=\"Scheduled\",\n        TEXT(Revecast__Project_Schedule__c.Revecast__Status__c)=\"In Progress\"),\nRevecast__Project_Schedule__c.Revecast__Scheduled_Revenue__c-Revecast__Project_Schedule__c.Revecast__Actual_Revenue_Calculated__c,\n0\n)",
+        "formulaType": "number",
+        "label": "Future Scheduled Revenue"
+      }
+    },
+    "customSummaryFormula": {
+      "FORMULA1": {
+        "acrossGroup": null,
+        "acrossGroupType": "all",
+        "decimalPlaces": 2,
+        "description": null,
+        "downGroup": null,
+        "downGroupType": "all",
+        "formula": "Revecast__Project_Schedule__c.Revecast__Actual_Revenue_Calculated__c:SUM + CDF1:SUM",
+        "formulaType": "number",
+        "label": "Combined"
+      },
+      "FORMULA2": {
+        "acrossGroup": null,
+        "acrossGroupType": "all",
+        "decimalPlaces": 2,
+        "description": null,
+        "downGroup": null,
+        "downGroupType": "all",
+        "formula": "(Revecast__Project_Schedule__c.Revecast__Total_Time_Logged_Billable__c:SUM + Revecast__Project_Schedule__c.Revecast__Total_Time_Logged_Non_Billable__c:SUM + Revecast__Project_Schedule__c.Revecast__Total_Time_Logged_Override__c:SUM) - Revecast__Project_Schedule__c.Revecast__Scheduled_Hours_this_week__c:SUM",
+        "formulaType": "number",
+        "label": "Difference in Hours"
+      },
+      "FORMULA3": {
+        "acrossGroup": null,
+        "acrossGroupType": "all",
+        "decimalPlaces": 2,
+        "description": null,
+        "downGroup": null,
+        "downGroupType": "all",
+        "formula": "Revecast__Project_Schedule__c.Revecast__Actual_Revenue_Calculated__c:SUM - Revecast__Project_Schedule__c.Revecast__Scheduled_Revenue__c:SUM",
+        "formulaType": "number",
+        "label": "Difference in Dollars"
+      }
+    },
     "dashboardSetting": null,
-    "description": null,
+    "description": "Used in revenue dashboard",
     "detailColumns": [
+      "Revecast__Project__c.Name",
+      "Revecast__Project_Member__c.Name",
+      "Revecast__Project_Schedule__c.Name",
       "Revecast__Project_Schedule__c.Revecast__Scheduled_Revenue__c",
-      "Revecast__Project_Schedule__c.Revecast__Actual_Revenue_Calculated__c"
+      "Revecast__Project_Schedule__c.Revecast__Scheduled_Actual__c",
+      "Revecast__Project_Schedule__c.Revecast__Actual_Revenue_Calculated__c",
+      "CDF1"
     ],
     "developerName": "Project_Financials_v6_Person",
     "division": null,
@@ -20,44 +102,80 @@
     "groupingsDown": [
       {
         "dateGranularity": "None",
-        "name": "Revecast__Project_Member__c.Name",
+        "name": "Revecast__Project_Member__c.Revecast__Staff_Member__c.Name",
         "sortAggregate": null,
         "sortOrder": "Asc"
       },
       {
-        "dateGranularity": "Day",
+        "dateGranularity": "Month",
         "name": "Revecast__Project_Schedule__c.Revecast__End_Date__c",
         "sortAggregate": null,
         "sortOrder": "Asc"
       },
       {
-        "dateGranularity": "Day",
+        "dateGranularity": "Week",
         "name": "Revecast__Project_Schedule__c.Revecast__Start_Date__c",
         "sortAggregate": null,
         "sortOrder": "Asc"
       }
     ],
     "hasDetailRows": true,
-    "hasRecordCount": true,
+    "hasRecordCount": false,
     "historicalSnapshotDates": [],
     "name": "Project Financials v6 by Person",
     "presentationOptions": {
       "hasStackedSummaries": true
     },
+    "reportBooleanFilter": "((1 AND 2 AND (3 OR 4) AND 5) AND 6) AND 7",
     "reportFilters": [
       {
         "column": "Revecast__Project__c.Revecast__Project_Type__c",
         "filterType": "fieldValue",
-        "isRunPageEditable": false,
+        "isRunPageEditable": true,
         "operator": "equals",
         "value": "External Project,Managed Services"
       },
       {
         "column": "Revecast__Project__c.Revecast__Status__c",
         "filterType": "fieldValue",
-        "isRunPageEditable": false,
+        "isRunPageEditable": true,
         "operator": "notEqual",
         "value": "Pending"
+      },
+      {
+        "column": "Revecast__Project_Schedule__c.Revecast__Scheduled_Revenue__c",
+        "filterType": "fieldValue",
+        "isRunPageEditable": true,
+        "operator": "greaterThan",
+        "value": "0"
+      },
+      {
+        "column": "Revecast__Project_Schedule__c.Revecast__Actual_Revenue_Calculated__c",
+        "filterType": "fieldValue",
+        "isRunPageEditable": true,
+        "operator": "greaterThan",
+        "value": "0"
+      },
+      {
+        "column": "Revecast__Project__c.Revecast__Status__c",
+        "filterType": "fieldValue",
+        "isRunPageEditable": true,
+        "operator": "equals",
+        "value": "In Progress,Closed"
+      },
+      {
+        "column": "Revecast__Project_Schedule__c.Revecast__Start_Date__c",
+        "filterType": "fieldValue",
+        "isRunPageEditable": false,
+        "operator": "equals",
+        "value": "LAST 8 MONTHS"
+      },
+      {
+        "column": "Revecast__Project_Schedule__c.Revecast__Start_Date__c",
+        "filterType": "fieldValue",
+        "isRunPageEditable": false,
+        "operator": "equals",
+        "value": "LAST 8 MONTHS"
       }
     ],
     "reportFormat": "SUMMARY",
@@ -70,10 +188,10 @@
     "showSubtotals": true,
     "sortBy": [],
     "standardDateFilter": {
-      "column": "Revecast__Project_Schedule__c.Revecast__Start_Date__c",
-      "durationValue": "THIS_FISCAL_QUARTER",
-      "endDate": "2026-06-30",
-      "startDate": "2026-04-01"
+      "column": "Revecast__Project__c.CreatedDate",
+      "durationValue": "CUSTOM",
+      "endDate": null,
+      "startDate": null
     },
     "standardFilters": null,
     "supportsRoleHierarchy": false,

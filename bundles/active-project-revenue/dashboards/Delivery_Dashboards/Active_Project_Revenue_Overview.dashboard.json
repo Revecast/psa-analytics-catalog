@@ -1,8 +1,8 @@
 {
   "canChangeRunningUser": false,
   "canUseStickyFilter": true,
-  "chartTheme": null,
-  "colorPalette": null,
+  "chartTheme": "dark",
+  "colorPalette": "water",
   "components": [
     {
       "chartTheme": null,
@@ -12,7 +12,7 @@
       "properties": {
         "content": {
           "additionalInfo": null,
-          "richTextContent": "[{\"insert\":\"Section\"}]"
+          "richTextContent": "[{\"attributes\":{\"size\":\"52px\",\"color\":\"#00b531\"},\"insert\":\"Overview\"},{\"attributes\":{\"align\":\"center\"},\"insert\":\"\\n\"}]"
         },
         "visualizationType": "RichText"
       },
@@ -23,31 +23,58 @@
     {
       "chartTheme": null,
       "componentData": 0,
-      "footer": null,
+      "footer": "Report: project financials.v4",
       "header": "Combined Revenue",
       "properties": {
         "aggregates": [
           {
-            "name": "s!Revecast__Project_Schedule__c.Revecast__Scheduled_Revenue__c"
+            "name": "FORMULA1"
           }
         ],
-        "autoSelectColumns": true,
+        "autoSelectColumns": false,
         "drillUrl": null,
-        "filterColumns": [],
+        "filterColumns": [
+          {
+            "label": "Start Date",
+            "name": "Revecast__Project_Schedule__c.Revecast__Start_Date__c"
+          }
+        ],
         "groupings": null,
         "maxRows": null,
         "reportFormat": "SUMMARY",
         "sort": null,
         "useReportChart": false,
         "visualizationProperties": {
-          "decimalPrecision": null,
+          "breakPoints": [
+            {
+              "aggregateName": "FORMULA1",
+              "breaks": [
+                {
+                  "color": "c23934",
+                  "lowerBound": null,
+                  "upperBound": 33
+                },
+                {
+                  "color": "ca8501",
+                  "lowerBound": 33,
+                  "upperBound": 67
+                },
+                {
+                  "color": "00716b",
+                  "lowerBound": 67,
+                  "upperBound": null
+                }
+              ]
+            }
+          ],
+          "decimalPrecision": -1,
           "displayUnits": "auto",
-          "metricLabel": "Combined Revenue",
+          "metricLabel": "Actual plus Future Scheduled",
           "showRange": false
         },
         "visualizationType": "Metric"
       },
-      "reportId": "00OcU000004nCovUAE",
+      "reportId": null,
       "title": null,
       "type": "Report",
       "__devName": "Project_Financials_v41"
@@ -55,31 +82,58 @@
     {
       "chartTheme": null,
       "componentData": 1,
-      "footer": null,
+      "footer": "Report: Project Financials.v4",
       "header": "Actual Dollars in (this date range)",
       "properties": {
         "aggregates": [
           {
-            "name": "s!Revecast__Project_Schedule__c.Revecast__Scheduled_Revenue__c"
+            "name": "s!Revecast__Project_Schedule__c.Revecast__Actual_Revenue_Calculated__c"
           }
         ],
-        "autoSelectColumns": true,
+        "autoSelectColumns": false,
         "drillUrl": null,
-        "filterColumns": [],
+        "filterColumns": [
+          {
+            "label": "Start Date",
+            "name": "Revecast__Project_Schedule__c.Revecast__Start_Date__c"
+          }
+        ],
         "groupings": null,
         "maxRows": null,
         "reportFormat": "SUMMARY",
         "sort": null,
         "useReportChart": false,
         "visualizationProperties": {
-          "decimalPrecision": null,
+          "breakPoints": [
+            {
+              "aggregateName": "s!Revecast__Project_Schedule__c.Revecast__Actual_Revenue_Calculated__c",
+              "breaks": [
+                {
+                  "color": "c23934",
+                  "lowerBound": null,
+                  "upperBound": 33
+                },
+                {
+                  "color": "ca8501",
+                  "lowerBound": 33,
+                  "upperBound": 67
+                },
+                {
+                  "color": "00716b",
+                  "lowerBound": 67,
+                  "upperBound": null
+                }
+              ]
+            }
+          ],
+          "decimalPrecision": -1,
           "displayUnits": "auto",
-          "metricLabel": "Actual Dollars in (this date range)",
+          "metricLabel": "Total",
           "showRange": false
         },
         "visualizationType": "Metric"
       },
-      "reportId": "00OcU000004nCovUAE",
+      "reportId": null,
       "title": null,
       "type": "Report",
       "__devName": "Project_Financials_v41"
@@ -87,7 +141,7 @@
     {
       "chartTheme": null,
       "componentData": 2,
-      "footer": null,
+      "footer": "Report: Project Financials.v4",
       "header": "Scheduled Dollars in (this date range)",
       "properties": {
         "aggregates": [
@@ -95,15 +149,26 @@
             "name": "s!Revecast__Project_Schedule__c.Revecast__Scheduled_Revenue__c"
           }
         ],
-        "autoSelectColumns": true,
+        "autoSelectColumns": false,
         "drillUrl": null,
-        "filterColumns": [],
+        "filterColumns": [
+          {
+            "label": "Start Date",
+            "name": "Revecast__Project_Schedule__c.Revecast__Start_Date__c"
+          }
+        ],
         "groupings": [
           {
-            "inheritedReportSort": "reportGrouping",
+            "inheritedReportSort": null,
             "name": "Revecast__Project__c.Name",
             "sortAggregate": null,
-            "sortOrder": null
+            "sortOrder": "Asc"
+          },
+          {
+            "inheritedReportSort": null,
+            "name": "Revecast__Project_Schedule__c.Revecast__Start_Date__c",
+            "sortAggregate": null,
+            "sortOrder": "Asc"
           }
         ],
         "maxRows": null,
@@ -116,17 +181,17 @@
             "min": null,
             "rangeType": "auto"
           },
-          "decimalPrecision": null,
+          "decimalPrecision": -1,
           "displayUnits": "auto",
-          "groupByType": "none",
+          "groupByType": "stacked",
           "legendPosition": "Right",
           "showChatterPhotos": false,
-          "showValues": true
+          "showValues": false
         },
         "visualizationType": "Bar"
       },
-      "reportId": "00OcU000004nCovUAE",
-      "title": null,
+      "reportId": null,
+      "title": "By Project (and stacked by week)",
       "type": "Report",
       "__devName": "Project_Financials_v41"
     },
@@ -138,7 +203,7 @@
       "properties": {
         "content": {
           "additionalInfo": null,
-          "richTextContent": "[{\"insert\":\"Section\"}]"
+          "richTextContent": "[{\"attributes\":{\"size\":\"52px\",\"color\":\"#cd96ff\"},\"insert\":\"Combined\"},{\"attributes\":{\"align\":\"center\"},\"insert\":\"\\n\"}]"
         },
         "visualizationType": "RichText"
       },
@@ -155,17 +220,28 @@
         "aggregates": [
           {
             "name": "s!Revecast__Project_Schedule__c.Revecast__Scheduled_Revenue__c"
+          },
+          {
+            "name": "s!Revecast__Project_Schedule__c.Revecast__Actual_Revenue_Calculated__c"
+          },
+          {
+            "name": "FORMULA2"
           }
         ],
-        "autoSelectColumns": true,
+        "autoSelectColumns": false,
         "drillUrl": null,
-        "filterColumns": [],
+        "filterColumns": [
+          {
+            "label": "Start Date",
+            "name": "Revecast__Project_Schedule__c.Revecast__Start_Date__c"
+          }
+        ],
         "groupings": [
           {
-            "inheritedReportSort": "reportGrouping",
+            "inheritedReportSort": null,
             "name": "Revecast__Project__c.Name",
             "sortAggregate": null,
-            "sortOrder": null
+            "sortOrder": "Asc"
           }
         ],
         "maxRows": null,
@@ -177,6 +253,14 @@
             {
               "axis": "Y",
               "visualizationType": "Column"
+            },
+            {
+              "axis": "Y",
+              "visualizationType": "Column"
+            },
+            {
+              "axis": "Y",
+              "visualizationType": "Column"
             }
           ],
           "axisRange": {
@@ -184,7 +268,7 @@
             "min": null,
             "rangeType": "auto"
           },
-          "decimalPrecision": null,
+          "decimalPrecision": -1,
           "displayUnits": "auto",
           "groupByType": "none",
           "legendPosition": "Right",
@@ -192,7 +276,7 @@
         },
         "visualizationType": "Column"
       },
-      "reportId": "00OcU000004nCovUAE",
+      "reportId": null,
       "title": null,
       "type": "Report",
       "__devName": "Project_Financials_v41"
@@ -200,7 +284,7 @@
     {
       "chartTheme": null,
       "componentData": 4,
-      "footer": null,
+      "footer": "Report: project financials.v4",
       "header": "Scheduled Revenue",
       "properties": {
         "aggregates": [
@@ -208,23 +292,50 @@
             "name": "s!Revecast__Project_Schedule__c.Revecast__Scheduled_Revenue__c"
           }
         ],
-        "autoSelectColumns": true,
+        "autoSelectColumns": false,
         "drillUrl": null,
-        "filterColumns": [],
+        "filterColumns": [
+          {
+            "label": "Start Date",
+            "name": "Revecast__Project_Schedule__c.Revecast__Start_Date__c"
+          }
+        ],
         "groupings": null,
         "maxRows": null,
         "reportFormat": "SUMMARY",
         "sort": null,
         "useReportChart": false,
         "visualizationProperties": {
-          "decimalPrecision": null,
+          "breakPoints": [
+            {
+              "aggregateName": "s!Revecast__Project_Schedule__c.Revecast__Scheduled_Revenue__c",
+              "breaks": [
+                {
+                  "color": "c23934",
+                  "lowerBound": null,
+                  "upperBound": 33
+                },
+                {
+                  "color": "ca8501",
+                  "lowerBound": 33,
+                  "upperBound": 67
+                },
+                {
+                  "color": "00716b",
+                  "lowerBound": 67,
+                  "upperBound": null
+                }
+              ]
+            }
+          ],
+          "decimalPrecision": -1,
           "displayUnits": "auto",
-          "metricLabel": "Scheduled Revenue",
+          "metricLabel": null,
           "showRange": false
         },
         "visualizationType": "Metric"
       },
-      "reportId": "00OcU000004nCovUAE",
+      "reportId": null,
       "title": null,
       "type": "Report",
       "__devName": "Project_Financials_v41"
@@ -237,7 +348,7 @@
       "properties": {
         "content": {
           "additionalInfo": null,
-          "richTextContent": "[{\"insert\":\"Section\"}]"
+          "richTextContent": "[{\"attributes\":{\"size\":\"52px\",\"color\":\"#00b531\"},\"insert\":\"Actual\"},{\"attributes\":{\"align\":\"center\"},\"insert\":\"\\n\"}]"
         },
         "visualizationType": "RichText"
       },
@@ -248,23 +359,34 @@
     {
       "chartTheme": null,
       "componentData": 5,
-      "footer": null,
+      "footer": "Report: Project Financials.v5",
       "header": "Actual Dollars in (this date range)",
       "properties": {
         "aggregates": [
           {
-            "name": "s!Revecast__Project_Schedule__c.Revecast__Scheduled_Revenue__c"
+            "name": "s!Revecast__Project_Schedule__c.Revecast__Actual_Revenue_Calculated__c"
           }
         ],
-        "autoSelectColumns": true,
+        "autoSelectColumns": false,
         "drillUrl": null,
-        "filterColumns": [],
+        "filterColumns": [
+          {
+            "label": "Start Date",
+            "name": "Revecast__Project_Schedule__c.Revecast__Start_Date__c"
+          }
+        ],
         "groupings": [
           {
-            "inheritedReportSort": "reportGrouping",
-            "name": "Revecast__Project_Member__c.Name",
+            "inheritedReportSort": null,
+            "name": "Revecast__Project_Member__c.Revecast__Staff_Member__c.Name",
             "sortAggregate": null,
-            "sortOrder": null
+            "sortOrder": "Asc"
+          },
+          {
+            "inheritedReportSort": null,
+            "name": "Revecast__Project_Schedule__c.Revecast__Start_Date__c",
+            "sortAggregate": null,
+            "sortOrder": "Asc"
           }
         ],
         "maxRows": null,
@@ -277,24 +399,24 @@
             "min": null,
             "rangeType": "auto"
           },
-          "decimalPrecision": null,
+          "decimalPrecision": -1,
           "displayUnits": "auto",
-          "groupByType": "none",
+          "groupByType": "stacked",
           "legendPosition": "Right",
           "showChatterPhotos": false,
-          "showValues": true
+          "showValues": false
         },
         "visualizationType": "Bar"
       },
-      "reportId": "00OcU000004nCgsUAE",
-      "title": null,
+      "reportId": null,
+      "title": "By Staff Member (and stacked by week)",
       "type": "Report",
       "__devName": "Project_Financials_v5_Person"
     },
     {
       "chartTheme": null,
       "componentData": 6,
-      "footer": null,
+      "footer": "Report: Project Financials.v4",
       "header": "Scheduled Dollars in (this date range)",
       "properties": {
         "aggregates": [
@@ -302,23 +424,50 @@
             "name": "s!Revecast__Project_Schedule__c.Revecast__Scheduled_Revenue__c"
           }
         ],
-        "autoSelectColumns": true,
+        "autoSelectColumns": false,
         "drillUrl": null,
-        "filterColumns": [],
+        "filterColumns": [
+          {
+            "label": "Start Date",
+            "name": "Revecast__Project_Schedule__c.Revecast__Start_Date__c"
+          }
+        ],
         "groupings": null,
         "maxRows": null,
         "reportFormat": "SUMMARY",
         "sort": null,
         "useReportChart": false,
         "visualizationProperties": {
-          "decimalPrecision": null,
+          "breakPoints": [
+            {
+              "aggregateName": "s!Revecast__Project_Schedule__c.Revecast__Scheduled_Revenue__c",
+              "breaks": [
+                {
+                  "color": "c23934",
+                  "lowerBound": null,
+                  "upperBound": 33
+                },
+                {
+                  "color": "ca8501",
+                  "lowerBound": 33,
+                  "upperBound": 67
+                },
+                {
+                  "color": "00716b",
+                  "lowerBound": 67,
+                  "upperBound": null
+                }
+              ]
+            }
+          ],
+          "decimalPrecision": -1,
           "displayUnits": "auto",
-          "metricLabel": "Scheduled Dollars in (this date range)",
+          "metricLabel": "Total",
           "showRange": false
         },
         "visualizationType": "Metric"
       },
-      "reportId": "00OcU000004nCovUAE",
+      "reportId": null,
       "title": null,
       "type": "Report",
       "__devName": "Project_Financials_v41"
@@ -331,18 +480,29 @@
       "properties": {
         "aggregates": [
           {
-            "name": "s!Revecast__Project_Schedule__c.Revecast__Scheduled_Revenue__c"
+            "name": "FORMULA1"
           }
         ],
-        "autoSelectColumns": true,
+        "autoSelectColumns": false,
         "drillUrl": null,
-        "filterColumns": [],
+        "filterColumns": [
+          {
+            "label": "Start Date",
+            "name": "Revecast__Project_Schedule__c.Revecast__Start_Date__c"
+          }
+        ],
         "groupings": [
           {
-            "inheritedReportSort": "reportGrouping",
+            "inheritedReportSort": null,
             "name": "Revecast__Project__c.Name",
             "sortAggregate": null,
-            "sortOrder": null
+            "sortOrder": "Asc"
+          },
+          {
+            "inheritedReportSort": null,
+            "name": "Revecast__Project_Schedule__c.Revecast__Start_Date__c",
+            "sortAggregate": null,
+            "sortOrder": "Asc"
           }
         ],
         "maxRows": null,
@@ -355,16 +515,16 @@
             "min": null,
             "rangeType": "auto"
           },
-          "decimalPrecision": null,
+          "decimalPrecision": -1,
           "displayUnits": "auto",
-          "groupByType": "none",
+          "groupByType": "stacked",
           "legendPosition": "Right",
           "showChatterPhotos": false,
-          "showValues": true
+          "showValues": false
         },
         "visualizationType": "Bar"
       },
-      "reportId": "00OcU000004nCovUAE",
+      "reportId": null,
       "title": null,
       "type": "Report",
       "__devName": "Project_Financials_v41"
@@ -377,7 +537,7 @@
       "properties": {
         "content": {
           "additionalInfo": null,
-          "richTextContent": "[{\"insert\":\"Section\"}]"
+          "richTextContent": "[{\"attributes\":{\"size\":\"52px\",\"color\":\"#e8963b\"},\"insert\":\"Adherence\"},{\"attributes\":{\"align\":\"center\"},\"insert\":\"\\n\"}]"
         },
         "visualizationType": "RichText"
       },
@@ -388,31 +548,58 @@
     {
       "chartTheme": null,
       "componentData": 8,
-      "footer": null,
+      "footer": "Report: project financials.v4",
       "header": "Actual Revenue",
       "properties": {
         "aggregates": [
           {
-            "name": "s!Revecast__Project_Schedule__c.Revecast__Scheduled_Revenue__c"
+            "name": "s!Revecast__Project_Schedule__c.Revecast__Actual_Revenue_Calculated__c"
           }
         ],
-        "autoSelectColumns": true,
+        "autoSelectColumns": false,
         "drillUrl": null,
-        "filterColumns": [],
+        "filterColumns": [
+          {
+            "label": "Start Date",
+            "name": "Revecast__Project_Schedule__c.Revecast__Start_Date__c"
+          }
+        ],
         "groupings": null,
         "maxRows": null,
         "reportFormat": "SUMMARY",
         "sort": null,
         "useReportChart": false,
         "visualizationProperties": {
-          "decimalPrecision": null,
+          "breakPoints": [
+            {
+              "aggregateName": "s!Revecast__Project_Schedule__c.Revecast__Actual_Revenue_Calculated__c",
+              "breaks": [
+                {
+                  "color": "c23934",
+                  "lowerBound": null,
+                  "upperBound": 33
+                },
+                {
+                  "color": "ca8501",
+                  "lowerBound": 33,
+                  "upperBound": 67
+                },
+                {
+                  "color": "00716b",
+                  "lowerBound": 67,
+                  "upperBound": null
+                }
+              ]
+            }
+          ],
+          "decimalPrecision": -1,
           "displayUnits": "auto",
-          "metricLabel": "Actual Revenue",
+          "metricLabel": null,
           "showRange": false
         },
         "visualizationType": "Metric"
       },
-      "reportId": "00OcU000004nCovUAE",
+      "reportId": null,
       "title": null,
       "type": "Report",
       "__devName": "Project_Financials_v41"
@@ -420,23 +607,34 @@
     {
       "chartTheme": null,
       "componentData": 9,
-      "footer": null,
+      "footer": "Report: Project Financials.v4",
       "header": "Actual Dollars in (this date range)",
       "properties": {
         "aggregates": [
           {
-            "name": "s!Revecast__Project_Schedule__c.Revecast__Scheduled_Revenue__c"
+            "name": "s!Revecast__Project_Schedule__c.Revecast__Actual_Revenue_Calculated__c"
           }
         ],
-        "autoSelectColumns": true,
+        "autoSelectColumns": false,
         "drillUrl": null,
-        "filterColumns": [],
+        "filterColumns": [
+          {
+            "label": "Start Date",
+            "name": "Revecast__Project_Schedule__c.Revecast__Start_Date__c"
+          }
+        ],
         "groupings": [
           {
-            "inheritedReportSort": "reportGrouping",
+            "inheritedReportSort": null,
             "name": "Revecast__Project__c.Name",
             "sortAggregate": null,
-            "sortOrder": null
+            "sortOrder": "Asc"
+          },
+          {
+            "inheritedReportSort": null,
+            "name": "Revecast__Project_Schedule__c.Revecast__Start_Date__c",
+            "sortAggregate": null,
+            "sortOrder": "Asc"
           }
         ],
         "maxRows": null,
@@ -449,17 +647,17 @@
             "min": null,
             "rangeType": "auto"
           },
-          "decimalPrecision": null,
+          "decimalPrecision": -1,
           "displayUnits": "auto",
-          "groupByType": "none",
+          "groupByType": "stacked",
           "legendPosition": "Right",
           "showChatterPhotos": false,
-          "showValues": true
+          "showValues": false
         },
         "visualizationType": "Bar"
       },
-      "reportId": "00OcU000004nCovUAE",
-      "title": null,
+      "reportId": null,
+      "title": "By Project (and stacked by week)",
       "type": "Report",
       "__devName": "Project_Financials_v41"
     },
@@ -471,7 +669,7 @@
       "properties": {
         "content": {
           "additionalInfo": null,
-          "richTextContent": "[{\"insert\":\"Section\"}]"
+          "richTextContent": "[{\"attributes\":{\"color\":\"#963ce8\",\"size\":\"52px\"},\"insert\":\"Scheduled\"},{\"attributes\":{\"align\":\"center\"},\"insert\":\"\\n\"}]"
         },
         "visualizationType": "RichText"
       },
@@ -482,7 +680,7 @@
     {
       "chartTheme": null,
       "componentData": 10,
-      "footer": null,
+      "footer": "Report: Project Financials.v5",
       "header": "Scheduled Dollars in (this date range)",
       "properties": {
         "aggregates": [
@@ -490,15 +688,26 @@
             "name": "s!Revecast__Project_Schedule__c.Revecast__Scheduled_Revenue__c"
           }
         ],
-        "autoSelectColumns": true,
+        "autoSelectColumns": false,
         "drillUrl": null,
-        "filterColumns": [],
+        "filterColumns": [
+          {
+            "label": "Start Date",
+            "name": "Revecast__Project_Schedule__c.Revecast__Start_Date__c"
+          }
+        ],
         "groupings": [
           {
-            "inheritedReportSort": "reportGrouping",
-            "name": "Revecast__Project_Member__c.Name",
+            "inheritedReportSort": null,
+            "name": "Revecast__Project_Member__c.Revecast__Staff_Member__c.Name",
             "sortAggregate": null,
-            "sortOrder": null
+            "sortOrder": "Asc"
+          },
+          {
+            "inheritedReportSort": null,
+            "name": "Revecast__Project_Schedule__c.Revecast__Start_Date__c",
+            "sortAggregate": null,
+            "sortOrder": "Asc"
           }
         ],
         "maxRows": null,
@@ -511,48 +720,75 @@
             "min": null,
             "rangeType": "auto"
           },
-          "decimalPrecision": null,
+          "decimalPrecision": -1,
           "displayUnits": "auto",
-          "groupByType": "none",
+          "groupByType": "stacked",
           "legendPosition": "Right",
           "showChatterPhotos": false,
-          "showValues": true
+          "showValues": false
         },
         "visualizationType": "Bar"
       },
-      "reportId": "00OcU000004nCgsUAE",
-      "title": null,
+      "reportId": null,
+      "title": "by Staff Member (and stacked by week)",
       "type": "Report",
       "__devName": "Project_Financials_v5_Person"
     },
     {
       "chartTheme": null,
       "componentData": 11,
-      "footer": null,
+      "footer": "Report: Project Financials.v4",
       "header": "Combined (actual plus future scheduled)",
       "properties": {
         "aggregates": [
           {
-            "name": "s!Revecast__Project_Schedule__c.Revecast__Scheduled_Revenue__c"
+            "name": "FORMULA1"
           }
         ],
-        "autoSelectColumns": true,
+        "autoSelectColumns": false,
         "drillUrl": null,
-        "filterColumns": [],
+        "filterColumns": [
+          {
+            "label": "Start Date",
+            "name": "Revecast__Project_Schedule__c.Revecast__Start_Date__c"
+          }
+        ],
         "groupings": null,
         "maxRows": null,
         "reportFormat": "SUMMARY",
         "sort": null,
         "useReportChart": false,
         "visualizationProperties": {
-          "decimalPrecision": null,
+          "breakPoints": [
+            {
+              "aggregateName": "FORMULA1",
+              "breaks": [
+                {
+                  "color": "c23934",
+                  "lowerBound": null,
+                  "upperBound": 33
+                },
+                {
+                  "color": "ca8501",
+                  "lowerBound": 33,
+                  "upperBound": 67
+                },
+                {
+                  "color": "00716b",
+                  "lowerBound": 67,
+                  "upperBound": null
+                }
+              ]
+            }
+          ],
+          "decimalPrecision": -1,
           "displayUnits": "auto",
-          "metricLabel": "Combined (actual plus future scheduled)",
+          "metricLabel": "Actual dollars plus future scheduled",
           "showRange": false
         },
         "visualizationType": "Metric"
       },
-      "reportId": "00OcU000004nCovUAE",
+      "reportId": null,
       "title": null,
       "type": "Report",
       "__devName": "Project_Financials_v41"
@@ -560,23 +796,28 @@
     {
       "chartTheme": null,
       "componentData": 12,
-      "footer": null,
+      "footer": "Report: Project Financials.v6 (shows negative number if that person hasn't hit their schedule - positive if over)",
       "header": "Schedule Adherence (in dollars)",
       "properties": {
         "aggregates": [
           {
-            "name": "s!Revecast__Project_Schedule__c.Revecast__Scheduled_Revenue__c"
+            "name": "FORMULA2"
           }
         ],
-        "autoSelectColumns": true,
+        "autoSelectColumns": false,
         "drillUrl": null,
-        "filterColumns": [],
+        "filterColumns": [
+          {
+            "label": "Start Date",
+            "name": "Revecast__Project_Schedule__c.Revecast__Start_Date__c"
+          }
+        ],
         "groupings": [
           {
-            "inheritedReportSort": "reportGrouping",
-            "name": "Revecast__Project_Member__c.Name",
+            "inheritedReportSort": null,
+            "name": "Revecast__Project_Member__c.Revecast__Staff_Member__c.Name",
             "sortAggregate": null,
-            "sortOrder": null
+            "sortOrder": "Asc"
           }
         ],
         "maxRows": null,
@@ -595,16 +836,16 @@
             "min": null,
             "rangeType": "auto"
           },
-          "decimalPrecision": null,
+          "decimalPrecision": -1,
           "displayUnits": "auto",
           "groupByType": "none",
-          "legendPosition": "Right",
+          "legendPosition": "Bottom",
           "showValues": true
         },
         "visualizationType": "Column"
       },
-      "reportId": "00OcU000004n09VUAQ",
-      "title": null,
+      "reportId": null,
+      "title": "Only works backward in time",
       "type": "Report",
       "__devName": "Project_Financials_v6_Person"
     }
@@ -612,7 +853,86 @@
   "dashboardType": "SpecifiedUser",
   "description": null,
   "developerName": "Active_Project_Revenue_Overview",
-  "filters": [],
+  "filters": [
+    {
+      "dataType": "date",
+      "errorMessage": null,
+      "name": "Start Date (Week)",
+      "options": [
+        {
+          "alias": null,
+          "endValue": null,
+          "operation": "equals",
+          "startValue": null,
+          "value": "THIS MONTH"
+        },
+        {
+          "alias": null,
+          "endValue": null,
+          "operation": "equals",
+          "startValue": null,
+          "value": "LAST MONTH"
+        },
+        {
+          "alias": null,
+          "endValue": null,
+          "operation": "equals",
+          "startValue": null,
+          "value": "LAST 2 MONTHS"
+        },
+        {
+          "alias": null,
+          "endValue": null,
+          "operation": "equals",
+          "startValue": null,
+          "value": "LAST 3 MONTHS"
+        },
+        {
+          "alias": null,
+          "endValue": null,
+          "operation": "equals",
+          "startValue": null,
+          "value": "LAST 6 MONTHS"
+        },
+        {
+          "alias": null,
+          "endValue": null,
+          "operation": "equals",
+          "startValue": null,
+          "value": "LAST 8 MONTHS"
+        },
+        {
+          "alias": null,
+          "endValue": null,
+          "operation": "equals",
+          "startValue": null,
+          "value": "NEXT MONTH"
+        },
+        {
+          "alias": null,
+          "endValue": null,
+          "operation": "equals",
+          "startValue": null,
+          "value": "NEXT 2 MONTHS"
+        },
+        {
+          "alias": null,
+          "endValue": null,
+          "operation": "equals",
+          "startValue": null,
+          "value": "NEXT 3 MONTHS"
+        },
+        {
+          "alias": null,
+          "endValue": null,
+          "operation": "equals",
+          "startValue": null,
+          "value": "LAST 12 MONTHS"
+        }
+      ],
+      "selectedOption": 4
+    }
+  ],
   "flexTableImplementation": "REPORT_INSTANCE",
   "layout": {
     "components": [

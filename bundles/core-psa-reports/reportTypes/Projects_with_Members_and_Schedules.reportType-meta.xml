@@ -29,6 +29,11 @@
             <field>Revecast__Status__c</field>
             <table>Revecast__Project__c</table>
         </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CreatedDate</field>
+            <table>Revecast__Project__c</table>
+        </columns>
         <masterLabel>Project</masterLabel>
     </sections>
     <sections>
@@ -78,6 +83,31 @@
         <columns>
             <checkedByDefault>true</checkedByDefault>
             <field>Revecast__Scheduled_Hours_this_week__c</field>
+            <table>Revecast__Project__c.Revecast__Project_Members__r.Revecast__Project_Schedules__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Revecast__Status__c</field>
+            <table>Revecast__Project__c.Revecast__Project_Members__r.Revecast__Project_Schedules__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Revecast__Scheduled_Actual__c</field>
+            <table>Revecast__Project__c.Revecast__Project_Members__r.Revecast__Project_Schedules__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Revecast__Total_Time_Logged_Billable__c</field>
+            <table>Revecast__Project__c.Revecast__Project_Members__r.Revecast__Project_Schedules__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Revecast__Total_Time_Logged_Non_Billable__c</field>
+            <table>Revecast__Project__c.Revecast__Project_Members__r.Revecast__Project_Schedules__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Revecast__Total_Time_Logged_Override__c</field>
             <table>Revecast__Project__c.Revecast__Project_Members__r.Revecast__Project_Schedules__r</table>
         </columns>
         <masterLabel>Project Schedule</masterLabel>
