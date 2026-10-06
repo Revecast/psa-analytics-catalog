@@ -46,7 +46,7 @@
       "label": "Project Schedules",
       "type": "CustomEntity$Revecast__Project_Schedule__c"
     },
-    "scope": "user",
+    "scope": "organization",
     "showGrandTotal": true,
     "showSubtotals": true,
     "sortBy": [],

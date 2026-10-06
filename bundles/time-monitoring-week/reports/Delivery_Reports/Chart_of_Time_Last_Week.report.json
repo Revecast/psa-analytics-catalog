@@ -61,7 +61,7 @@
       "label": "Time Entries with Staff Week",
       "type": "CustomEntity$Revecast__Time_Entry__c@Revecast__Time_Entry__c.Revecast__Staff_Week__c"
     },
-    "scope": "user",
+    "scope": "organization",
     "showGrandTotal": true,
     "showSubtotals": true,
     "sortBy": [],

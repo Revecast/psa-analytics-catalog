@@ -79,7 +79,7 @@
       "label": "Projects w/ Monthly and Weekly Schedules",
       "type": "Revecast__Projects_w_Monthly_and_Weekly_Schedules__c"
     },
-    "scope": "user",
+    "scope": "organization",
     "showGrandTotal": true,
     "showSubtotals": true,
     "sortBy": [],
