@@ -394,11 +394,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Revecast__Invoicing_History_Report__c</field>
-            <table>Opportunity.Revecast__Projects__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Revecast__Future_Scheduled_Revenue__c</field>
             <table>Opportunity.Revecast__Projects__r</table>
         </columns>
@@ -410,66 +405,6 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Revecast__Used_Billable_Hours__c</field>
-            <table>Opportunity.Revecast__Projects__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Revecast__Billable_vs_Non_Billable__c</field>
-            <table>Opportunity.Revecast__Projects__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Revecast__Day_Off_Impacts__c</field>
-            <table>Opportunity.Revecast__Projects__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Revecast__Last_Month_s_Breakdown__c</field>
-            <table>Opportunity.Revecast__Projects__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Revecast__Last_Week_s_Time__c</field>
-            <table>Opportunity.Revecast__Projects__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Revecast__Opportunity_Schedule_Details__c</field>
-            <table>Opportunity.Revecast__Projects__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Revecast__Project_Budget_By_Person__c</field>
-            <table>Opportunity.Revecast__Projects__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Revecast__Project_Budget_Report__c</field>
-            <table>Opportunity.Revecast__Projects__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Revecast__Schedule_Edits2__c</field>
-            <table>Opportunity.Revecast__Projects__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Revecast__Schedule_by_Role__c</field>
-            <table>Opportunity.Revecast__Projects__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Revecast__Scheduling_Report2__c</field>
-            <table>Opportunity.Revecast__Projects__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Revecast__This_Month_s_Breakdown__c</field>
-            <table>Opportunity.Revecast__Projects__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Revecast__Workstream_Schedules__c</field>
             <table>Opportunity.Revecast__Projects__r</table>
         </columns>
         <masterLabel>Projects</masterLabel>
@@ -667,11 +602,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Revecast__Schedule_Edits_Report__c</field>
-            <table>Opportunity.Revecast__Projects__r.Revecast__Project_Schedules__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Revecast__Scheduled_Actual__c</field>
             <table>Opportunity.Revecast__Projects__r.Revecast__Project_Schedules__r</table>
         </columns>
@@ -703,11 +633,6 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Revecast__Revenue_Calculated_Rate_Card__c</field>
-            <table>Opportunity.Revecast__Projects__r.Revecast__Project_Schedules__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Revecast__Monthly_Time_Review__c</field>
             <table>Opportunity.Revecast__Projects__r.Revecast__Project_Schedules__r</table>
         </columns>
         <columns>
@@ -974,11 +899,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Revecast__Schedule_Edits_Report__c</field>
-            <table>Opportunity.Revecast__Projects__r.Revecast__Project_Schedules__r.Revecast__Child_Project_Schedules__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Revecast__Scheduled_Actual__c</field>
             <table>Opportunity.Revecast__Projects__r.Revecast__Project_Schedules__r.Revecast__Child_Project_Schedules__r</table>
         </columns>
@@ -1006,11 +926,6 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Revecast__Revenue_Calculated_Rate_Card__c</field>
-            <table>Opportunity.Revecast__Projects__r.Revecast__Project_Schedules__r.Revecast__Child_Project_Schedules__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Revecast__Monthly_Time_Review__c</field>
             <table>Opportunity.Revecast__Projects__r.Revecast__Project_Schedules__r.Revecast__Child_Project_Schedules__r</table>
         </columns>
         <columns>
