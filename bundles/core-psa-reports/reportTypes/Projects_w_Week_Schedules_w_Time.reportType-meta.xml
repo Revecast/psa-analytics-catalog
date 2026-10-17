@@ -21,6 +21,11 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
+            <field>Id</field>
+            <table>Revecast__Project__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
             <field>Revecast__Project_Type__c</field>
             <table>Revecast__Project__c</table>
         </columns>
