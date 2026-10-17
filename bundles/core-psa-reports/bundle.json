@@ -1,7 +1,7 @@
 {
   "bundleId": "core-psa-reports",
   "name": "Core PSA Reports",
-  "description": "The standard PSA operational reports that PSACore features (Project Impact, scheduling screens, timesheet links) deep-link to. Install these, then click 'Populate Report IDs' to register them in PSA settings.",
+  "description": "The standard PSA operational reports for project impact, scheduling and timesheet review.",
   "category": "core",
   "primaryDashboard": null,
   "components": {

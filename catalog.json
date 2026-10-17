@@ -9,7 +9,7 @@
     {
       "id": "core",
       "label": "Core PSA Reports",
-      "description": "Standard operational reports required for PSA features (Project Impact, scheduling, timesheets) to function. Install, then Populate Report IDs.",
+      "description": "Standard PSA operational reports for project impact, scheduling and timesheet review.",
       "bundleIds": [
         "core-psa-reports"
       ]
@@ -223,7 +223,7 @@
     },
     "core-psa-reports": {
       "name": "Core PSA Reports",
-      "description": "The standard PSA operational reports that PSACore features (Project Impact, scheduling screens, timesheet links) deep-link to. Install these, then click 'Populate Report IDs' to register them in PSA settings.",
+      "description": "The standard PSA operational reports for project impact, scheduling and timesheet review.",
       "category": "core",
       "primaryDashboard": null,
       "components": {
