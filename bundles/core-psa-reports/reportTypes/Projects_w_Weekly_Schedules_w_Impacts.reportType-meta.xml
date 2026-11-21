@@ -355,11 +355,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Revecast__Schedule_Edits_Report__c</field>
-            <table>Revecast__Project__c.Revecast__Project_Schedules__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Revecast__Scheduled_Actual__c</field>
             <table>Revecast__Project__c.Revecast__Project_Schedules__r</table>
         </columns>
