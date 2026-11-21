@@ -21,6 +21,11 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
+            <field>Id</field>
+            <table>Revecast__Project__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
             <field>Revecast__Project_Type__c</field>
             <table>Revecast__Project__c</table>
         </columns>
@@ -60,6 +65,16 @@
         <columns>
             <checkedByDefault>true</checkedByDefault>
             <field>Revecast__Team_Member_Name__c</field>
+            <table>Revecast__Project__c.Revecast__Project_Schedules__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Revecast__Project_Week__c.Revecast__Chronology__c.Name</field>
+            <table>Revecast__Project__c.Revecast__Project_Schedules__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Revecast__Project_Week__c.Revecast__Chronology__c.Revecast__Start_Date__c</field>
             <table>Revecast__Project__c.Revecast__Project_Schedules__r</table>
         </columns>
         <columns>
